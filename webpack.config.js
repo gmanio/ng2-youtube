@@ -9,14 +9,12 @@ var path = require("path");
 
 module.exports = {
     entry: {
-        'polyfills': './src/polyfills.ts',
-        'vendor': './src/vendor.ts',
-        'app': './src/main.ts'
+        'bundle': ['./src/polyfills.ts','./src/vendor.ts', './src/main.ts']
     },
 
     output: {
         path: path.resolve(__dirname, "dist"),
-        // publicPath: "/dist/",
+        publicPath: "/dist/",
         filename: '[name].js',
     },
 
@@ -47,10 +45,11 @@ module.exports = {
 
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: "bundle",
-            chunks: ['polyfills', 'vendor', 'app']
-        }),
+        new webpack.optimize.OccurrenceOrderPlugin()
+        // new webpack.optimize.CommonsChunkPlugin({
+        //     name: "bundle",
+        //     chunks: ['polyfills', 'vendor', 'app']
+        // }),
         // new webpack.NoErrorsPlugin(),
         // new webpack.optimize.DedupePlugin(),
         // new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
@@ -68,7 +67,7 @@ module.exports = {
         colors: true,
         historyApiFallback: true,
         compress: true,
-        quiet: false,
+        quiet: true,
         progress: true
     }
 };
