@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "types": [
+      // add node as an option
+      "core-js",
+      "node"
+    ],
+    "typeroots": [
+      // add path to @types
+      "../node_modules/@types"
+    ]
+  }
+}
