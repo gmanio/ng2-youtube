@@ -7,6 +7,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule}  from '@angular/platform-browser';
 import {HttpModule}    from '@angular/http';
+import {FormsModule} from '@angular/forms';
 
 // User Module
 import {AppComponent} from './app.component';
@@ -18,6 +19,7 @@ import {routingModule} from './app.routes';
     imports: [
         BrowserModule,
         HttpModule,
+        FormsModule,
         routingModule
     ],
     declarations: [
@@ -27,4 +29,5 @@ import {routingModule} from './app.routes';
     bootstrap: [AppComponent],
 })
 
-export class AppModule {}
+export class AppModule {
+}

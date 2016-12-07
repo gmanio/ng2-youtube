@@ -2,7 +2,14 @@
     <div class="nav_youtube"></div>
     <div class="ct_youtube">
         <ul class="list_video">
-
+            <li class="video_item" *ngFor="let video of videos">
+                <div class="bg_video" data-videoId='{video.id.videoId}' [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
+                    <div class="description">
+                        <span class="ellipsis">{{video.snippet.title}}</span>
+                    </div>
+                </div>
+                <!--{{video.id.videoId}}-->
+            </li>
         </ul>
     </div>
 </div>
