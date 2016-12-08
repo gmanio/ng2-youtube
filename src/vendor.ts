@@ -17,6 +17,6 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 
 //youtube
-import './vendor/material/material.indigo-pink.min.css';
+import 'style!./vendor/material/material.min.css';
 import './vendor/material/material.min.js';
 import './vendor/youtube/client.js';

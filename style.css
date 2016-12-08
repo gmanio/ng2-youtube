@@ -2,8 +2,8 @@
 
 html, body{ height:100%; }
 #ct{ min-height:100%; }
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, fieldset, p, button{ margin:0; padding:0; letter-spacing:-0.1em; }
-body, input, select, textarea{ color:#000; font-family:Helvetica, 'Apple SD Gothic Neo', Dotum, '돋움', 'Malgun Gothic', '맑은 고딕', sans-serif; font-size:87.5%; font-weight:normal; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, fieldset, p, button{ margin:0; padding:0; }
+body, input, select, textarea{ color:#000; font-family:'Malgun Gothic', '맑은 고딕', Helvetica, 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif; font-size:87.5%; font-weight:normal; }
 img, fieldset{ border:0 none; }
 ul, ol, li{ list-style:none; }
 address, caption, cite, code, dfn, em, i, var{ font-style:normal; font-weight:normal; }
@@ -21,7 +21,6 @@ textarea, input[type="text"], input[type="number"], input[type="password"], inpu
 label, input[type="radio"], input[type="checkbox"]{ vertical-align:middle; }
 button{ *overflow:visible; overflow:hidden; background-color:transparent; border:none; cursor:pointer; text-align:center; }
 .blind, .skip{ visibility:hidden; overflow:hidden; position:absolute; left:-1000em; width:0; height:0; font-size:0; line-height:0; }
-
 /* Material Google Icon */
 @font-face{
     font-family:'Material Icons';

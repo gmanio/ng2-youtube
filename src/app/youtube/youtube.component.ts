@@ -16,6 +16,7 @@ export class YoutubeComponent implements OnInit {
     private oYoutubeSearchRequest;
     private query: string = 'america president';
     private order: string = 'relevance';
+    private isLoading: boolean = false;
     private cdRef;
     private videos = [];
 
@@ -58,5 +59,13 @@ export class YoutubeComponent implements OnInit {
 
     onFailed() {
         console.log('error');
+    }
+
+    onLoading() {
+        this.isLoading = true;
+    }
+
+    onLoaded() {
+        this.isLoading = false;
     }
 }
