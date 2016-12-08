@@ -3,7 +3,7 @@
  * @author: Gman Park
  */
 
-import {Component, HostListener, OnInit, ChangeDetectorRef} from "@angular/core";
+import {Component, HostListener, OnInit, ChangeDetectorRef, ViewEncapsulation} from "@angular/core";
 
 @Component({
     styleUrls: ['youtube.component.css'],
