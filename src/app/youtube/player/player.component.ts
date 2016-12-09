@@ -3,36 +3,52 @@
  * @author: Gman Park
  */
 
-import {Component, OnInit, HostListener} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
     templateUrl: 'player.component.html'
 })
 
-
 export class PlayerComponent implements OnInit {
     private player;
+    private isPlayerOpen: boolean = true;
+    private videoId;
+
+    constructor(private router: ActivatedRoute) {
+        this.router = router;
+    }
 
     ngOnInit(): void {
-        window['onYoutubeIframeAPIReady'] = this.onYoutubeReady ;
+        console.log("init");
+        window['onYouTubeIframeAPIReady'] = () => {
+            if (window['YT'] && window['YT'].Player) {
+                console.log('Youtube API is ready');
+                this.onYoutubeReady.bind(this);
+            }
+        };
 
-        console.log("ready");
-        console.log(window['YT']);
-        setTimeout(() => {
-            console.log(window['YT']);
-        }, 2000)
+        this.router.params.subscribe(params => {
+            this.videoId = params['id'];
+        });
     }
 
     onYoutubeReady() {
+        console.log(window.innerHeight + " " + window.innerWidth);
         this.player = new window['YT'].Player('youtube_player', {
             width: window.innerWidth,
             height: window.innerHeight,
+            videoId: this.videoId,
             events: {
-                // 'onReady': onPlayerReady,
+                'onReady': this.onPlayerReady,
                 // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
                 // 'onStateChange': onPlayerStateChange,
                 // 'onError': onPlayerError
             }
         });
+    }
+
+    onPlayerReady(event) {
+        event.target.playVideo();
     }
 }
