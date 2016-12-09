@@ -1,4 +1,3 @@
-
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer">
     <div class="nav_youtube mdl-layout__header">
         <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
@@ -29,11 +28,13 @@
         <div class="ct_youtube">
             <ul class="list_video">
                 <li class="video_item" *ngFor="let video of videos">
-                    <div class="bg_video" data-videoId='{video.id.videoId}' [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
-                        <div class="description">
-                            <span class="ellipsis">{{video.snippet.title}}</span>
+                    <a [routerLink]="'./player/'+[video.id.videoId]">
+                        <div class="bg_video" data-videoId='{video.id.videoId}' [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
+                            <div class="description">
+                                <span class="ellipsis">{{video.snippet.title}}</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </li>
             </ul>
         </div>

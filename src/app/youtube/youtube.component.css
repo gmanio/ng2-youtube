@@ -1,18 +1,58 @@
 .nav_youtube{ height:60px; background:#167ac6 }
 .video_item{ max-height:640px; background:#eee }
-.video_item .bg_video{ position:relative; margin-bottom:4px; min-height:200px; height:100%; background-size:cover; background-position:center center; text-align:left; }
+.video_item .bg_video{ position:relative; margin-bottom:4px; min-height:300px; height:auto; background-size:cover; background-position:center center; text-align:left; }
 .video_item .ellipsis{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; /* 라인수 */ -webkit-box-orient:vertical; word-wrap:break-word; }
 .video_item .description{ position:absolute; left:0; bottom:0; width:100%; height:20px; background:#333; color:#fff; text-overflow:ellipsis; }
 .inp_search{ border:none; border-bottom:1px solid rgba(0, 0, 0, 0.12); }
+.video_loading{ width:100%; height:100%; background:#16171d; opacity:.9; position:fixed; top:0; left:0; z-index:9999 }
+.video_loading > div{ width:60px; height:60px; position:absolute; left:50%; margin-left:-30px; top:40%; margin-top:-30px }
+.video_loading > div > div{ content:''; position:absolute; width:16px; height:16px; background:#ff8c00; top:10px; left:10px; transform-origin:20px 20px; border-radius:8px; animation:spin-a 2s infinite cubic-bezier(.5, 0, .5, 1) }
+.video_loading > div > .c2{ top:10px; left:auto; right:10px; transform-origin:-4px 20px; animation:spin-b 2s infinite cubic-bezier(.5, 0, .5, 1) }
+.video_loading > div > .c3{ top:auto; left:auto; right:10px; bottom:10px; transform-origin:-4px -4px; animation:spin-c 2s infinite cubic-bezier(.5, 0, .5, 1) }
+.video_loading > div > .c4{ top:auto; bottom:10px; transform-origin:20px -4px; animation:spin-d 2s infinite cubic-bezier(.5, 0, .5, 1) }
+.video_loading > span{ width:100px; height:30px; position:absolute; left:50%; margin-left:-50px; top:40%; margin-top:30px; color:#ff8c00; font-size:12px; text-align:center }
 
-.video_loading{width:100%;height:100%;background:#16171d;opacity:.9;position:fixed;top:0;left:0;z-index:9999}
-.video_loading>div{width:60px;height:60px;position:absolute;left:50%;margin-left:-30px;top:40%;margin-top:-30px}
-.video_loading>div>div{content:'';position:absolute;width:16px;height:16px;background:#ff8c00;top:10px;left:10px;transform-origin:20px 20px;border-radius:8px;animation:spin-a 2s infinite cubic-bezier(.5,0,.5,1)}
-.video_loading>div>.c2{top:10px;left:auto;right:10px;transform-origin:-4px 20px;animation:spin-b 2s infinite cubic-bezier(.5,0,.5,1)}
-.video_loading>div>.c3{top:auto;left:auto;right:10px;bottom:10px;transform-origin:-4px -4px;animation:spin-c 2s infinite cubic-bezier(.5,0,.5,1)}
-.video_loading>div>.c4{top:auto;bottom:10px;transform-origin:20px -4px;animation:spin-d 2s infinite cubic-bezier(.5,0,.5,1)}
-.video_loading>span{width:100px;height:30px;position:absolute;left:50%;margin-left:-50px;top:40%;margin-top:30px;color:#ff8c00;font-size:12px;text-align:center}
-@keyframes spin-a{0%{transform:rotate(90deg)}50%{transform:rotate(180deg)}75%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
-@keyframes spin-b{0%,25%{transform:rotate(90deg)}25%{transform:rotate(180deg)}75%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}
-@keyframes spin-c{0%,25%{transform:rotate(90deg)}50%{transform:rotate(270deg)}100%{transform:rotate(360deg)}}@keyframes spin-d{0%,25%{transform:rotate(90deg)}50%{transform:rotate(180deg)}100%,75%{transform:rotate(360deg)}}
-
+@keyframes spin-a{
+    0%{ transform:rotate(90deg) }
+    50%{ transform:rotate(180deg) }
+    75%{ transform:rotate(270deg) }
+    100%{ transform:rotate(360deg) }
+}
+@keyframes spin-b{
+    0%, 25%{ transform:rotate(90deg) }
+    25%{ transform:rotate(180deg) }
+    75%{ transform:rotate(270deg) }
+    100%{ transform:rotate(360deg) }
+}
+@keyframes spin-c{
+    0%, 25%{ transform:rotate(90deg) }
+    50%{ transform:rotate(270deg) }
+    100%{ transform:rotate(360deg) }
+}
+@keyframes spin-d{
+    0%, 25%{ transform:rotate(90deg) }
+    50%{ transform:rotate(180deg) }
+    100%, 75%{ transform:rotate(360deg) }
+}
+.list_video{
+    -webkit-overflow-scrolling:touch;
+    -webkit-transform:translateZ(0);
+    -moz-transform:translateZ(0);
+    -ms-transform:translateZ(0);
+    -o-transform:translateZ(0);
+    transform:translateZ(0);
+    -moz-transition:all 1s;
+    -webkit-transition:all 1s;
+    -o-transition:all 1s;
+    transition:all 1s;
+}
+/* responsive */
+@media screen and (max-width:767px){
+    .video_item{ width:100%; }
+}
+@media screen and (min-width:768px) and (max-width:1919px){
+    .video_item{ float:left; width:50%; }
+}
+@media screen and (min-width:1920px){
+    .video_item{ float:left; width:25%; }
+}

@@ -11,7 +11,7 @@ export const routingModule = RouterModule.forRoot([
     {path: '', redirectTo: 'youtube', pathMatch: 'full'},
     {path: 'youtube', component: YoutubeComponent,
         children: [
-            { path: 'player', component: PlayerComponent }
+            { path: 'player/:id', component: PlayerComponent }
         ]
     },
     // {path: 'main', component: AppComponent},

@@ -20,3 +20,4 @@ import 'rxjs';
 import 'style!./vendor/material/material.min.css';
 import './vendor/material/material.min.js';
 import './vendor/youtube/client.js';
+import './vendor/youtube/player.js';
