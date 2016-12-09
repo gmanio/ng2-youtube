@@ -15,8 +15,6 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
-
     entry: {
         'bundle': ['./src/polyfills.ts', './src/vendor.ts', './src/main.ts']
     },

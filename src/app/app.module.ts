@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 // User Module
 import {AppComponent} from './app.component';
 import {YoutubeComponent} from "./youtube/youtube.component";
+import {PlayerComponent} from "./youtube/player/player.component";
 
 import {routingModule} from './app.routes';
 
@@ -24,7 +25,8 @@ import {routingModule} from './app.routes';
     ],
     declarations: [
         AppComponent,
-        YoutubeComponent
+        YoutubeComponent,
+        PlayerComponent
     ],
     bootstrap: [AppComponent],
 })
