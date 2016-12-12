@@ -19,59 +19,56 @@ export class PlayerComponent implements OnInit {
     constructor(private router: ActivatedRoute, private cdRef: ChangeDetectorRef) {
         this.router = router;
         this.cdRef = cdRef;
+
+        window.addEventListener('resize', this.onResize.bind(this), false);
+
+
     }
 
     ngOnInit(): void {
-        window.addEventListener('resize', this.onResize.bind(this), false);
-
-        window['onYouTubeIframeAPIReady'] = () => {
-            if (window['YT'] && window['YT'].Player) {
-                console.log('Youtube API is ready');
-                this.onYoutubeReady();
-            }
-        };
-
         this.router.params.subscribe(params => {
             console.log("player router change");
             this.isPlayerOpen = true;
             this.videoId = params['id'];
+            this.cdRef.detectChanges();
 
             if (this.player) {
-                this.player.loadVideoById(this.videoId);
-                this.player.playVideo();
-            }else{
-                this.onYoutubeReady();
+                console.log("call: playVideo");
+                this.playVideo();
             }
         });
+
+
+        window['onYouTubeIframeAPIReady'] = () => {
+            if (window['YT'] && window['YT'].Player) {
+                console.log('Youtube API is ready');
+                console.log("init");
+                this.player = new window['YT'].Player('youtube_player', {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                    videoId: this.router.snapshot.params['id'],
+                    events: {
+                        // 'onReady': this.playVideo.bind(this),
+                        'onStateChange': this.onPlayerStateChange.bind(this)
+                        // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+                        // 'onStateChange': onPlayerStateChange,
+                        // 'onError': onPlayerError
+                    }
+                });
+            }
+        };
     }
 
     hide() {
         this.player.stopVideo();
-        this.router
-        // this.isPlayerOpen = false;
+        this.isPlayerOpen = false;
+        this.cdRef.detectChanges();
     }
 
     onResize() {
         if (this.player) {
             this.player.setSize(window.innerWidth, window.innerHeight);
         }
-    }
-
-    onYoutubeReady() {
-        console.log(window.innerHeight + " " + window.innerWidth);
-        console.log(this.router.snapshot.params['id']);
-        this.player = new window['YT'].Player('youtube_player', {
-            width: window.innerWidth,
-            height: window.innerHeight,
-            videoId: this.router.snapshot.params['id'],
-            events: {
-                'onReady': this.onPlayerReady.bind(this),
-                'onStateChange': this.onPlayerStateChange.bind(this)
-                // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
-                // 'onStateChange': onPlayerStateChange,
-                // 'onError': onPlayerError
-            }
-        });
     }
 
     /*
@@ -87,31 +84,35 @@ export class PlayerComponent implements OnInit {
      YT.PlayerState.BUFFERING
      YT.PlayerState.CUED
      */
-    onPlayerStateChange() {
-        // var youtubeIframe = document.querySelector('#youtube_player');
-        // console.log(youtubeIframe.querySelector('.ytp-title-link'));
-        console.log(this.player.getPlayerState());
-        // switch (this.player.getPlayerState()) {
-        //     case (0):
-        //         break;
-        //     case (1):
-        //         this.isPlayerOpen = true;
-        //         this.cdRef.detectChanges();
-        //         break;
-        //     case (3):
-        //         this.isPlayerOpen = true;
-        //         this.cdRef.detectChanges();
-        //         break;
-        //     default:
-        //         this.isPlayerOpen = true;
-        //         break;
-        // }
-        // this.isPlayerOpen = true;
-        // this.cdRef.detectChanges();
+    onPlayerStateChange(event) {
+        switch (event.data) {
+            case (0):
+                break;
+            case (1):
+                this.isPlayerOpen = true;
+                this.cdRef.detectChanges();
+                break;
+            case (3):
+                this.isPlayerOpen = true;
+                this.cdRef.detectChanges();
+                break;
+            case (5):
+                // this.hide();
+                break;
+            // default:
+            //     this.isPlayerOpen = false;
+            //     this.cdRef.detectChanges();
+            //     break;
+        }
     }
 
-    onPlayerReady() {
-        console.log("player ready");
+    playVideo(){
+        this.player.loadVideoById(this.videoId);
         this.player.playVideo();
     }
+
+    // onPlayerReady() {
+    //     console.log("player ready");
+    //     this.player.playVideo();
+    // }
 }

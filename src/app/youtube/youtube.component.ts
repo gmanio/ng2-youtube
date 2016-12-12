@@ -30,18 +30,18 @@ export class YoutubeComponent implements OnInit {
             oClient.setApiKey(YoutubeComponent.apiKey);
             oClient.load('youtube', 'v3').then(() => {
                 this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
-                this.requestYoutubeData();
+                this.requestYoutubeData({type: 'init'});
             })
         })
     }
 
-    constructor(cdRef: ChangeDetectorRef, router:Router) {
+    constructor(cdRef: ChangeDetectorRef, router: Router) {
         this.cdRef = cdRef;
         this.router = router;
         // this.cdRef.detectChanges();
     }
 
-    requestYoutubeData() {
+    requestYoutubeData(htOption) {
         let initOption = {
             part: 'snippet', //required
             q: this.query,
@@ -50,12 +50,27 @@ export class YoutubeComponent implements OnInit {
             region: 'KR'
         }
 
+        if (htOption.type = "init") {
+            this.videos = [];
+        }
+
+        console.log(initOption);
+
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
+    }
+
+    onClickedSort(sortType){
+        this.order = sortType;
+        this.requestYoutubeData({type: 'init'});
+    }
+
+    onSearch(e) {
+        this.requestYoutubeData({type: 'init'});
     }
 
     onSuccess(data) {
         this.videos = this.videos.concat(data.result.items);
-        console.log(this.videos[0]);
+        // console.log(this.videos[0]);
         // debugger;
         this.cdRef.detectChanges();
     }
@@ -66,13 +81,11 @@ export class YoutubeComponent implements OnInit {
 
     onLoading() {
         this.isLoading = true;
+        this.cdRef.detectChanges();
     }
 
     onLoaded() {
         this.isLoading = false;
-    }
-
-    onVideoPlay(id){
-        this.router.navigate(['youtube/player', id])
+        this.cdRef.detectChanges();
     }
 }
