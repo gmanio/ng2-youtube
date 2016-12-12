@@ -22,41 +22,40 @@ export class PlayerComponent implements OnInit {
 
         window.addEventListener('resize', this.onResize.bind(this), false);
 
-
+        window['onYouTubeIframeAPIReady'] = () => {
+            if (window['YT'] && window['YT'].Player) {
+                this.initYoutubePlayer();
+            }
+        };
     }
 
     ngOnInit(): void {
         this.router.params.subscribe(params => {
-            console.log("player router change");
             this.isPlayerOpen = true;
             this.videoId = params['id'];
             this.cdRef.detectChanges();
 
             if (this.player) {
-                console.log("call: playVideo");
                 this.playVideo();
+            } else {
+                this.initYoutubePlayer();
             }
         });
+    }
 
-
-        window['onYouTubeIframeAPIReady'] = () => {
-            if (window['YT'] && window['YT'].Player) {
-                console.log('Youtube API is ready');
-                console.log("init");
-                this.player = new window['YT'].Player('youtube_player', {
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                    videoId: this.router.snapshot.params['id'],
-                    events: {
-                        // 'onReady': this.playVideo.bind(this),
-                        'onStateChange': this.onPlayerStateChange.bind(this)
-                        // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
-                        // 'onStateChange': onPlayerStateChange,
-                        // 'onError': onPlayerError
-                    }
-                });
+    initYoutubePlayer() {
+        this.player = new window['YT'].Player('youtube_player', {
+            width: window.innerWidth,
+            height: window.innerHeight,
+            videoId: this.videoId,
+            events: {
+                'onReady': this.playVideo.bind(this),
+                // 'onStateChange': this.onPlayerStateChange.bind(this)
+                // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
+                // 'onStateChange': onPlayerStateChange,
+                // 'onError': onPlayerError
             }
-        };
+        });
     }
 
     hide() {
@@ -99,14 +98,10 @@ export class PlayerComponent implements OnInit {
             case (5):
                 // this.hide();
                 break;
-            // default:
-            //     this.isPlayerOpen = false;
-            //     this.cdRef.detectChanges();
-            //     break;
         }
     }
 
-    playVideo(){
+    playVideo() {
         this.player.loadVideoById(this.videoId);
         this.player.playVideo();
     }

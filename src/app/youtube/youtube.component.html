@@ -12,6 +12,9 @@
     </div>
     <div class="mdl-layout__drawer">
         <nav class="mdl-navigation">
+            <div class="logo_gman">
+                <i>g</i><i>m</i><i>a</i><i>n</i>
+            </div>
             <a class="mdl-navigation__link" (click)="onClickedSort('viewCount')">
                 <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>ViewCount
             </a>
@@ -45,6 +48,12 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mdl-typography--text-center">
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="onLoadMoreContent()">
+                <i class="material-icons">add</i>
+            </button>
+            <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
         </div>
     </div>
     <div class="video_loading" [hidden]="!isLoading">

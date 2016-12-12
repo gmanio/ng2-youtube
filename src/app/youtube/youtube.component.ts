@@ -11,6 +11,10 @@ import {Router} from "@angular/router";
     templateUrl: 'youtube.component.html'
 })
 
+/**
+ *
+ * [ref] : https://developers.google.com/youtube/v3/docs/search/list?hl=ko
+ */
 export class YoutubeComponent implements OnInit {
     static apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
 
@@ -21,6 +25,7 @@ export class YoutubeComponent implements OnInit {
     private cdRef: ChangeDetectorRef;
     private videos = [];
     private router;
+    private nextPageToken;
 
     @HostListener('window:googleApiClientReady')
     ngOnInit(): void {
@@ -38,28 +43,35 @@ export class YoutubeComponent implements OnInit {
     constructor(cdRef: ChangeDetectorRef, router: Router) {
         this.cdRef = cdRef;
         this.router = router;
-        // this.cdRef.detectChanges();
     }
 
     requestYoutubeData(htOption) {
+        this.onLoading();
+
         let initOption = {
             part: 'snippet', //required
+            type: 'video',
             q: this.query,
             order: this.order,
             maxResults: 20,
             region: 'KR'
         }
 
-        if (htOption.type = "init") {
+        if (htOption.type == "init") {
             this.videos = [];
+        } else {
+            initOption = Object.assign({}, initOption, {pageToken: this.nextPageToken});
+            console.log(initOption);
         }
-
-        console.log(initOption);
 
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
     }
 
-    onClickedSort(sortType){
+    onLoadMoreContent() {
+        this.requestYoutubeData({pageToken: this.nextPageToken});
+    }
+
+    onClickedSort(sortType) {
         this.order = sortType;
         this.requestYoutubeData({type: 'init'});
     }
@@ -69,13 +81,14 @@ export class YoutubeComponent implements OnInit {
     }
 
     onSuccess(data) {
+        this.onLoaded();
+        this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
-        // console.log(this.videos[0]);
-        // debugger;
         this.cdRef.detectChanges();
     }
 
     onFailed() {
+        this.onLoaded();
         console.log('error');
     }
 
