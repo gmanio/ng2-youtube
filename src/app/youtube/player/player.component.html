@@ -1,8 +1,8 @@
-<div class="wrap_ytplayer" [hidden]="!isPlayerOpen">
-    <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;icon" (click)="hide()">-->
-        <!--<i class="material-icons">clear</i>-->
-    <!--</button>-->
-    <div id="youtube_player" style="position:absolute;z-index:10000;height:1000px">
+<div class="wrap_youtube_player" [hidden]="!isPlayerOpen">
+    <button class="btn_player-close mdl-button mdl-js-button mdl-button--icon" (click)="hide()">
+        <i class="material-icons">clear</i>
+    </button>
+    <div id="youtube_player">
         <!--inserted youtube player -->
     </div>
 </div>

@@ -28,7 +28,7 @@
         <div class="ct_youtube">
             <ul class="list_video">
                 <li class="video_item" *ngFor="let video of videos">
-                    <a [routerLink]="'./player/'+[video.id.videoId]">
+                    <a routerLink="./player/+{{video.id.videoId}}" routerLinkActive="active">
                         <div class="bg_video" data-videoId='{video.id.videoId}' [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
                             <div class="description">
                                 <span class="ellipsis">{{video.snippet.title}}</span>

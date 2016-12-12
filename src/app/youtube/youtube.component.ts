@@ -4,6 +4,7 @@
  */
 
 import {Component, HostListener, OnInit, ChangeDetectorRef} from "@angular/core";
+import {Router} from "@angular/router";
 
 @Component({
     styleUrls: ['youtube.component.css'],
@@ -17,8 +18,9 @@ export class YoutubeComponent implements OnInit {
     private query: string = 'america president';
     private order: string = 'relevance';
     private isLoading: boolean = false;
-    private cdRef;
+    private cdRef: ChangeDetectorRef;
     private videos = [];
+    private router;
 
     @HostListener('window:googleApiClientReady')
     ngOnInit(): void {
@@ -33,8 +35,9 @@ export class YoutubeComponent implements OnInit {
         })
     }
 
-    constructor(cdRef: ChangeDetectorRef) {
+    constructor(cdRef: ChangeDetectorRef, router:Router) {
         this.cdRef = cdRef;
+        this.router = router;
         // this.cdRef.detectChanges();
     }
 
@@ -67,5 +70,9 @@ export class YoutubeComponent implements OnInit {
 
     onLoaded() {
         this.isLoading = false;
+    }
+
+    onVideoPlay(id){
+        this.router.navigate(['youtube/player', id])
     }
 }
