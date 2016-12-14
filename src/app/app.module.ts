@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {YoutubeComponent} from "./youtube/youtube.component";
 import {PlayerComponent} from "./youtube/player/player.component";
+import {PageNotFoundComponent} from "./etc/pagenotfound.component";
 
 import {routingModule} from './app.routes';
 
@@ -26,7 +27,8 @@ import {routingModule} from './app.routes';
     declarations: [
         AppComponent,
         YoutubeComponent,
-        PlayerComponent
+        PlayerComponent,
+        PageNotFoundComponent
     ],
     bootstrap: [AppComponent],
 })

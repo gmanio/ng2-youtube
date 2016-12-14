@@ -38,7 +38,9 @@ export class PlayerComponent implements OnInit {
             if (this.player) {
                 this.playVideo();
             } else {
-                this.initYoutubePlayer();
+                if (window['YT'] && window['YT'].Player) {
+                    this.initYoutubePlayer();
+                }
             }
         });
     }

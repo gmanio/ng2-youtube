@@ -1,5 +1,5 @@
 /**
- * Created on 2016-12-06.
+ * Created on 2016-12-14.
  * @author: Gman Park
  */
 
@@ -10,9 +10,10 @@ function root(args) {
     return path.join.apply(path, [_root].concat(args));
 }
 
+var path = require("path");
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -57,30 +58,37 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin('[name].css')
-        // new webpack.optimize.CommonsChunkPlugin({
-        //     name: "bundle",
-        //     chunks: ['polyfills', 'vendor', 'app']
-        // }),
-        // new webpack.NoErrorsPlugin(),
-        // new webpack.optimize.DedupePlugin(),
-        // new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
-        //     mangle: {
-        //         keep_fnames: true
-        //     }
+        new ExtractTextPlugin('[name].css'),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "bundle",
+            chunks: ['polyfills', 'vendor', 'app']
+        }),
+        new webpack.NoErrorsPlugin(),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
+            output: {
+                comments: false
+            }, //prod
+            mangle: {
+                screw_ie8: true
+            }, //prod
+            compress: {
+                screw_ie8: true,
+                warnings: false,
+                conditionals: true,
+                unused: true,
+                comparisons: true,
+                sequences: true,
+                dead_code: true,
+                evaluate: true,
+                if_return: true,
+                join_vars: true,
+                negate_iife: false // we need this for lazy v8
+            },
+        })
+        // new HtmlWebpackPlugin({
+        //     filename: 'dist/index.html',
+        //     template: 'index.html'
         // })
-    ],
-
-    devServer: {
-        port: 3000,
-        host: '0.0.0.0',
-        hot: true,
-        inline: true,
-        colors: true,
-        historyApiFallback: true,
-        compress: true,
-        quiet: true,
-        progress: true
-    }
+    ]
 };

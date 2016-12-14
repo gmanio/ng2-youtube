@@ -1,4 +1,4 @@
-.nav_youtube{ height:60px; background:#167ac6 }
+.nav_youtube{ height:60px; background:#19bee1 }
 .video_item{ max-height:640px; background:#eee }
 .video_item .bg_video{ position:relative; min-height:280px; height:auto; background-size:cover; background-position:center center; text-align:left; }
 .video_item .ellipsis{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; /* 라인수 */ -webkit-box-orient:vertical; word-wrap:break-word; }

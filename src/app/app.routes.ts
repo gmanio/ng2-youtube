@@ -6,18 +6,18 @@
 import {RouterModule} from "@angular/router";
 import {YoutubeComponent} from "./youtube/youtube.component";
 import {PlayerComponent} from "./youtube/player/player.component";
+import {PageNotFoundComponent} from "./etc/pagenotfound.component";
 
 export const routingModule = RouterModule.forRoot([
     {path: '', redirectTo: 'youtube', pathMatch: 'full'},
-    {path: 'youtube', component: YoutubeComponent,
+    {
+        path: 'youtube', component: YoutubeComponent,
         children: [
-            { path: 'player/:id', component: PlayerComponent }
+            {path: 'player/:id', component: PlayerComponent}
         ]
     },
-    // {path: 'main', component: AppComponent},
-    // {path: 'about', component: AboutComponent, pathMatch: 'full'},
-    // {
-    //     path: "**",
-    //     component: PageNotFoundComponent
-    // }
+    {
+        path: "**",
+        component: PageNotFoundComponent
+    }
 ]);

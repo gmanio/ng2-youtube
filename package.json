@@ -2,7 +2,8 @@
   "name": "ng2-youtube",
   "version": "0.0.1",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js"
   },
   "author": "Gmanpark@2016",
   "license": "MIT",
@@ -23,7 +24,6 @@
   "devDependencies": {
     "@types/core-js": "^0.9.35",
     "@types/node": "0.0.2",
-    "typescript": "^2.1.4",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.9",
     "css-loader": "^0.26.1",
@@ -33,6 +33,7 @@
     "html-webpack-plugin": "^2.24.1",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
+    "typescript": "^2.1.4",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }
