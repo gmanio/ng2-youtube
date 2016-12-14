@@ -1,8 +1,9 @@
 .nav_youtube{ height:60px; background:#19bee1 }
-.video_item{ max-height:640px; background:#eee }
+.video_item{ overflow:hidden; max-height:640px; background:#eee; }
 .video_item .bg_video{ position:relative; min-height:280px; height:auto; background-size:cover; background-position:center center; text-align:left; }
-.video_item .ellipsis{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; /* 라인수 */ -webkit-box-orient:vertical; word-wrap:break-word; }
-.video_item .description{ position:absolute; left:0; bottom:0; width:100%; height:20px; background:#333; color:#fff; text-overflow:ellipsis; }
+.video_item .description{ position:absolute; padding:0px 10px; left:0; bottom:0; width:100%; height:25px; font-size:16px; line-height:25px; background-color:rgba(0, 0, 0, 0.5); color:#fff; }
+.video_item .bg_description{ }
+.video_item .ellipsis{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; opacity:1; -webkit-box-orient:vertical; word-wrap:break-word; }
 .inp_search{ border:none; border-bottom:1px solid rgba(0, 0, 0, 0.12); }
 .video_loading{ width:100%; height:100%; background:#16171d; opacity:.9; position:fixed; top:0; left:0; z-index:9999 }
 .video_loading > div{ width:60px; height:60px; position:absolute; left:50%; margin-left:-30px; top:40%; margin-top:-30px }
@@ -11,6 +12,10 @@
 .video_loading > div > .c3{ top:auto; left:auto; right:10px; bottom:10px; transform-origin:-4px -4px; animation:spin-c 2s infinite cubic-bezier(.5, 0, .5, 1) }
 .video_loading > div > .c4{ top:auto; bottom:10px; transform-origin:20px -4px; animation:spin-d 2s infinite cubic-bezier(.5, 0, .5, 1) }
 .video_loading > span{ width:100px; height:30px; position:absolute; left:50%; margin-left:-50px; top:40%; margin-top:30px; color:#ff8c00; font-size:12px; text-align:center }
+.btn_more_content{ margin:10px 0; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+.btn_more_content:hover{-webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg);-webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; -o-transition:transform 1s; transition:transform 1s;}
+.sort_description{ background:red; opacity:0.5; padding:10px; }
+.sort_description .txt{ opacity:1; color:#fff }
 .logo_gman{
     margin:20px 0;
     display:-webkit-box;
@@ -104,6 +109,7 @@
     100%, 75%{ transform:rotate(360deg) }
 }
 .list_video{
+    overflow:hidden;
     -webkit-overflow-scrolling:touch;
     -webkit-transform:translateZ(0);
     -moz-transform:translateZ(0);

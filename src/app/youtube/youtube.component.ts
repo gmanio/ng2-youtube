@@ -76,8 +76,15 @@ export class YoutubeComponent implements OnInit {
         this.requestYoutubeData({type: 'init'});
     }
 
-    onSearch(e) {
+    onSearch(event) {
+        console.log(event);
+
+        if (event.button != 0 && event.which != 13) {
+            return;
+        }
+
         this.requestYoutubeData({type: 'init'});
+        return true;
     }
 
     onSuccess(data) {
