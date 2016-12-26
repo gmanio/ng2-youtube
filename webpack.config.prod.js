@@ -13,7 +13,6 @@ function root(args) {
 var path = require("path");
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -59,11 +58,6 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('[name].css'),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: "bundle",
-            chunks: ['polyfills', 'vendor', 'app']
-        }),
-        new webpack.NoErrorsPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
             output: {
@@ -85,10 +79,10 @@ module.exports = {
                 join_vars: true,
                 negate_iife: false // we need this for lazy v8
             },
-        })
-        // new HtmlWebpackPlugin({
-        //     filename: 'dist/index.html',
-        //     template: 'index.html'
-        // })
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "bundle",
+            chunks: ['polyfills', 'vendor', 'app']
+        }),
     ]
 };
