@@ -19,7 +19,7 @@ export class YoutubeComponent implements OnInit {
     static apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
 
     private oYoutubeSearchRequest;
-    private query: string = 'america president';
+    private query: string = 'donald trump';
     private order: string = 'relevance';
     private isLoading: boolean = false;
     private cdRef: ChangeDetectorRef;
@@ -64,7 +64,6 @@ export class YoutubeComponent implements OnInit {
             this.videos = [];
         } else {
             initOption = Object.assign({}, initOption, {pageToken: this.nextPageToken});
-            console.log(initOption);
         }
 
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
@@ -80,43 +79,21 @@ export class YoutubeComponent implements OnInit {
     }
 
     onSearch(event) {
-        console.log(event);
-
         if (event.button != 0 && event.which != 13) {
             return;
         }
 
         this.requestYoutubeData({type: 'init'});
-        return true;
     }
 
     onSuccess(data) {
-        this.onLoaded();
         this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
-        this.cdRef.detectChanges();
-
-        let elList = [].slice.call(document.querySelectorAll('.video_item'));
-        let interval = 0;
-
-        for (let el of elList) {
-            this.delay(10000);
-        }
-        // [].forEach.call(elList, function (li) {
-        //     // do whatever
-        //     setTimeout(() => {
-        //         li.className = 'video_item show';
-        //     }, interval);
-        // });
-    }
-
-    async delay(ms) {
-         let promise = new Promise(resolve => setTimeout(console.log("delay"), ms));
+        this.onLoaded();
     }
 
     onFailed() {
         this.onLoaded();
-        console.log('error');
     }
 
     onLoading() {

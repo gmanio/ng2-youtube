@@ -1,5 +1,5 @@
-<div class="mdl-layout mdl-js-layout">
-    <div class="nav_youtube mdl-layout__header mdl-layout__header--scroll">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="nav_youtube mdl-layout__header ">
         <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field" (click)="onSearch($event)">
@@ -47,7 +47,7 @@
     <div class="mdl-layout__content">
         <div class="ct_youtube">
             <ul class="list_video">
-                <li class="video_item" *ngFor="let video of videos">
+                <li class="video_item show" *ngFor="let video of videos">
                     <a routerLink="./player/{{video.id.videoId}}" routerLinkActive="active">
                         <div class="bg_video" [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
                             <div class="description">
@@ -59,11 +59,10 @@
                 </li>
             </ul>
         </div>
-        <div class="btn_more_content mdl-typography--text-center">
-            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="onLoadMoreContent()">
+        <div class="mdl-typography--text-center">
+            <button class="btn_more_content mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="onLoadMoreContent()">
                 <i class="material-icons">add</i>
             </button>
-            <!--<div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>-->
         </div>
     </div>
     <div class="video_loading" [hidden]="!isLoading">

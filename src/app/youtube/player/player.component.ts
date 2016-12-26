@@ -54,10 +54,12 @@ export class PlayerComponent implements OnInit {
                 'onReady': this.playVideo.bind(this),
                 // 'onStateChange': this.onPlayerStateChange.bind(this)
                 // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
-                // 'onStateChange': onPlayerStateChange,
+                'onStateChange': this.onPlayerStateChange.bind(this),
                 // 'onError': onPlayerError
             }
         });
+
+
     }
 
     hide() {
@@ -94,11 +96,8 @@ export class PlayerComponent implements OnInit {
                 this.cdRef.detectChanges();
                 break;
             case (3):
-                this.isPlayerOpen = true;
-                this.cdRef.detectChanges();
                 break;
             case (5):
-                // this.hide();
                 break;
         }
     }
@@ -107,9 +106,4 @@ export class PlayerComponent implements OnInit {
         this.player.loadVideoById(this.videoId);
         this.player.playVideo();
     }
-
-    // onPlayerReady() {
-    //     console.log("player ready");
-    //     this.player.playVideo();
-    // }
 }

@@ -1,4 +1,4 @@
-.nav_youtube{ height:60px; background:#19bee1 }
+.nav_youtube{ height:60px; background:#b71c1c }
 .video_item{ overflow:hidden; opacity:0; max-height:640px; background:#eee; }
 .video_item.show{ opacity:1; -webkit-transition:opacity .5s; -moz-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s; transition:opacity .5s; }
 .video_item .bg_video{ position:relative; min-height:250px; height:auto; background-size:cover; background-position:center center; text-align:left; }
