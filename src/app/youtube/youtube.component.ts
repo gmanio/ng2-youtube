@@ -26,6 +26,7 @@ export class YoutubeComponent implements OnInit {
     private videos = [];
     private router;
     private nextPageToken;
+    private isNavHide: boolean = false;
 
     @HostListener('window:googleApiClientReady')
     ngOnInit(): void {
@@ -38,7 +39,9 @@ export class YoutubeComponent implements OnInit {
                 this.requestYoutubeData({type: 'init'});
             })
         })
+
     }
+
 
     constructor(cdRef: ChangeDetectorRef, router: Router) {
         this.cdRef = cdRef;
@@ -92,6 +95,23 @@ export class YoutubeComponent implements OnInit {
         this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
         this.cdRef.detectChanges();
+
+        let elList = [].slice.call(document.querySelectorAll('.video_item'));
+        let interval = 0;
+
+        for (let el of elList) {
+            this.delay(10000);
+        }
+        // [].forEach.call(elList, function (li) {
+        //     // do whatever
+        //     setTimeout(() => {
+        //         li.className = 'video_item show';
+        //     }, interval);
+        // });
+    }
+
+    async delay(ms) {
+         let promise = new Promise(resolve => setTimeout(console.log("delay"), ms));
     }
 
     onFailed() {

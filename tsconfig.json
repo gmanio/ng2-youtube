@@ -12,10 +12,6 @@
       // add node as an option
       "core-js",
       "node"
-    ],
-    "typeroots": [
-      // add path to @types
-      "../node_modules/@types"
     ]
   }
 }

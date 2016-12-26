@@ -15,5 +15,5 @@ import {Component} from '@angular/core';
 })
 
 export class PageNotFoundComponent{
-    title = ' Page Not Found ! ';
+    title = ' Page Not Found ';
 }

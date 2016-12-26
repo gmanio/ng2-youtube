@@ -1,5 +1,5 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer">
-    <div class="nav_youtube mdl-layout__header">
+<div class="mdl-layout mdl-js-layout">
+    <div class="nav_youtube mdl-layout__header mdl-layout__header--scroll">
         <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field" (click)="onSearch($event)">
@@ -49,7 +49,7 @@
             <ul class="list_video">
                 <li class="video_item" *ngFor="let video of videos">
                     <a routerLink="./player/{{video.id.videoId}}" routerLinkActive="active">
-                        <div class="bg_video" data-videoId='{video.id.videoId}' [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
+                        <div class="bg_video" [ngStyle]="{'background-image': 'url(' + video.snippet.thumbnails.high.url + ')'}">
                             <div class="description">
                                 <span class="ellipsis">{{video.snippet.title}}</span>
                                 <div class="bg_description"></div>
