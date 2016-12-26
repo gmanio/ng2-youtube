@@ -37,7 +37,7 @@ module.exports = {
             },
             {
                 test: /\.html$/,
-                loader: 'html'
+                loader: 'html?interpolate=require&-minimize'
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -58,31 +58,25 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('[name].css'),
+
         new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
-            output: {
-                comments: false
-            }, //prod
-            mangle: {
-                screw_ie8: true
-            }, //prod
-            compress: {
-                screw_ie8: true,
-                warnings: false,
-                conditionals: true,
-                unused: true,
-                comparisons: true,
-                sequences: true,
-                dead_code: true,
-                evaluate: true,
-                if_return: true,
-                join_vars: true,
-                negate_iife: false // we need this for lazy v8
-            },
-        }),
+
         new webpack.optimize.CommonsChunkPlugin({
             name: "bundle",
             chunks: ['polyfills', 'vendor', 'app']
+        }),
+
+        new webpack.optimize.UglifyJsPlugin({
+            beautify: false,
+            mangle: {
+                screw_ie8: true,
+                keep_fnames: true
+            },
+            compress: {
+                warnings: false,
+                screw_ie8: true
+            },
+            comments: false
         }),
     ]
 };

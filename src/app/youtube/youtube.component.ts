@@ -26,7 +26,6 @@ export class YoutubeComponent implements OnInit {
     private videos = [];
     private router;
     private nextPageToken;
-    private isNavHide: boolean = false;
 
     @HostListener('window:googleApiClientReady')
     ngOnInit(): void {
