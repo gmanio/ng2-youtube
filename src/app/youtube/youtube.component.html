@@ -6,7 +6,7 @@
                 <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input inp_search" type="text" id="search-field" [(ngModel)]='query' (keypress)="onSearch($event)">
+                <input class="mdl-textfield__input inp_search" type="text" id="search-field" [(ngModel)]='query' (keypress)="onSearch($event)" (blur)="onSearch($event)">
             </div>
         </div>
     </div>
