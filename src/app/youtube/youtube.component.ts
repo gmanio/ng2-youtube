@@ -18,14 +18,14 @@ import {Router} from "@angular/router";
 export class YoutubeComponent implements OnInit {
     static apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
 
-    private oYoutubeSearchRequest;
-    private query: string = 'donald trump';
-    private order: string = 'relevance';
-    private isLoading: boolean = false;
-    private cdRef: ChangeDetectorRef;
-    private videos = [];
-    private router;
-    private nextPageToken;
+    public oYoutubeSearchRequest;
+    public query: string = 'donald trump';
+    public order: string = 'relevance';
+    public isLoading: boolean = false;
+    public cdRef: ChangeDetectorRef;
+    public videos = [];
+    public router;
+    public nextPageToken;
 
     @HostListener('window:googleApiClientReady')
     ngOnInit(): void {

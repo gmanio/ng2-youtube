@@ -12,11 +12,11 @@ import {ActivatedRoute} from "@angular/router";
 })
 
 export class PlayerComponent implements OnInit {
-    private player: any;
-    private isPlayerOpen: boolean = false;
-    private videoId: string;
+    public player: any;
+    public isPlayerOpen: boolean = false;
+    public videoId: string;
 
-    constructor(private router: ActivatedRoute, private cdRef: ChangeDetectorRef) {
+    constructor(public router: ActivatedRoute, public cdRef: ChangeDetectorRef) {
         this.router = router;
         this.cdRef = cdRef;
 

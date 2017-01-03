@@ -15,8 +15,10 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 
 module.exports = {
+    devtool:'inline-source-map',
+
     entry: {
-        'bundle': ['./src/polyfills.ts', './src/vendor.ts', './src/main.ts']
+        'bundle': ['./src/main.ts']
     },
 
     output: {
