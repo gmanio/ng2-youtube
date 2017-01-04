@@ -41907,7 +41907,7 @@ var Headers = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$161 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$160 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -42037,7 +42037,7 @@ var ResponseOptions = (function () {
   * *
  */
 var BaseResponseOptions = (function (_super) {
-    __extends$161(BaseResponseOptions, _super);
+    __extends$160(BaseResponseOptions, _super);
     function BaseResponseOptions() {
         _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() });
     }
@@ -42454,7 +42454,7 @@ var Body = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$162 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$161 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -42479,7 +42479,7 @@ var __extends$162 = (undefined && undefined.__extends) || function (d, b) {
   * *
  */
 var Response = (function (_super) {
-    __extends$162(Response, _super);
+    __extends$161(Response, _super);
     /**
      * @param {?} responseOptions
      */
@@ -42590,7 +42590,7 @@ var BrowserJsonp = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$160 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$159 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -42616,7 +42616,7 @@ var JSONPConnection = (function () {
     return JSONPConnection;
 }());
 var JSONPConnection_ = (function (_super) {
-    __extends$160(JSONPConnection_, _super);
+    __extends$159(JSONPConnection_, _super);
     /**
      * @param {?} req
      * @param {?} _dom
@@ -42709,14 +42709,14 @@ var JSONPConnection_ = (function (_super) {
  * @abstract
  */
 var JSONPBackend = (function (_super) {
-    __extends$160(JSONPBackend, _super);
+    __extends$159(JSONPBackend, _super);
     function JSONPBackend() {
         _super.apply(this, arguments);
     }
     return JSONPBackend;
 }(ConnectionBackend));
 var JSONPBackend_ = (function (_super) {
-    __extends$160(JSONPBackend_, _super);
+    __extends$159(JSONPBackend_, _super);
     /**
      * @param {?} _browserJSONP
      * @param {?} _baseResponseOptions
@@ -42994,7 +42994,7 @@ var XHRBackend = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$163 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$162 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -43130,7 +43130,7 @@ var RequestOptions = (function () {
   * *
  */
 var BaseRequestOptions = (function (_super) {
-    __extends$163(BaseRequestOptions, _super);
+    __extends$162(BaseRequestOptions, _super);
     function BaseRequestOptions() {
         _super.call(this, { method: RequestMethod.Get, headers: new Headers() });
     }
@@ -43149,7 +43149,7 @@ var BaseRequestOptions = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$165 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$164 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -43192,7 +43192,7 @@ var __extends$165 = (undefined && undefined.__extends) || function (d, b) {
   * *
  */
 var Request = (function (_super) {
-    __extends$165(Request, _super);
+    __extends$164(Request, _super);
     /**
      * @param {?} requestOptions
      */
@@ -43307,7 +43307,7 @@ var ArrayBuffer$1 = ((w) /** TODO #9100 */)['ArrayBuffer'] || noop$2;
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$164 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$163 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -43512,7 +43512,7 @@ var Http = (function () {
  * @experimental
  */
 var Jsonp = (function (_super) {
-    __extends$164(Jsonp, _super);
+    __extends$163(Jsonp, _super);
     /**
      * @param {?} backend
      * @param {?} defaultOptions
@@ -43828,7 +43828,7 @@ var AbstractControlDirective = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$167 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$166 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -43840,7 +43840,7 @@ var __extends$167 = (undefined && undefined.__extends) || function (d, b) {
   * *
  */
 var ControlContainer = (function (_super) {
-    __extends$167(ControlContainer, _super);
+    __extends$166(ControlContainer, _super);
     function ControlContainer() {
         _super.apply(this, arguments);
     }
@@ -44607,7 +44607,7 @@ var NumberValueAccessor = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$168 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$167 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -44627,7 +44627,7 @@ function unimplemented$2() {
  * @abstract
  */
 var NgControl = (function (_super) {
-    __extends$168(NgControl, _super);
+    __extends$167(NgControl, _super);
     function NgControl() {
         _super.apply(this, arguments);
         /** @internal */
@@ -45620,7 +45620,7 @@ function selectValueAccessor(dir, valueAccessors) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$166 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$165 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -45630,7 +45630,7 @@ var __extends$166 = (undefined && undefined.__extends) || function (d, b) {
   * *
  */
 var AbstractFormGroupDirective = (function (_super) {
-    __extends$166(AbstractFormGroupDirective, _super);
+    __extends$165(AbstractFormGroupDirective, _super);
     function AbstractFormGroupDirective() {
         _super.apply(this, arguments);
     }
@@ -45706,7 +45706,7 @@ var AbstractFormGroupDirective = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$169 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$168 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -45791,7 +45791,7 @@ var ngControlStatusHost = {
   * *
  */
 var NgControlStatus = (function (_super) {
-    __extends$169(NgControlStatus, _super);
+    __extends$168(NgControlStatus, _super);
     /**
      * @param {?} cd
      */
@@ -45813,7 +45813,7 @@ var NgControlStatus = (function (_super) {
   * *
  */
 var NgControlStatusGroup = (function (_super) {
-    __extends$169(NgControlStatusGroup, _super);
+    __extends$168(NgControlStatusGroup, _super);
     /**
      * @param {?} cd
      */
@@ -45840,7 +45840,7 @@ var NgControlStatusGroup = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$171 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$170 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -45891,7 +45891,7 @@ var __extends$171 = (undefined && undefined.__extends) || function (d, b) {
   * Once a reference implementation of the spec is available, switch to it.
  */
 var EventEmitter$1 = (function (_super) {
-    __extends$171(EventEmitter, _super);
+    __extends$170(EventEmitter, _super);
     /**
      *  Creates an instance of [EventEmitter], which depending on [isAsync],
       * delivers events synchronously or asynchronously.
@@ -45954,7 +45954,7 @@ var EventEmitter$1 = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$172 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$171 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -46711,7 +46711,7 @@ var AbstractControl = (function () {
   * *
  */
 var FormControl = (function (_super) {
-    __extends$172(FormControl, _super);
+    __extends$171(FormControl, _super);
     /**
      * @param {?=} formState
      * @param {?=} validator
@@ -46916,7 +46916,7 @@ var FormControl = (function (_super) {
   * *
  */
 var FormGroup = (function (_super) {
-    __extends$172(FormGroup, _super);
+    __extends$171(FormGroup, _super);
     /**
      * @param {?} controls
      * @param {?=} validator
@@ -47259,7 +47259,7 @@ var FormGroup = (function (_super) {
   * *
  */
 var FormArray = (function (_super) {
-    __extends$172(FormArray, _super);
+    __extends$171(FormArray, _super);
     /**
      * @param {?} controls
      * @param {?=} validator
@@ -47541,7 +47541,7 @@ var FormArray = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$170 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$169 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -47581,7 +47581,7 @@ var resolvedPromise = Promise.resolve(null);
   * @stable
  */
 var NgForm = (function (_super) {
-    __extends$170(NgForm, _super);
+    __extends$169(NgForm, _super);
     /**
      * @param {?} validators
      * @param {?} asyncValidators
@@ -47819,7 +47819,7 @@ var TemplateDrivenErrors = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$174 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$173 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -47851,7 +47851,7 @@ var modelGroupProvider = {
   * *
  */
 var NgModelGroup = (function (_super) {
-    __extends$174(NgModelGroup, _super);
+    __extends$173(NgModelGroup, _super);
     /**
      * @param {?} parent
      * @param {?} validators
@@ -47893,7 +47893,7 @@ var NgModelGroup = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$173 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$172 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -47977,7 +47977,7 @@ var resolvedPromise$1 = Promise.resolve(null);
   * @stable
  */
 var NgModel = (function (_super) {
-    __extends$173(NgModel, _super);
+    __extends$172(NgModel, _super);
     /**
      * @param {?} parent
      * @param {?} validators
@@ -48225,7 +48225,7 @@ var ReactiveErrors = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$175 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$174 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -48275,7 +48275,7 @@ var formControlBinding$1 = {
   * @stable
  */
 var FormControlDirective = (function (_super) {
-    __extends$175(FormControlDirective, _super);
+    __extends$174(FormControlDirective, _super);
     /**
      * @param {?} validators
      * @param {?} asyncValidators
@@ -48388,7 +48388,7 @@ var FormControlDirective = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$177 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$176 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -48431,7 +48431,7 @@ var formDirectiveProvider$1 = {
   * @stable
  */
 var FormGroupDirective = (function (_super) {
-    __extends$177(FormGroupDirective, _super);
+    __extends$176(FormGroupDirective, _super);
     /**
      * @param {?} _validators
      * @param {?} _asyncValidators
@@ -48649,7 +48649,7 @@ var FormGroupDirective = (function (_super) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$178 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$177 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -48700,7 +48700,7 @@ var formGroupNameProvider = {
   * *
  */
 var FormGroupName = (function (_super) {
-    __extends$178(FormGroupName, _super);
+    __extends$177(FormGroupName, _super);
     /**
      * @param {?} parent
      * @param {?} validators
@@ -48783,7 +48783,7 @@ var formArrayNameProvider = {
   * *
  */
 var FormArrayName = (function (_super) {
-    __extends$178(FormArrayName, _super);
+    __extends$177(FormArrayName, _super);
     /**
      * @param {?} parent
      * @param {?} validators
@@ -48890,7 +48890,7 @@ function _hasInvalidParent(parent) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$176 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$175 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -48949,7 +48949,7 @@ var controlNameBinding = {
   * @stable
  */
 var FormControlName = (function (_super) {
-    __extends$176(FormControlName, _super);
+    __extends$175(FormControlName, _super);
     /**
      * @param {?} parent
      * @param {?} validators
@@ -49087,7 +49087,7 @@ var FormControlName = (function (_super) {
     return FormControlName;
 }(NgControl));
 
-var __extends$179 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$178 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -49171,7 +49171,7 @@ var RequiredValidator = (function () {
   * *
  */
 var CheckboxRequiredValidator = (function (_super) {
-    __extends$179(CheckboxRequiredValidator, _super);
+    __extends$178(CheckboxRequiredValidator, _super);
     function CheckboxRequiredValidator() {
         _super.apply(this, arguments);
     }
@@ -49529,22 +49529,21 @@ var __decorate$1 = (undefined && undefined.__decorate) || function (decorators, 
 var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var AppComponent = (function () {
-    function AppComponent(titleService) {
+let AppComponent = class AppComponent {
+    constructor(titleService) {
         this.titleService = titleService;
     }
-    AppComponent.prototype.setTitle = function (newTitle) {
+    setTitle(newTitle) {
         this.titleService.setTitle(newTitle);
-    };
-    AppComponent = __decorate$1([
-        Component({
-            selector: 'my-app',
-            templateUrl: 'app.component.html'
-        }), 
-        __metadata$1('design:paramtypes', [Title])
-    ], AppComponent);
-    return AppComponent;
-}());
+    }
+};
+AppComponent = __decorate$1([
+    Component({
+        selector: 'my-app',
+        templateUrl: 'app.component.html'
+    }), 
+    __metadata$1('design:paramtypes', [Title])
+], AppComponent);
 
 /**
  * @license
@@ -49553,7 +49552,7 @@ var AppComponent = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$180 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$179 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -49565,7 +49564,7 @@ var __extends$180 = (undefined && undefined.__extends) || function (d, b) {
  */
 var PRIMARY_OUTLET = 'primary';
 var NavigationCancelingError = (function (_super) {
-    __extends$180(NavigationCancelingError, _super);
+    __extends$179(NavigationCancelingError, _super);
     /**
      * @param {?} message
      */
@@ -51380,7 +51379,7 @@ var TreeNode = (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-var __extends$181 = (undefined && undefined.__extends) || function (d, b) {
+var __extends$180 = (undefined && undefined.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -51408,7 +51407,7 @@ var __extends$181 = (undefined && undefined.__extends) || function (d, b) {
   * *
  */
 var RouterState = (function (_super) {
-    __extends$181(RouterState, _super);
+    __extends$180(RouterState, _super);
     /**
      * @param {?} root
      * @param {?} snapshot
@@ -51710,7 +51709,7 @@ var ActivatedRouteSnapshot = (function () {
   * *
  */
 var RouterStateSnapshot = (function (_super) {
-    __extends$181(RouterStateSnapshot, _super);
+    __extends$180(RouterStateSnapshot, _super);
     /**
      * @param {?} url
      * @param {?} root
@@ -55115,8 +55114,8 @@ var __decorate$2 = (undefined && undefined.__decorate) || function (decorators, 
 var __metadata$2 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var YoutubeComponent = (function () {
-    function YoutubeComponent(cdRef, router) {
+let YoutubeComponent_1 = class YoutubeComponent {
+    constructor(cdRef, router) {
         this.query = 'donald trump';
         this.order = 'relevance';
         this.isLoading = false;
@@ -55124,20 +55123,19 @@ var YoutubeComponent = (function () {
         this.cdRef = cdRef;
         this.router = router;
     }
-    YoutubeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        window['gapi'].load('client', function () {
-            var oClient = window['gapi']['client'];
-            oClient.setApiKey(YoutubeComponent.apiKey);
-            oClient.load('youtube', 'v3').then(function () {
-                _this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
-                _this.requestYoutubeData({ type: 'init' });
+    ngOnInit() {
+        window['gapi'].load('client', () => {
+            let oClient = window['gapi']['client'];
+            oClient.setApiKey(YoutubeComponent_1.apiKey);
+            oClient.load('youtube', 'v3').then(() => {
+                this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
+                this.requestYoutubeData({ type: 'init' });
             });
         });
-    };
-    YoutubeComponent.prototype.requestYoutubeData = function (htOption) {
+    }
+    requestYoutubeData(htOption) {
         this.onLoading();
-        var initOption = {
+        let initOption = {
             part: 'snippet',
             type: 'video',
             q: this.query,
@@ -55152,52 +55150,52 @@ var YoutubeComponent = (function () {
             initOption = Object.assign({}, initOption, { pageToken: this.nextPageToken });
         }
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
-    };
-    YoutubeComponent.prototype.onLoadMoreContent = function () {
+    }
+    onLoadMoreContent() {
         this.requestYoutubeData({ pageToken: this.nextPageToken });
-    };
-    YoutubeComponent.prototype.onClickedSort = function (sortType) {
+    }
+    onClickedSort(sortType) {
         this.order = sortType;
         this.requestYoutubeData({ type: 'init' });
-    };
-    YoutubeComponent.prototype.onSearch = function (event) {
+    }
+    onSearch(event) {
         if (event.button != 0 && event.which != 13) {
             return;
         }
         this.requestYoutubeData({ type: 'init' });
-    };
-    YoutubeComponent.prototype.onSuccess = function (data) {
+    }
+    onSuccess(data) {
         this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
         this.onLoaded();
-    };
-    YoutubeComponent.prototype.onFailed = function () {
+    }
+    onFailed() {
         this.onLoaded();
-    };
-    YoutubeComponent.prototype.onLoading = function () {
+    }
+    onLoading() {
         this.isLoading = true;
         this.cdRef.detectChanges();
-    };
-    YoutubeComponent.prototype.onLoaded = function () {
+    }
+    onLoaded() {
         this.isLoading = false;
         this.cdRef.detectChanges();
-    };
-    YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
-    __decorate$2([
-        HostListener('window:googleApiClientReady'), 
-        __metadata$2('design:type', Function), 
-        __metadata$2('design:paramtypes', []), 
-        __metadata$2('design:returntype', void 0)
-    ], YoutubeComponent.prototype, "ngOnInit", null);
-    YoutubeComponent = __decorate$2([
-        Component({
-            styleUrls: ['youtube.component.css'],
-            templateUrl: 'youtube.component.html'
-        }), 
-        __metadata$2('design:paramtypes', [ChangeDetectorRef, Router])
-    ], YoutubeComponent);
-    return YoutubeComponent;
-}());
+    }
+};
+let YoutubeComponent = YoutubeComponent_1;
+YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
+__decorate$2([
+    HostListener('window:googleApiClientReady'), 
+    __metadata$2('design:type', Function), 
+    __metadata$2('design:paramtypes', []), 
+    __metadata$2('design:returntype', void 0)
+], YoutubeComponent.prototype, "ngOnInit", null);
+YoutubeComponent = YoutubeComponent_1 = __decorate$2([
+    Component({
+        styleUrls: ['youtube.component.css'],
+        templateUrl: 'youtube.component.html'
+    }), 
+    __metadata$2('design:paramtypes', [ChangeDetectorRef, Router])
+], YoutubeComponent);
 
 /**
  * Created on 2016-12-08.
@@ -55212,38 +55210,36 @@ var __decorate$3 = (undefined && undefined.__decorate) || function (decorators, 
 var __metadata$3 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var PlayerComponent = (function () {
-    function PlayerComponent(router, cdRef) {
-        var _this = this;
+let PlayerComponent = class PlayerComponent {
+    constructor(router, cdRef) {
         this.router = router;
         this.cdRef = cdRef;
         this.isPlayerOpen = false;
         this.router = router;
         this.cdRef = cdRef;
         window.addEventListener('resize', this.onResize.bind(this), false);
-        window['onYouTubeIframeAPIReady'] = function () {
+        window['onYouTubeIframeAPIReady'] = () => {
             if (window['YT'] && window['YT'].Player) {
-                _this.initYoutubePlayer();
+                this.initYoutubePlayer();
             }
         };
     }
-    PlayerComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.router.params.subscribe(function (params) {
-            _this.isPlayerOpen = true;
-            _this.videoId = params['id'];
-            _this.cdRef.detectChanges();
-            if (_this.player) {
-                _this.playVideo();
+    ngOnInit() {
+        this.router.params.subscribe(params => {
+            this.isPlayerOpen = true;
+            this.videoId = params['id'];
+            this.cdRef.detectChanges();
+            if (this.player) {
+                this.playVideo();
             }
             else {
                 if (window['YT'] && window['YT'].Player) {
-                    _this.initYoutubePlayer();
+                    this.initYoutubePlayer();
                 }
             }
         });
-    };
-    PlayerComponent.prototype.initYoutubePlayer = function () {
+    }
+    initYoutubePlayer() {
         this.player = new window['YT'].Player('youtube_player', {
             width: window.innerWidth,
             height: window.innerHeight,
@@ -55255,17 +55251,17 @@ var PlayerComponent = (function () {
                 'onStateChange': this.onPlayerStateChange.bind(this),
             }
         });
-    };
-    PlayerComponent.prototype.hide = function () {
+    }
+    hide() {
         this.player.stopVideo();
         this.isPlayerOpen = false;
         this.cdRef.detectChanges();
-    };
-    PlayerComponent.prototype.onResize = function () {
+    }
+    onResize() {
         if (this.player) {
             this.player.setSize(window.innerWidth, window.innerHeight);
         }
-    };
+    }
     /*
      * -1(시작되지 않음)
      0(종료됨)
@@ -55279,7 +55275,7 @@ var PlayerComponent = (function () {
      YT.PlayerState.BUFFERING
      YT.PlayerState.CUED
      */
-    PlayerComponent.prototype.onPlayerStateChange = function (event) {
+    onPlayerStateChange(event) {
         switch (event.data) {
             case (0):
                 break;
@@ -55292,20 +55288,19 @@ var PlayerComponent = (function () {
             case (5):
                 break;
         }
-    };
-    PlayerComponent.prototype.playVideo = function () {
+    }
+    playVideo() {
         this.player.loadVideoById(this.videoId);
         this.player.playVideo();
-    };
-    PlayerComponent = __decorate$3([
-        Component({
-            templateUrl: 'player.component.html',
-            styleUrls: ['./player.component.css']
-        }), 
-        __metadata$3('design:paramtypes', [ActivatedRoute, ChangeDetectorRef])
-    ], PlayerComponent);
-    return PlayerComponent;
-}());
+    }
+};
+PlayerComponent = __decorate$3([
+    Component({
+        templateUrl: 'player.component.html',
+        styleUrls: ['./player.component.css']
+    }), 
+    __metadata$3('design:paramtypes', [ActivatedRoute, ChangeDetectorRef])
+], PlayerComponent);
 
 /**
  * Created on 2016-12-14.
@@ -55320,24 +55315,28 @@ var __decorate$4 = (undefined && undefined.__decorate) || function (decorators, 
 var __metadata$4 = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var PageNotFoundComponent = (function () {
-    function PageNotFoundComponent() {
+let PageNotFoundComponent = class PageNotFoundComponent {
+    constructor() {
         this.title = ' Page Not Found ';
     }
-    PageNotFoundComponent = __decorate$4([
-        Component({
-            template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
-        }), 
-        __metadata$4('design:paramtypes', [])
-    ], PageNotFoundComponent);
-    return PageNotFoundComponent;
-}());
+};
+PageNotFoundComponent = __decorate$4([
+    Component({
+        template: `
+        <div>
+            <h3>Angular2 Router</h3>
+            <p> Sorry.. Something is wrong. </p>
+            <span>{{title}}</span>
+        </div>`,
+    }), 
+    __metadata$4('design:paramtypes', [])
+], PageNotFoundComponent);
 
 /**
  * Created on 2016-12-06.
  * @author: Gman Park
  */
-var routingModule = RouterModule.forRoot([
+const routingModule = RouterModule.forRoot([
     { path: '', redirectTo: 'youtube', pathMatch: 'full' },
     {
         path: 'youtube', component: YoutubeComponent,
@@ -55364,32 +55363,29 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var AppModule = (function () {
-    function AppModule() {
-    }
-    AppModule = __decorate([
-        NgModule({
-            imports: [
-                BrowserModule,
-                HttpModule,
-                FormsModule,
-                routingModule,
-            ],
-            declarations: [
-                AppComponent,
-                YoutubeComponent,
-                PlayerComponent,
-                PageNotFoundComponent
-            ],
-            providers: [
-                Title
-            ],
-            bootstrap: [AppComponent],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
-}());
+let AppModule = class AppModule {
+};
+AppModule = __decorate([
+    NgModule({
+        imports: [
+            BrowserModule,
+            HttpModule,
+            FormsModule,
+            routingModule,
+        ],
+        declarations: [
+            AppComponent,
+            YoutubeComponent,
+            PlayerComponent,
+            PageNotFoundComponent
+        ],
+        providers: [
+            Title
+        ],
+        bootstrap: [AppComponent],
+    }), 
+    __metadata('design:paramtypes', [])
+], AppModule);
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55397,7 +55393,7 @@ var AppModule = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var styles = ['.nav_youtube[_ngcontent-%COMP%]{ height:60px; background:#b71c1c }\r\n.video_item[_ngcontent-%COMP%]{ overflow:hidden; opacity:0; max-height:640px; background:#eee; }\r\n.video_item.show[_ngcontent-%COMP%]{ opacity:1; -webkit-transition:opacity .5s; -moz-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s; transition:opacity .5s; }\r\n.video_item[_ngcontent-%COMP%]   .bg_video[_ngcontent-%COMP%]{ position:relative; min-height:250px; height:auto; background-size:cover; background-position:center center; text-align:left; }\r\n.video_item[_ngcontent-%COMP%]   .description[_ngcontent-%COMP%]{ position:absolute; padding:0px 10px; left:0; bottom:0; width:100%; height:25px; font-size:16px; line-height:25px; background-color:rgba(0, 0, 0, 0.5); color:#fff; }\r\n.video_item[_ngcontent-%COMP%]   .bg_description[_ngcontent-%COMP%]{ }\r\n.video_item[_ngcontent-%COMP%]   .ellipsis[_ngcontent-%COMP%]{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; opacity:1; -webkit-box-orient:vertical; word-wrap:break-word; }\r\n.inp_search[_ngcontent-%COMP%]{ border:none; border-bottom:1px solid rgba(0, 0, 0, 0.12); }\r\n.video_loading[_ngcontent-%COMP%]{ width:100%; height:100%; background:#16171d; opacity:.9; position:fixed; top:0; left:0; z-index:9999 }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{ width:60px; height:60px; position:absolute; left:50%; margin-left:-30px; top:40%; margin-top:-30px }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{ content:\'\'; position:absolute; width:16px; height:16px; background:#ff8c00; top:10px; left:10px; transform-origin:20px 20px; border-radius:8px; animation:spin-a 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c2[_ngcontent-%COMP%]{ top:10px; left:auto; right:10px; transform-origin:-4px 20px; animation:spin-b 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c3[_ngcontent-%COMP%]{ top:auto; left:auto; right:10px; bottom:10px; transform-origin:-4px -4px; animation:spin-c 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c4[_ngcontent-%COMP%]{ top:auto; bottom:10px; transform-origin:20px -4px; animation:spin-d 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]{ width:100px; height:30px; position:absolute; left:50%; margin-left:-50px; top:40%; margin-top:30px; color:#ff8c00; font-size:12px; text-align:center }\r\n.btn_more_content[_ngcontent-%COMP%]{ margin:10px 0; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }\r\n.btn_more_content[_ngcontent-%COMP%]:hover{ -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); -webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; -o-transition:transform 1s; transition:transform 1s; }\r\n.sort_description[_ngcontent-%COMP%]{ background:red; opacity:0.5; padding:10px; }\r\n.sort_description[_ngcontent-%COMP%]   .txt[_ngcontent-%COMP%]{ opacity:1; color:#fff }\r\n.logo_gman[_ngcontent-%COMP%]{\r\n    margin:20px 0;\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align:center;\r\n    -ms-flex-align:center;\r\n    align-items:center;\r\n    -webkit-box-pack:center;\r\n    -ms-flex-pack:center;\r\n    justify-content:center;\r\n    width:100%;\r\n    height:100%;\r\n    font:normal bold 8vmin "Product Sans", sans-serif;\r\n    white-space:nowrap;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{\r\n    -webkit-animation:bounce 0.875s cubic-bezier(0.1, 0, 0.3, 1) infinite alternate;\r\n    animation:bounce 0.875s cubic-bezier(0.1, 0, 0.3, 1) infinite alternate;\r\n    display:inline-block;\r\n    -webkit-transform:translate3d(0, 0, 0);\r\n    transform:translate3d(0, 0, 0);\r\n    margin-top:0.5em;\r\n    text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    font:normal bold 8vmin "Product Sans", sans-serif;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(1){\r\n    -webkit-animation-delay:0.11667s;\r\n    animation-delay:0.11667s;\r\n    color:#4285f4;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(2){\r\n    -webkit-animation-delay:0.23333s;\r\n    animation-delay:0.23333s;\r\n    color:#ea4335;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(3){\r\n    -webkit-animation-delay:0.35s;\r\n    animation-delay:0.35s;\r\n    color:#fbbc05;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(4){\r\n    -webkit-animation-delay:0.46667s;\r\n    animation-delay:0.46667s;\r\n    color:#4285f4;\r\n}\r\n@-webkit-keyframes bounce{\r\n    0%{\r\n        -webkit-transform:translate3d(0, 0, 0);\r\n        transform:translate3d(0, 0, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    }\r\n    100%{\r\n        -webkit-transform:translate3d(0, -1em, 0);\r\n        transform:translate3d(0, -1em, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 1em 0.25em;\r\n    }\r\n}\r\n@keyframes bounce{\r\n    0%{\r\n        -webkit-transform:translate3d(0, 0, 0);\r\n        transform:translate3d(0, 0, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    }\r\n    100%{\r\n        -webkit-transform:translate3d(0, -1em, 0);\r\n        transform:translate3d(0, -1em, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 1em 0.25em;\r\n    }\r\n}\r\n@keyframes spin-a{\r\n    0%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(180deg) }\r\n    75%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-b{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    25%{ transform:rotate(180deg) }\r\n    75%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-c{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-d{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(180deg) }\r\n    100%, 75%{ transform:rotate(360deg) }\r\n}\r\n.list_video[_ngcontent-%COMP%]{\r\n    overflow:hidden;\r\n    -webkit-overflow-scrolling:touch;\r\n    -webkit-transform:translateZ(0);\r\n    -moz-transform:translateZ(0);\r\n    -ms-transform:translateZ(0);\r\n    -o-transform:translateZ(0);\r\n    transform:translateZ(0);\r\n    -moz-transition:all 1s;\r\n    -webkit-transition:all 1s;\r\n    -o-transition:all 1s;\r\n    transition:all 1s;\r\n}\r\n\r\n@media screen and (max-width:767px){\r\n    .video_item[_ngcontent-%COMP%]{ width:100%; }\r\n}\r\n@media screen and (min-width:768px) and (max-width:1279px){\r\n    .video_item[_ngcontent-%COMP%]{ float:left; width:50%; }\r\n}\r\n@media screen and (min-width:1280px){\r\n    .video_item[_ngcontent-%COMP%]{ float:left; width:25%; }\r\n}'];
+const styles = ['.nav_youtube[_ngcontent-%COMP%]{ height:60px; background:#b71c1c }\r\n.video_item[_ngcontent-%COMP%]{ overflow:hidden; opacity:0; max-height:640px; background:#eee; }\r\n.video_item.show[_ngcontent-%COMP%]{ opacity:1; -webkit-transition:opacity .5s; -moz-transition:opacity .5s; -ms-transition:opacity .5s; -o-transition:opacity .5s; transition:opacity .5s; }\r\n.video_item[_ngcontent-%COMP%]   .bg_video[_ngcontent-%COMP%]{ position:relative; min-height:250px; height:auto; background-size:cover; background-position:center center; text-align:left; }\r\n.video_item[_ngcontent-%COMP%]   .description[_ngcontent-%COMP%]{ position:absolute; padding:0px 10px; left:0; bottom:0; width:100%; height:25px; font-size:16px; line-height:25px; background-color:rgba(0, 0, 0, 0.5); color:#fff; }\r\n.video_item[_ngcontent-%COMP%]   .bg_description[_ngcontent-%COMP%]{ }\r\n.video_item[_ngcontent-%COMP%]   .ellipsis[_ngcontent-%COMP%]{ overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; opacity:1; -webkit-box-orient:vertical; word-wrap:break-word; }\r\n.inp_search[_ngcontent-%COMP%]{ border:none; border-bottom:1px solid rgba(0, 0, 0, 0.12); }\r\n.video_loading[_ngcontent-%COMP%]{ width:100%; height:100%; background:#16171d; opacity:.9; position:fixed; top:0; left:0; z-index:9999 }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{ width:60px; height:60px; position:absolute; left:50%; margin-left:-30px; top:40%; margin-top:-30px }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]{ content:\'\'; position:absolute; width:16px; height:16px; background:#ff8c00; top:10px; left:10px; transform-origin:20px 20px; border-radius:8px; animation:spin-a 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c2[_ngcontent-%COMP%]{ top:10px; left:auto; right:10px; transform-origin:-4px 20px; animation:spin-b 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c3[_ngcontent-%COMP%]{ top:auto; left:auto; right:10px; bottom:10px; transform-origin:-4px -4px; animation:spin-c 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > div[_ngcontent-%COMP%]    > .c4[_ngcontent-%COMP%]{ top:auto; bottom:10px; transform-origin:20px -4px; animation:spin-d 2s infinite cubic-bezier(.5, 0, .5, 1) }\r\n.video_loading[_ngcontent-%COMP%]    > span[_ngcontent-%COMP%]{ width:100px; height:30px; position:absolute; left:50%; margin-left:-50px; top:40%; margin-top:30px; color:#ff8c00; font-size:12px; text-align:center }\r\n.btn_more_content[_ngcontent-%COMP%]{ margin:10px 0; -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }\r\n.btn_more_content[_ngcontent-%COMP%]:hover{ -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); -webkit-transition:transform 1s; -moz-transition:transform 1s; -ms-transition:transform 1s; -o-transition:transform 1s; transition:transform 1s; }\r\n.sort_description[_ngcontent-%COMP%]{ background:red; opacity:0.5; padding:10px; }\r\n.sort_description[_ngcontent-%COMP%]   .txt[_ngcontent-%COMP%]{ opacity:1; color:#fff }\r\n.logo_gman[_ngcontent-%COMP%]{\r\n    margin:20px 0;\r\n    display:-webkit-box;\r\n    display:-ms-flexbox;\r\n    display:flex;\r\n    -webkit-box-align:center;\r\n    -ms-flex-align:center;\r\n    align-items:center;\r\n    -webkit-box-pack:center;\r\n    -ms-flex-pack:center;\r\n    justify-content:center;\r\n    width:100%;\r\n    height:100%;\r\n    font:normal bold 8vmin "Product Sans", sans-serif;\r\n    white-space:nowrap;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]{\r\n    -webkit-animation:bounce 0.875s cubic-bezier(0.1, 0, 0.3, 1) infinite alternate;\r\n    animation:bounce 0.875s cubic-bezier(0.1, 0, 0.3, 1) infinite alternate;\r\n    display:inline-block;\r\n    -webkit-transform:translate3d(0, 0, 0);\r\n    transform:translate3d(0, 0, 0);\r\n    margin-top:0.5em;\r\n    text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    font:normal bold 8vmin "Product Sans", sans-serif;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(1){\r\n    -webkit-animation-delay:0.11667s;\r\n    animation-delay:0.11667s;\r\n    color:#4285f4;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(2){\r\n    -webkit-animation-delay:0.23333s;\r\n    animation-delay:0.23333s;\r\n    color:#ea4335;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(3){\r\n    -webkit-animation-delay:0.35s;\r\n    animation-delay:0.35s;\r\n    color:#fbbc05;\r\n}\r\n.logo_gman[_ngcontent-%COMP%]   i[_ngcontent-%COMP%]:nth-child(4){\r\n    -webkit-animation-delay:0.46667s;\r\n    animation-delay:0.46667s;\r\n    color:#4285f4;\r\n}\r\n@-webkit-keyframes bounce{\r\n    0%{\r\n        -webkit-transform:translate3d(0, 0, 0);\r\n        transform:translate3d(0, 0, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    }\r\n    100%{\r\n        -webkit-transform:translate3d(0, -1em, 0);\r\n        transform:translate3d(0, -1em, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 1em 0.25em;\r\n    }\r\n}\r\n@keyframes bounce{\r\n    0%{\r\n        -webkit-transform:translate3d(0, 0, 0);\r\n        transform:translate3d(0, 0, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 0 0.025em;\r\n    }\r\n    100%{\r\n        -webkit-transform:translate3d(0, -1em, 0);\r\n        transform:translate3d(0, -1em, 0);\r\n        text-shadow:rgba(0, 0, 0, 0.45) 0 1em 0.25em;\r\n    }\r\n}\r\n@keyframes spin-a{\r\n    0%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(180deg) }\r\n    75%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-b{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    25%{ transform:rotate(180deg) }\r\n    75%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-c{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(270deg) }\r\n    100%{ transform:rotate(360deg) }\r\n}\r\n@keyframes spin-d{\r\n    0%, 25%{ transform:rotate(90deg) }\r\n    50%{ transform:rotate(180deg) }\r\n    100%, 75%{ transform:rotate(360deg) }\r\n}\r\n.list_video[_ngcontent-%COMP%]{\r\n    overflow:hidden;\r\n    -webkit-overflow-scrolling:touch;\r\n    -webkit-transform:translateZ(0);\r\n    -moz-transform:translateZ(0);\r\n    -ms-transform:translateZ(0);\r\n    -o-transform:translateZ(0);\r\n    transform:translateZ(0);\r\n    -moz-transition:all 1s;\r\n    -webkit-transition:all 1s;\r\n    -o-transition:all 1s;\r\n    transition:all 1s;\r\n}\r\n\r\n@media screen and (max-width:767px){\r\n    .video_item[_ngcontent-%COMP%]{ width:100%; }\r\n}\r\n@media screen and (min-width:768px) and (max-width:1279px){\r\n    .video_item[_ngcontent-%COMP%]{ float:left; width:50%; }\r\n}\r\n@media screen and (min-width:1280px){\r\n    .video_item[_ngcontent-%COMP%]{ float:left; width:25%; }\r\n}'];
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55405,39 +55401,38 @@ var styles = ['.nav_youtube[_ngcontent-%COMP%]{ height:60px; background:#b71c1c 
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_DefaultValueAccessor = (function () {
-    function Wrapper_DefaultValueAccessor(p0, p1) {
+class Wrapper_DefaultValueAccessor {
+    constructor(p0, p1) {
         this._changed = false;
         this.context = new DefaultValueAccessor(p0, p1);
     }
-    Wrapper_DefaultValueAccessor.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_DefaultValueAccessor.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_DefaultValueAccessor.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    };
-    Wrapper_DefaultValueAccessor.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_DefaultValueAccessor.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         if ((eventName == 'input')) {
-            var pd_sub_0 = (this.context.onChange($event.target.value) !== false);
+            const pd_sub_0 = (this.context.onChange($event.target.value) !== false);
             result = (pd_sub_0 && result);
         }
         if ((eventName == 'blur')) {
-            var pd_sub_1 = (this.context.onTouched() !== false);
+            const pd_sub_1 = (this.context.onTouched() !== false);
             result = (pd_sub_1 && result);
         }
         return result;
-    };
-    Wrapper_DefaultValueAccessor.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_DefaultValueAccessor;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55445,8 +55440,8 @@ var Wrapper_DefaultValueAccessor = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_NgModel = (function () {
-    function Wrapper_NgModel(p0, p1, p2, p3) {
+class Wrapper_NgModel {
+    constructor(p0, p1, p2, p3) {
         this._changed = false;
         this._changes = {};
         this.context = new NgModel(p0, p1, p2, p3);
@@ -55455,45 +55450,45 @@ var Wrapper_NgModel = (function () {
         this._expr_2 = UNINITIALIZED;
         this._expr_3 = UNINITIALIZED;
     }
-    Wrapper_NgModel.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_NgModel.prototype.ngOnDestroy = function () {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
         this.context.ngOnDestroy();
         (this.subscription0 && this.subscription0.unsubscribe());
-    };
-    Wrapper_NgModel.prototype.check_name = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_name(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_0, currValue))) {
             this._changed = true;
             this.context.name = currValue;
             this._changes['name'] = new SimpleChange(this._expr_0, currValue);
             this._expr_0 = currValue;
         }
-    };
-    Wrapper_NgModel.prototype.check_isDisabled = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_isDisabled(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_1, currValue))) {
             this._changed = true;
             this.context.isDisabled = currValue;
             this._changes['isDisabled'] = new SimpleChange(this._expr_1, currValue);
             this._expr_1 = currValue;
         }
-    };
-    Wrapper_NgModel.prototype.check_model = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_model(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_2, currValue))) {
             this._changed = true;
             this.context.model = currValue;
             this._changes['model'] = new SimpleChange(this._expr_2, currValue);
             this._expr_2 = currValue;
         }
-    };
-    Wrapper_NgModel.prototype.check_options = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_options(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_3, currValue))) {
             this._changed = true;
             this.context.options = currValue;
             this._changes['options'] = new SimpleChange(this._expr_3, currValue);
             this._expr_3 = currValue;
         }
-    };
-    Wrapper_NgModel.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -55503,21 +55498,20 @@ var Wrapper_NgModel = (function () {
             }
         }
         return changed;
-    };
-    Wrapper_NgModel.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_NgModel.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_NgModel.prototype.subscribe = function (view, _eventHandler, emit0) {
+    }
+    subscribe(view, _eventHandler, emit0) {
         this._eventHandler = _eventHandler;
         if (emit0) {
             (this.subscription0 = this.context.update.subscribe(_eventHandler.bind(view, 'ngModelChange')));
         }
-    };
-    return Wrapper_NgModel;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55525,8 +55519,8 @@ var Wrapper_NgModel = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_NgControlStatus = (function () {
-    function Wrapper_NgControlStatus(p0) {
+class Wrapper_NgControlStatus {
+    constructor(p0) {
         this._changed = false;
         this.context = new NgControlStatus(p0);
         this._expr_0 = UNINITIALIZED;
@@ -55537,61 +55531,60 @@ var Wrapper_NgControlStatus = (function () {
         this._expr_5 = UNINITIALIZED;
         this._expr_6 = UNINITIALIZED;
     }
-    Wrapper_NgControlStatus.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_NgControlStatus.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_NgControlStatus.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    };
-    Wrapper_NgControlStatus.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-        var currVal_0 = this.context.ngClassUntouched;
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+        const currVal_0 = this.context.ngClassUntouched;
         if (checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             view.renderer.setElementClass(el, 'ng-untouched', currVal_0);
             this._expr_0 = currVal_0;
         }
-        var currVal_1 = this.context.ngClassTouched;
+        const currVal_1 = this.context.ngClassTouched;
         if (checkBinding(throwOnChange, this._expr_1, currVal_1)) {
             view.renderer.setElementClass(el, 'ng-touched', currVal_1);
             this._expr_1 = currVal_1;
         }
-        var currVal_2 = this.context.ngClassPristine;
+        const currVal_2 = this.context.ngClassPristine;
         if (checkBinding(throwOnChange, this._expr_2, currVal_2)) {
             view.renderer.setElementClass(el, 'ng-pristine', currVal_2);
             this._expr_2 = currVal_2;
         }
-        var currVal_3 = this.context.ngClassDirty;
+        const currVal_3 = this.context.ngClassDirty;
         if (checkBinding(throwOnChange, this._expr_3, currVal_3)) {
             view.renderer.setElementClass(el, 'ng-dirty', currVal_3);
             this._expr_3 = currVal_3;
         }
-        var currVal_4 = this.context.ngClassValid;
+        const currVal_4 = this.context.ngClassValid;
         if (checkBinding(throwOnChange, this._expr_4, currVal_4)) {
             view.renderer.setElementClass(el, 'ng-valid', currVal_4);
             this._expr_4 = currVal_4;
         }
-        var currVal_5 = this.context.ngClassInvalid;
+        const currVal_5 = this.context.ngClassInvalid;
         if (checkBinding(throwOnChange, this._expr_5, currVal_5)) {
             view.renderer.setElementClass(el, 'ng-invalid', currVal_5);
             this._expr_5 = currVal_5;
         }
-        var currVal_6 = this.context.ngClassPending;
+        const currVal_6 = this.context.ngClassPending;
         if (checkBinding(throwOnChange, this._expr_6, currVal_6)) {
             view.renderer.setElementClass(el, 'ng-pending', currVal_6);
             this._expr_6 = currVal_6;
         }
-    };
-    Wrapper_NgControlStatus.prototype.handleEvent = function (eventName, $event) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_NgControlStatus.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_NgControlStatus;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55599,8 +55592,8 @@ var Wrapper_NgControlStatus = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_NgFor = (function () {
-    function Wrapper_NgFor(p0, p1, p2, p3) {
+class Wrapper_NgFor {
+    constructor(p0, p1, p2, p3) {
         this._changed = false;
         this._changes = {};
         this.context = new NgFor(p0, p1, p2, p3);
@@ -55608,35 +55601,35 @@ var Wrapper_NgFor = (function () {
         this._expr_1 = UNINITIALIZED;
         this._expr_2 = UNINITIALIZED;
     }
-    Wrapper_NgFor.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_NgFor.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_NgFor.prototype.check_ngForOf = function (currValue, throwOnChange, forceUpdate) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    check_ngForOf(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_0, currValue))) {
             this._changed = true;
             this.context.ngForOf = currValue;
             this._changes['ngForOf'] = new SimpleChange(this._expr_0, currValue);
             this._expr_0 = currValue;
         }
-    };
-    Wrapper_NgFor.prototype.check_ngForTrackBy = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_ngForTrackBy(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_1, currValue))) {
             this._changed = true;
             this.context.ngForTrackBy = currValue;
             this._changes['ngForTrackBy'] = new SimpleChange(this._expr_1, currValue);
             this._expr_1 = currValue;
         }
-    };
-    Wrapper_NgFor.prototype.check_ngForTemplate = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_ngForTemplate(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_2, currValue))) {
             this._changed = true;
             this.context.ngForTemplate = currValue;
             this._changes['ngForTemplate'] = new SimpleChange(this._expr_2, currValue);
             this._expr_2 = currValue;
         }
-    };
-    Wrapper_NgFor.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -55647,18 +55640,17 @@ var Wrapper_NgFor = (function () {
             this.context.ngDoCheck();
         }
         return changed;
-    };
-    Wrapper_NgFor.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_NgFor.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_NgFor.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_NgFor;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55666,30 +55658,30 @@ var Wrapper_NgFor = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_RouterOutlet = (function () {
-    function Wrapper_RouterOutlet(p0, p1, p2, p3) {
+class Wrapper_RouterOutlet {
+    constructor(p0, p1, p2, p3) {
         this._changed = false;
         this.context = new RouterOutlet(p0, p1, p2, p3);
     }
-    Wrapper_RouterOutlet.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_RouterOutlet.prototype.ngOnDestroy = function () {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
         this.context.ngOnDestroy();
         (this.subscription0 && this.subscription0.unsubscribe());
         (this.subscription1 && this.subscription1.unsubscribe());
-    };
-    Wrapper_RouterOutlet.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    };
-    Wrapper_RouterOutlet.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_RouterOutlet.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_RouterOutlet.prototype.subscribe = function (view, _eventHandler, emit0, emit1) {
+    }
+    subscribe(view, _eventHandler, emit0, emit1) {
         this._eventHandler = _eventHandler;
         if (emit0) {
             (this.subscription0 = this.context.activateEvents.subscribe(_eventHandler.bind(view, 'activate')));
@@ -55697,9 +55689,8 @@ var Wrapper_RouterOutlet = (function () {
         if (emit1) {
             (this.subscription1 = this.context.deactivateEvents.subscribe(_eventHandler.bind(view, 'deactivate')));
         }
-    };
-    return Wrapper_RouterOutlet;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55708,8 +55699,8 @@ var Wrapper_RouterOutlet = (function () {
  */
 /* tslint:disable */
 
-var Wrapper_RouterLinkWithHref = (function () {
-    function Wrapper_RouterLinkWithHref(p0, p1, p2) {
+class Wrapper_RouterLinkWithHref {
+    constructor(p0, p1, p2) {
         this._changed = false;
         this._changes = {};
         this.context = new RouterLinkWithHref(p0, p1, p2);
@@ -55723,76 +55714,76 @@ var Wrapper_RouterLinkWithHref = (function () {
         this._expr_7 = UNINITIALIZED;
         this._expr_8 = UNINITIALIZED;
     }
-    Wrapper_RouterLinkWithHref.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_RouterLinkWithHref.prototype.ngOnDestroy = function () {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
         this.context.ngOnDestroy();
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_target = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_target(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_0, currValue))) {
             this._changed = true;
             this.context.target = currValue;
             this._changes['target'] = new SimpleChange(this._expr_0, currValue);
             this._expr_0 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_queryParams = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_queryParams(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_1, currValue))) {
             this._changed = true;
             this.context.queryParams = currValue;
             this._changes['queryParams'] = new SimpleChange(this._expr_1, currValue);
             this._expr_1 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_fragment = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_fragment(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_2, currValue))) {
             this._changed = true;
             this.context.fragment = currValue;
             this._changes['fragment'] = new SimpleChange(this._expr_2, currValue);
             this._expr_2 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_preserveQueryParams = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_preserveQueryParams(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_3, currValue))) {
             this._changed = true;
             this.context.preserveQueryParams = currValue;
             this._changes['preserveQueryParams'] = new SimpleChange(this._expr_3, currValue);
             this._expr_3 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_preserveFragment = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_preserveFragment(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_4, currValue))) {
             this._changed = true;
             this.context.preserveFragment = currValue;
             this._changes['preserveFragment'] = new SimpleChange(this._expr_4, currValue);
             this._expr_4 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_skipLocationChange = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_skipLocationChange(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_5, currValue))) {
             this._changed = true;
             this.context.skipLocationChange = currValue;
             this._changes['skipLocationChange'] = new SimpleChange(this._expr_5, currValue);
             this._expr_5 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_replaceUrl = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_replaceUrl(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_6, currValue))) {
             this._changed = true;
             this.context.replaceUrl = currValue;
             this._changes['replaceUrl'] = new SimpleChange(this._expr_6, currValue);
             this._expr_6 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.check_routerLink = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_routerLink(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_7, currValue))) {
             this._changed = true;
             this.context.routerLink = currValue;
             this._changes['routerLink'] = new SimpleChange(this._expr_7, currValue);
             this._expr_7 = currValue;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -55802,27 +55793,26 @@ var Wrapper_RouterLinkWithHref = (function () {
             }
         }
         return changed;
-    };
-    Wrapper_RouterLinkWithHref.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-        var currVal_8 = this.context.href;
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+        const currVal_8 = this.context.href;
         if (checkBinding(throwOnChange, this._expr_8, currVal_8)) {
             view.renderer.setElementProperty(el, 'href', view.viewUtils.sanitizer.sanitize(SecurityContext.URL, currVal_8));
             this._expr_8 = currVal_8;
         }
-    };
-    Wrapper_RouterLinkWithHref.prototype.handleEvent = function (eventName, $event) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+            const pd_sub_0 = (this.context.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    Wrapper_RouterLinkWithHref.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_RouterLinkWithHref;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55830,36 +55820,36 @@ var Wrapper_RouterLinkWithHref = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_RouterLinkActive = (function () {
-    function Wrapper_RouterLinkActive(p0, p1, p2) {
+class Wrapper_RouterLinkActive {
+    constructor(p0, p1, p2) {
         this._changed = false;
         this._changes = {};
         this.context = new RouterLinkActive(p0, p1, p2);
         this._expr_0 = UNINITIALIZED;
         this._expr_1 = UNINITIALIZED;
     }
-    Wrapper_RouterLinkActive.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_RouterLinkActive.prototype.ngOnDestroy = function () {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
         this.context.ngOnDestroy();
-    };
-    Wrapper_RouterLinkActive.prototype.check_routerLinkActiveOptions = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_routerLinkActiveOptions(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_0, currValue))) {
             this._changed = true;
             this.context.routerLinkActiveOptions = currValue;
             this._changes['routerLinkActiveOptions'] = new SimpleChange(this._expr_0, currValue);
             this._expr_0 = currValue;
         }
-    };
-    Wrapper_RouterLinkActive.prototype.check_routerLinkActive = function (currValue, throwOnChange, forceUpdate) {
+    }
+    check_routerLinkActive(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_1, currValue))) {
             this._changed = true;
             this.context.routerLinkActive = currValue;
             this._changes['routerLinkActive'] = new SimpleChange(this._expr_1, currValue);
             this._expr_1 = currValue;
         }
-    };
-    Wrapper_RouterLinkActive.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -55869,18 +55859,17 @@ var Wrapper_RouterLinkActive = (function () {
             }
         }
         return changed;
-    };
-    Wrapper_RouterLinkActive.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_RouterLinkActive.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_RouterLinkActive.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_RouterLinkActive;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55888,42 +55877,41 @@ var Wrapper_RouterLinkActive = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var Wrapper_NgStyle = (function () {
-    function Wrapper_NgStyle(p0, p1, p2) {
+class Wrapper_NgStyle {
+    constructor(p0, p1, p2) {
         this._changed = false;
         this.context = new NgStyle(p0, p1, p2);
         this._expr_0 = UNINITIALIZED;
     }
-    Wrapper_NgStyle.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_NgStyle.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_NgStyle.prototype.check_ngStyle = function (currValue, throwOnChange, forceUpdate) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    check_ngStyle(currValue, throwOnChange, forceUpdate) {
         if ((forceUpdate || checkBinding(throwOnChange, this._expr_0, currValue))) {
             this._changed = true;
             this.context.ngStyle = currValue;
             this._expr_0 = currValue;
         }
-    };
-    Wrapper_NgStyle.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
             this.context.ngDoCheck();
         }
         return changed;
-    };
-    Wrapper_NgStyle.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_NgStyle.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_NgStyle.prototype.subscribe = function (view, _eventHandler) {
+    }
+    subscribe(view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    };
-    return Wrapper_NgStyle;
-}());
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -55931,21 +55919,16 @@ var Wrapper_NgStyle = (function () {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var __extends$182 = (undefined && undefined.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Wrapper_YoutubeComponent = (function () {
-    function Wrapper_YoutubeComponent(p0, p1) {
+class Wrapper_YoutubeComponent {
+    constructor(p0, p1) {
         this._changed = false;
         this.context = new YoutubeComponent(p0, p1);
     }
-    Wrapper_YoutubeComponent.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_YoutubeComponent.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_YoutubeComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -55954,29 +55937,27 @@ var Wrapper_YoutubeComponent = (function () {
             }
         }
         return changed;
-    };
-    Wrapper_YoutubeComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_YoutubeComponent.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         if ((eventName == 'window:googleApiClientReady')) {
-            var pd_sub_0 = (this.context.ngOnInit() !== false);
+            const pd_sub_0 = (this.context.ngOnInit() !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    Wrapper_YoutubeComponent.prototype.subscribe = function (view, _eventHandler) {
-        this._eventHandler = _eventHandler;
-    };
-    return Wrapper_YoutubeComponent;
-}());
-var renderType_YoutubeComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
-var View_YoutubeComponent_Host0 = (function (_super) {
-    __extends$182(View_YoutubeComponent_Host0, _super);
-    function View_YoutubeComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_YoutubeComponent_Host0, renderType_YoutubeComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
     }
-    View_YoutubeComponent_Host0.prototype.createInternal = function (rootSelector) {
+    subscribe(view, _eventHandler) {
+        this._eventHandler = _eventHandler;
+    }
+}
+var renderType_YoutubeComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
+class View_YoutubeComponent_Host0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_YoutubeComponent_Host0, renderType_YoutubeComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
         this._el_0 = selectOrCreateRenderHostElement(this.renderer, 'ng-component', EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_YoutubeComponent0(this.viewUtils, this, 0, this._el_0);
         this._YoutubeComponent_0_3 = new Wrapper_YoutubeComponent(this.compView_0.ref, this.injectorGet(Router, this.parentIndex));
@@ -55984,43 +55965,41 @@ var View_YoutubeComponent_Host0 = (function (_super) {
         var disposable_0 = subscribeToRenderElement(this, this._el_0, new InlineArray2(2, 'googleApiClientReady', 'window'), this.eventHandler(this.handleEvent_0));
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), [disposable_0]);
         return new ComponentRef_(0, this, this._el_0, this._YoutubeComponent_0_3.context);
-    };
-    View_YoutubeComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === YoutubeComponent) && (0 === requestNodeIndex))) {
             return this._YoutubeComponent_0_3.context;
         }
         return notFoundResult;
-    };
-    View_YoutubeComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._YoutubeComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    };
-    View_YoutubeComponent_Host0.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this.compView_0.destroy();
-    };
-    View_YoutubeComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
+    }
+    visitRootNodesInternal(cb, ctx) {
         cb(this._el_0, ctx);
-    };
-    View_YoutubeComponent_Host0.prototype.handleEvent_0 = function (eventName, $event) {
+    }
+    handleEvent_0(eventName, $event) {
         this.compView_0.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._YoutubeComponent_0_3.handleEvent(eventName, $event) && result);
         return result;
-    };
-    return View_YoutubeComponent_Host0;
-}(AppView));
-var YoutubeComponentNgFactory = new ComponentFactory('ng-component', View_YoutubeComponent_Host0, YoutubeComponent);
-var styles_YoutubeComponent = [styles];
+    }
+}
+const YoutubeComponentNgFactory = new ComponentFactory('ng-component', View_YoutubeComponent_Host0, YoutubeComponent);
+const styles_YoutubeComponent = [styles];
 var renderType_YoutubeComponent = createRenderComponentType('', 0, ViewEncapsulation.Emulated, styles_YoutubeComponent, {});
-var View_YoutubeComponent0 = (function (_super) {
-    __extends$182(View_YoutubeComponent0, _super);
-    function View_YoutubeComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_YoutubeComponent0, renderType_YoutubeComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+class View_YoutubeComponent0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_YoutubeComponent0, renderType_YoutubeComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         this._expr_150 = UNINITIALIZED;
         this._expr_151 = UNINITIALIZED;
     }
-    View_YoutubeComponent0.prototype.createInternal = function (rootSelector) {
-        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    createInternal(rootSelector) {
+        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'mdl-layout mdl-js-layout mdl-layout--fixed-header'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = createRenderElement(this.renderer, this._el_0, 'div', new InlineArray2(2, 'class', 'nav_youtube mdl-layout__header '), null);
@@ -56334,8 +56313,8 @@ var View_YoutubeComponent0 = (function (_super) {
             disposable_8
         ]);
         return null;
-    };
-    View_YoutubeComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === DefaultValueAccessor) && (18 === requestNodeIndex))) {
             return this._DefaultValueAccessor_18_3.context;
         }
@@ -56361,145 +56340,143 @@ var View_YoutubeComponent0 = (function (_super) {
             return this._RouterOutlet_139_5.context;
         }
         return notFoundResult;
-    };
-    View_YoutubeComponent0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._DefaultValueAccessor_18_3.ngDoCheck(this, this._el_18, throwOnChange);
-        var currVal_18_1_0 = this.context.query;
+        const currVal_18_1_0 = this.context.query;
         this._NgModel_18_5.check_model(currVal_18_1_0, throwOnChange, false);
         this._NgModel_18_5.ngDoCheck(this, this._el_18, throwOnChange);
         this._NgControlStatus_18_7.ngDoCheck(this, this._el_18, throwOnChange);
-        var currVal_107_0_0 = this.context.videos;
+        const currVal_107_0_0 = this.context.videos;
         this._NgFor_107_6.check_ngForOf(currVal_107_0_0, throwOnChange, false);
         this._NgFor_107_6.ngDoCheck(this, this._anchor_107, throwOnChange);
         this._RouterOutlet_139_5.ngDoCheck(this, this._el_139, throwOnChange);
         this._vc_107.detectChangesInNestedViews(throwOnChange);
         this._vc_139.detectChangesInNestedViews(throwOnChange);
         this._NgControlStatus_18_7.checkHost(this, this, this._el_18, throwOnChange);
-        var currVal_150 = inlineInterpolate(1, 'Sort by ', this.context.order, '');
+        const currVal_150 = inlineInterpolate(1, 'Sort by ', this.context.order, '');
         if (checkBinding(throwOnChange, this._expr_150, currVal_150)) {
             this.renderer.setText(this._text_42, currVal_150);
             this._expr_150 = currVal_150;
         }
-        var currVal_151 = !this.context.isLoading;
+        const currVal_151 = !this.context.isLoading;
         if (checkBinding(throwOnChange, this._expr_151, currVal_151)) {
             this.renderer.setElementProperty(this._el_121, 'hidden', currVal_151);
             this._expr_151 = currVal_151;
         }
-    };
-    View_YoutubeComponent0.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this._vc_107.destroyNestedViews();
         this._vc_139.destroyNestedViews();
         this._NgModel_18_5.ngOnDestroy();
         this._RouterOutlet_139_5.ngOnDestroy();
-    };
-    View_YoutubeComponent0.prototype.createEmbeddedViewInternal = function (nodeIndex) {
+    }
+    createEmbeddedViewInternal(nodeIndex) {
         if ((nodeIndex == 107)) {
             return new View_YoutubeComponent1(this.viewUtils, this, 107, this._anchor_107, this._vc_107);
         }
         return null;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_10 = function (eventName, $event) {
+    }
+    handleEvent_10(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onSearch($event) !== false);
+            const pd_sub_0 = (this.context.onSearch($event) !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_18 = function (eventName, $event) {
+    }
+    handleEvent_18(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._DefaultValueAccessor_18_3.handleEvent(eventName, $event) && result);
         if ((eventName == 'ngModelChange')) {
-            var pd_sub_0 = ((this.context.query = $event) !== false);
+            const pd_sub_0 = ((this.context.query = $event) !== false);
             result = (pd_sub_0 && result);
         }
         if ((eventName == 'keypress')) {
-            var pd_sub_1 = (this.context.onSearch($event) !== false);
+            const pd_sub_1 = (this.context.onSearch($event) !== false);
             result = (pd_sub_1 && result);
         }
         if ((eventName == 'blur')) {
-            var pd_sub_2 = (this.context.onSearch($event) !== false);
+            const pd_sub_2 = (this.context.onSearch($event) !== false);
             result = (pd_sub_2 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_45 = function (eventName, $event) {
+    }
+    handleEvent_45(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('viewCount') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('viewCount') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_54 = function (eventName, $event) {
+    }
+    handleEvent_54(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('rating') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('rating') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_63 = function (eventName, $event) {
+    }
+    handleEvent_63(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('relevance') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('relevance') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_72 = function (eventName, $event) {
+    }
+    handleEvent_72(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('date') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('date') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_81 = function (eventName, $event) {
+    }
+    handleEvent_81(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('videoCount') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('videoCount') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_90 = function (eventName, $event) {
+    }
+    handleEvent_90(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onClickedSort('title') !== false);
+            const pd_sub_0 = (this.context.onClickedSort('title') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    View_YoutubeComponent0.prototype.handleEvent_113 = function (eventName, $event) {
+    }
+    handleEvent_113(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.onLoadMoreContent() !== false);
+            const pd_sub_0 = (this.context.onLoadMoreContent() !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    return View_YoutubeComponent0;
-}(AppView));
-var View_YoutubeComponent1 = (function (_super) {
-    __extends$182(View_YoutubeComponent1, _super);
-    function View_YoutubeComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        _super.call(this, View_YoutubeComponent1, renderType_YoutubeComponent, ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-        this._map_21 = pureProxy1(function (p0) {
+    }
+}
+class View_YoutubeComponent1 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
+        super(View_YoutubeComponent1, renderType_YoutubeComponent, ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        this._map_21 = pureProxy1((p0) => {
             return { 'background-image': p0 };
         });
         this._expr_22 = UNINITIALIZED;
     }
-    View_YoutubeComponent1.prototype.createInternal = function (rootSelector) {
+    createInternal(rootSelector) {
         this._el_0 = createRenderElement(this.renderer, null, 'li', new InlineArray2(2, 'class', 'video_item show'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n                    ', null);
         this._el_2 = createRenderElement(this.renderer, this._el_0, 'a', new InlineArray2(2, 'routerLinkActive', 'active'), null);
@@ -56541,8 +56518,8 @@ var View_YoutubeComponent1 = (function (_super) {
             this._text_15
         ]), [disposable_0]);
         return null;
-    };
-    View_YoutubeComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === NgStyle) && ((4 <= requestNodeIndex) && (requestNodeIndex <= 13)))) {
             return this._NgStyle_4_3.context;
         }
@@ -56553,15 +56530,15 @@ var View_YoutubeComponent1 = (function (_super) {
             return this._RouterLinkActive_2_4.context;
         }
         return notFoundResult;
-    };
-    View_YoutubeComponent1.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_2_0_0 = inlineInterpolate(1, './player/', this.context.$implicit.id.videoId, '');
+    }
+    detectChangesInternal(throwOnChange) {
+        const currVal_2_0_0 = inlineInterpolate(1, './player/', this.context.$implicit.id.videoId, '');
         this._RouterLinkWithHref_2_3.check_routerLink(currVal_2_0_0, throwOnChange, false);
         this._RouterLinkWithHref_2_3.ngDoCheck(this, this._el_2, throwOnChange);
-        var currVal_2_1_0 = 'active';
+        const currVal_2_1_0 = 'active';
         this._RouterLinkActive_2_4.check_routerLinkActive(currVal_2_1_0, throwOnChange, false);
         this._RouterLinkActive_2_4.ngDoCheck(this, this._el_2, throwOnChange);
-        var currVal_4_0_0 = this._map_21((('url(' + this.context.$implicit.snippet.thumbnails.high.url) + ')'));
+        const currVal_4_0_0 = this._map_21((('url(' + this.context.$implicit.snippet.thumbnails.high.url) + ')'));
         this._NgStyle_4_3.check_ngStyle(currVal_4_0_0, throwOnChange, false);
         this._NgStyle_4_3.ngDoCheck(this, this._el_4, throwOnChange);
         if (!throwOnChange) {
@@ -56580,27 +56557,26 @@ var View_YoutubeComponent1 = (function (_super) {
             }
         }
         this._RouterLinkWithHref_2_3.checkHost(this, this, this._el_2, throwOnChange);
-        var currVal_22 = inlineInterpolate(1, '', this.context.$implicit.snippet.title, '');
+        const currVal_22 = inlineInterpolate(1, '', this.context.$implicit.snippet.title, '');
         if (checkBinding(throwOnChange, this._expr_22, currVal_22)) {
             this.renderer.setText(this._text_9, currVal_22);
             this._expr_22 = currVal_22;
         }
-    };
-    View_YoutubeComponent1.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this._RouterLinkWithHref_2_3.ngOnDestroy();
         this._RouterLinkActive_2_4.ngOnDestroy();
-    };
-    View_YoutubeComponent1.prototype.visitRootNodesInternal = function (cb, ctx) {
+    }
+    visitRootNodesInternal(cb, ctx) {
         cb(this._el_0, ctx);
-    };
-    View_YoutubeComponent1.prototype.handleEvent_2 = function (eventName, $event) {
+    }
+    handleEvent_2(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._RouterLinkWithHref_2_3.handleEvent(eventName, $event) && result);
         return result;
-    };
-    return View_YoutubeComponent1;
-}(AppView));
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -56608,7 +56584,7 @@ var View_YoutubeComponent1 = (function (_super) {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var styles$1 = ['.wrap_youtube_player[_ngcontent-%COMP%]{ position:absolute; z-index:100 }\r\n.btn_player-close[_ngcontent-%COMP%]{ position:absolute; width:25px; height:25px; background:#fff; opacity:0.3; z-index:100;}'];
+const styles$1 = ['.wrap_youtube_player[_ngcontent-%COMP%]{ position:absolute; z-index:100 }\r\n.btn_player-close[_ngcontent-%COMP%]{ position:absolute; width:25px; height:25px; background:#fff; opacity:0.3; z-index:100;}'];
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -56616,21 +56592,16 @@ var styles$1 = ['.wrap_youtube_player[_ngcontent-%COMP%]{ position:absolute; z-i
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var __extends$183 = (undefined && undefined.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Wrapper_PlayerComponent = (function () {
-    function Wrapper_PlayerComponent(p0, p1) {
+class Wrapper_PlayerComponent {
+    constructor(p0, p1) {
         this._changed = false;
         this.context = new PlayerComponent(p0, p1);
     }
-    Wrapper_PlayerComponent.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_PlayerComponent.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_PlayerComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -56639,61 +56610,57 @@ var Wrapper_PlayerComponent = (function () {
             }
         }
         return changed;
-    };
-    Wrapper_PlayerComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_PlayerComponent.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_PlayerComponent.prototype.subscribe = function (view, _eventHandler) {
-        this._eventHandler = _eventHandler;
-    };
-    return Wrapper_PlayerComponent;
-}());
-var renderType_PlayerComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
-var View_PlayerComponent_Host0 = (function (_super) {
-    __extends$183(View_PlayerComponent_Host0, _super);
-    function View_PlayerComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerComponent_Host0, renderType_PlayerComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
     }
-    View_PlayerComponent_Host0.prototype.createInternal = function (rootSelector) {
+    subscribe(view, _eventHandler) {
+        this._eventHandler = _eventHandler;
+    }
+}
+var renderType_PlayerComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
+class View_PlayerComponent_Host0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_PlayerComponent_Host0, renderType_PlayerComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
         this._el_0 = selectOrCreateRenderHostElement(this.renderer, 'ng-component', EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_PlayerComponent0(this.viewUtils, this, 0, this._el_0);
         this._PlayerComponent_0_3 = new Wrapper_PlayerComponent(this.injectorGet(ActivatedRoute, this.parentIndex), this.compView_0.ref);
         this.compView_0.create(this._PlayerComponent_0_3.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
         return new ComponentRef_(0, this, this._el_0, this._PlayerComponent_0_3.context);
-    };
-    View_PlayerComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === PlayerComponent) && (0 === requestNodeIndex))) {
             return this._PlayerComponent_0_3.context;
         }
         return notFoundResult;
-    };
-    View_PlayerComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._PlayerComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    };
-    View_PlayerComponent_Host0.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this.compView_0.destroy();
-    };
-    View_PlayerComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
+    }
+    visitRootNodesInternal(cb, ctx) {
         cb(this._el_0, ctx);
-    };
-    return View_PlayerComponent_Host0;
-}(AppView));
-var PlayerComponentNgFactory = new ComponentFactory('ng-component', View_PlayerComponent_Host0, PlayerComponent);
-var styles_PlayerComponent = [styles$1];
+    }
+}
+const PlayerComponentNgFactory = new ComponentFactory('ng-component', View_PlayerComponent_Host0, PlayerComponent);
+const styles_PlayerComponent = [styles$1];
 var renderType_PlayerComponent = createRenderComponentType('', 0, ViewEncapsulation.Emulated, styles_PlayerComponent, {});
-var View_PlayerComponent0 = (function (_super) {
-    __extends$183(View_PlayerComponent0, _super);
-    function View_PlayerComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PlayerComponent0, renderType_PlayerComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+class View_PlayerComponent0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_PlayerComponent0, renderType_PlayerComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         this._expr_12 = UNINITIALIZED;
     }
-    View_PlayerComponent0.prototype.createInternal = function (rootSelector) {
-        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    createInternal(rootSelector) {
+        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'wrap_youtube_player'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = createRenderElement(this.renderer, this._el_0, 'button', new InlineArray2(2, 'class', 'btn_player-close mdl-button mdl-js-button mdl-button--icon'), null);
@@ -56722,25 +56689,24 @@ var View_PlayerComponent0 = (function (_super) {
             this._text_11
         ]), [disposable_0]);
         return null;
-    };
-    View_PlayerComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_12 = !this.context.isPlayerOpen;
+    }
+    detectChangesInternal(throwOnChange) {
+        const currVal_12 = !this.context.isPlayerOpen;
         if (checkBinding(throwOnChange, this._expr_12, currVal_12)) {
             this.renderer.setElementProperty(this._el_0, 'hidden', currVal_12);
             this._expr_12 = currVal_12;
         }
-    };
-    View_PlayerComponent0.prototype.handleEvent_2 = function (eventName, $event) {
+    }
+    handleEvent_2(eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            var pd_sub_0 = (this.context.hide() !== false);
+            const pd_sub_0 = (this.context.hide() !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    };
-    return View_PlayerComponent0;
-}(AppView));
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -56748,79 +56714,70 @@ var View_PlayerComponent0 = (function (_super) {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var __extends$184 = (undefined && undefined.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Wrapper_PageNotFoundComponent = (function () {
-    function Wrapper_PageNotFoundComponent() {
+class Wrapper_PageNotFoundComponent {
+    constructor() {
         this._changed = false;
         this.context = new PageNotFoundComponent();
     }
-    Wrapper_PageNotFoundComponent.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_PageNotFoundComponent.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_PageNotFoundComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    };
-    Wrapper_PageNotFoundComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_PageNotFoundComponent.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_PageNotFoundComponent.prototype.subscribe = function (view, _eventHandler) {
-        this._eventHandler = _eventHandler;
-    };
-    return Wrapper_PageNotFoundComponent;
-}());
-var renderType_PageNotFoundComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
-var View_PageNotFoundComponent_Host0 = (function (_super) {
-    __extends$184(View_PageNotFoundComponent_Host0, _super);
-    function View_PageNotFoundComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PageNotFoundComponent_Host0, renderType_PageNotFoundComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
     }
-    View_PageNotFoundComponent_Host0.prototype.createInternal = function (rootSelector) {
+    subscribe(view, _eventHandler) {
+        this._eventHandler = _eventHandler;
+    }
+}
+var renderType_PageNotFoundComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
+class View_PageNotFoundComponent_Host0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_PageNotFoundComponent_Host0, renderType_PageNotFoundComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
         this._el_0 = selectOrCreateRenderHostElement(this.renderer, 'ng-component', EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_PageNotFoundComponent0(this.viewUtils, this, 0, this._el_0);
         this._PageNotFoundComponent_0_3 = new Wrapper_PageNotFoundComponent();
         this.compView_0.create(this._PageNotFoundComponent_0_3.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
         return new ComponentRef_(0, this, this._el_0, this._PageNotFoundComponent_0_3.context);
-    };
-    View_PageNotFoundComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === PageNotFoundComponent) && (0 === requestNodeIndex))) {
             return this._PageNotFoundComponent_0_3.context;
         }
         return notFoundResult;
-    };
-    View_PageNotFoundComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._PageNotFoundComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    };
-    View_PageNotFoundComponent_Host0.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this.compView_0.destroy();
-    };
-    View_PageNotFoundComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
+    }
+    visitRootNodesInternal(cb, ctx) {
         cb(this._el_0, ctx);
-    };
-    return View_PageNotFoundComponent_Host0;
-}(AppView));
-var PageNotFoundComponentNgFactory = new ComponentFactory('ng-component', View_PageNotFoundComponent_Host0, PageNotFoundComponent);
-var styles_PageNotFoundComponent = [];
+    }
+}
+const PageNotFoundComponentNgFactory = new ComponentFactory('ng-component', View_PageNotFoundComponent_Host0, PageNotFoundComponent);
+const styles_PageNotFoundComponent = [];
 var renderType_PageNotFoundComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_PageNotFoundComponent, {});
-var View_PageNotFoundComponent0 = (function (_super) {
-    __extends$184(View_PageNotFoundComponent0, _super);
-    function View_PageNotFoundComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_PageNotFoundComponent0, renderType_PageNotFoundComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+class View_PageNotFoundComponent0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_PageNotFoundComponent0, renderType_PageNotFoundComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         this._expr_12 = UNINITIALIZED;
     }
-    View_PageNotFoundComponent0.prototype.createInternal = function (rootSelector) {
-        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    createInternal(rootSelector) {
+        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._text_0 = this.renderer.createText(parentRenderNode, '\n        ', null);
         this._el_1 = createRenderElement(this.renderer, parentRenderNode, 'div', EMPTY_INLINE_ARRAY, null);
         this._text_2 = this.renderer.createText(this._el_1, '\n            ', null);
@@ -56848,16 +56805,15 @@ var View_PageNotFoundComponent0 = (function (_super) {
             this._text_11
         ]), null);
         return null;
-    };
-    View_PageNotFoundComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_12 = inlineInterpolate(1, '', this.context.title, '');
+    }
+    detectChangesInternal(throwOnChange) {
+        const currVal_12 = inlineInterpolate(1, '', this.context.title, '');
         if (checkBinding(throwOnChange, this._expr_12, currVal_12)) {
             this.renderer.setText(this._text_10, currVal_12);
             this._expr_12 = currVal_12;
         }
-    };
-    return View_PageNotFoundComponent0;
-}(AppView));
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -56865,78 +56821,69 @@ var View_PageNotFoundComponent0 = (function (_super) {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var __extends$185 = (undefined && undefined.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Wrapper_AppComponent = (function () {
-    function Wrapper_AppComponent(p0) {
+class Wrapper_AppComponent {
+    constructor(p0) {
         this._changed = false;
         this.context = new AppComponent(p0);
     }
-    Wrapper_AppComponent.prototype.ngOnDetach = function (view, componentView, el) {
-    };
-    Wrapper_AppComponent.prototype.ngOnDestroy = function () {
-    };
-    Wrapper_AppComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
+    ngOnDetach(view, componentView, el) {
+    }
+    ngOnDestroy() {
+    }
+    ngDoCheck(view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    };
-    Wrapper_AppComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
-    };
-    Wrapper_AppComponent.prototype.handleEvent = function (eventName, $event) {
+    }
+    checkHost(view, componentView, el, throwOnChange) {
+    }
+    handleEvent(eventName, $event) {
         var result = true;
         return result;
-    };
-    Wrapper_AppComponent.prototype.subscribe = function (view, _eventHandler) {
-        this._eventHandler = _eventHandler;
-    };
-    return Wrapper_AppComponent;
-}());
-var renderType_AppComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
-var View_AppComponent_Host0 = (function (_super) {
-    __extends$185(View_AppComponent_Host0, _super);
-    function View_AppComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_AppComponent_Host0, renderType_AppComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
     }
-    View_AppComponent_Host0.prototype.createInternal = function (rootSelector) {
+    subscribe(view, _eventHandler) {
+        this._eventHandler = _eventHandler;
+    }
+}
+var renderType_AppComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
+class View_AppComponent_Host0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_AppComponent_Host0, renderType_AppComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
         this._el_0 = selectOrCreateRenderHostElement(this.renderer, 'my-app', EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_AppComponent0(this.viewUtils, this, 0, this._el_0);
         this._AppComponent_0_3 = new Wrapper_AppComponent(this.injectorGet(Title, this.parentIndex));
         this.compView_0.create(this._AppComponent_0_3.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
         return new ComponentRef_(0, this, this._el_0, this._AppComponent_0_3.context);
-    };
-    View_AppComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === AppComponent) && (0 === requestNodeIndex))) {
             return this._AppComponent_0_3.context;
         }
         return notFoundResult;
-    };
-    View_AppComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._AppComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    };
-    View_AppComponent_Host0.prototype.destroyInternal = function () {
-        this.compView_0.destroy();
-    };
-    View_AppComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
-        cb(this._el_0, ctx);
-    };
-    return View_AppComponent_Host0;
-}(AppView));
-var AppComponentNgFactory = new ComponentFactory('my-app', View_AppComponent_Host0, AppComponent);
-var styles_AppComponent = [];
-var renderType_AppComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_AppComponent, {});
-var View_AppComponent0 = (function (_super) {
-    __extends$185(View_AppComponent0, _super);
-    function View_AppComponent0(viewUtils, parentView, parentIndex, parentElement) {
-        _super.call(this, View_AppComponent0, renderType_AppComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
     }
-    View_AppComponent0.prototype.createInternal = function (rootSelector) {
-        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    destroyInternal() {
+        this.compView_0.destroy();
+    }
+    visitRootNodesInternal(cb, ctx) {
+        cb(this._el_0, ctx);
+    }
+}
+const AppComponentNgFactory = new ComponentFactory('my-app', View_AppComponent_Host0, AppComponent);
+const styles_AppComponent = [];
+var renderType_AppComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_AppComponent, {});
+class View_AppComponent0 extends AppView {
+    constructor(viewUtils, parentView, parentIndex, parentElement) {
+        super(View_AppComponent0, renderType_AppComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
+        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'div', EMPTY_INLINE_ARRAY, null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = createRenderElement(this.renderer, this._el_0, 'router-outlet', EMPTY_INLINE_ARRAY, null);
@@ -56950,23 +56897,22 @@ var View_AppComponent0 = (function (_super) {
             this._text_3
         ]), null);
         return null;
-    };
-    View_AppComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
         if (((token === RouterOutlet) && (2 === requestNodeIndex))) {
             return this._RouterOutlet_2_5.context;
         }
         return notFoundResult;
-    };
-    View_AppComponent0.prototype.detectChangesInternal = function (throwOnChange) {
+    }
+    detectChangesInternal(throwOnChange) {
         this._RouterOutlet_2_5.ngDoCheck(this, this._el_2, throwOnChange);
         this._vc_2.detectChangesInNestedViews(throwOnChange);
-    };
-    View_AppComponent0.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this._vc_2.destroyNestedViews();
         this._RouterOutlet_2_5.ngOnDestroy();
-    };
-    return View_AppComponent0;
-}(AppView));
+    }
+}
 
 /**
  * @fileoverview This file is generated by the Angular 2 template compiler.
@@ -56974,456 +56920,286 @@ var View_AppComponent0 = (function (_super) {
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
-var __extends$159 = (undefined && undefined.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var AppModuleInjector = (function (_super) {
-    __extends$159(AppModuleInjector, _super);
-    function AppModuleInjector(parent) {
-        _super.call(this, parent, [
+class AppModuleInjector extends NgModuleInjector {
+    constructor(parent) {
+        super(parent, [
             YoutubeComponentNgFactory,
             PlayerComponentNgFactory,
             PageNotFoundComponentNgFactory,
             AppComponentNgFactory
         ], [AppComponentNgFactory]);
     }
-    Object.defineProperty(AppModuleInjector.prototype, "_LOCALE_ID_9", {
-        get: function () {
-            if ((this.__LOCALE_ID_9 == null)) {
-                (this.__LOCALE_ID_9 = 'en-US');
-            }
-            return this.__LOCALE_ID_9;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_NgLocalization_10", {
-        get: function () {
-            if ((this.__NgLocalization_10 == null)) {
-                (this.__NgLocalization_10 = new NgLocaleLocalization(this._LOCALE_ID_9));
-            }
-            return this.__NgLocalization_10;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ApplicationRef_15", {
-        get: function () {
-            if ((this.__ApplicationRef_15 == null)) {
-                (this.__ApplicationRef_15 = this._ApplicationRef__14);
-            }
-            return this.__ApplicationRef_15;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Compiler_16", {
-        get: function () {
-            if ((this.__Compiler_16 == null)) {
-                (this.__Compiler_16 = new Compiler());
-            }
-            return this.__Compiler_16;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_APP_ID_17", {
-        get: function () {
-            if ((this.__APP_ID_17 == null)) {
-                (this.__APP_ID_17 = _appIdRandomProviderFactory());
-            }
-            return this.__APP_ID_17;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_DOCUMENT_18", {
-        get: function () {
-            if ((this.__DOCUMENT_18 == null)) {
-                (this.__DOCUMENT_18 = _document());
-            }
-            return this.__DOCUMENT_18;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_HAMMER_GESTURE_CONFIG_19", {
-        get: function () {
-            if ((this.__HAMMER_GESTURE_CONFIG_19 == null)) {
-                (this.__HAMMER_GESTURE_CONFIG_19 = new HammerGestureConfig());
-            }
-            return this.__HAMMER_GESTURE_CONFIG_19;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_EVENT_MANAGER_PLUGINS_20", {
-        get: function () {
-            if ((this.__EVENT_MANAGER_PLUGINS_20 == null)) {
-                (this.__EVENT_MANAGER_PLUGINS_20 = [
-                    new DomEventsPlugin(),
-                    new KeyEventsPlugin(),
-                    new HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_19)
-                ]);
-            }
-            return this.__EVENT_MANAGER_PLUGINS_20;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_EventManager_21", {
-        get: function () {
-            if ((this.__EventManager_21 == null)) {
-                (this.__EventManager_21 = new EventManager(this._EVENT_MANAGER_PLUGINS_20, this.parent.get(NgZone)));
-            }
-            return this.__EventManager_21;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomSharedStylesHost_22", {
-        get: function () {
-            if ((this.__DomSharedStylesHost_22 == null)) {
-                (this.__DomSharedStylesHost_22 = new DomSharedStylesHost(this._DOCUMENT_18));
-            }
-            return this.__DomSharedStylesHost_22;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_AnimationDriver_23", {
-        get: function () {
-            if ((this.__AnimationDriver_23 == null)) {
-                (this.__AnimationDriver_23 = _resolveDefaultAnimationDriver());
-            }
-            return this.__AnimationDriver_23;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomRootRenderer_24", {
-        get: function () {
-            if ((this.__DomRootRenderer_24 == null)) {
-                (this.__DomRootRenderer_24 = new DomRootRenderer_(this._DOCUMENT_18, this._EventManager_21, this._DomSharedStylesHost_22, this._AnimationDriver_23, this._APP_ID_17));
-            }
-            return this.__DomRootRenderer_24;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_NgProbeToken_25", {
-        get: function () {
-            if ((this.__NgProbeToken_25 == null)) {
-                (this.__NgProbeToken_25 = [routerNgProbeToken()]);
-            }
-            return this.__NgProbeToken_25;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_RootRenderer_26", {
-        get: function () {
-            if ((this.__RootRenderer_26 == null)) {
-                (this.__RootRenderer_26 = _createConditionalRootRenderer(this._DomRootRenderer_24, this.parent.get(NgProbeToken$1, null), this._NgProbeToken_25));
-            }
-            return this.__RootRenderer_26;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_DomSanitizer_27", {
-        get: function () {
-            if ((this.__DomSanitizer_27 == null)) {
-                (this.__DomSanitizer_27 = new DomSanitizerImpl());
-            }
-            return this.__DomSanitizer_27;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Sanitizer_28", {
-        get: function () {
-            if ((this.__Sanitizer_28 == null)) {
-                (this.__Sanitizer_28 = this._DomSanitizer_27);
-            }
-            return this.__Sanitizer_28;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_AnimationQueue_29", {
-        get: function () {
-            if ((this.__AnimationQueue_29 == null)) {
-                (this.__AnimationQueue_29 = new AnimationQueue(this.parent.get(NgZone)));
-            }
-            return this.__AnimationQueue_29;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ViewUtils_30", {
-        get: function () {
-            if ((this.__ViewUtils_30 == null)) {
-                (this.__ViewUtils_30 = new ViewUtils(this._RootRenderer_26, this._Sanitizer_28, this._AnimationQueue_29));
-            }
-            return this.__ViewUtils_30;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_IterableDiffers_31", {
-        get: function () {
-            if ((this.__IterableDiffers_31 == null)) {
-                (this.__IterableDiffers_31 = _iterableDiffersFactory());
-            }
-            return this.__IterableDiffers_31;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_KeyValueDiffers_32", {
-        get: function () {
-            if ((this.__KeyValueDiffers_32 == null)) {
-                (this.__KeyValueDiffers_32 = _keyValueDiffersFactory());
-            }
-            return this.__KeyValueDiffers_32;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_SharedStylesHost_33", {
-        get: function () {
-            if ((this.__SharedStylesHost_33 == null)) {
-                (this.__SharedStylesHost_33 = this._DomSharedStylesHost_22);
-            }
-            return this.__SharedStylesHost_33;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Title_34", {
-        get: function () {
-            if ((this.__Title_34 == null)) {
-                (this.__Title_34 = new Title());
-            }
-            return this.__Title_34;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_BrowserXhr_35", {
-        get: function () {
-            if ((this.__BrowserXhr_35 == null)) {
-                (this.__BrowserXhr_35 = new BrowserXhr());
-            }
-            return this.__BrowserXhr_35;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ResponseOptions_36", {
-        get: function () {
-            if ((this.__ResponseOptions_36 == null)) {
-                (this.__ResponseOptions_36 = new BaseResponseOptions());
-            }
-            return this.__ResponseOptions_36;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_XSRFStrategy_37", {
-        get: function () {
-            if ((this.__XSRFStrategy_37 == null)) {
-                (this.__XSRFStrategy_37 = _createDefaultCookieXSRFStrategy());
-            }
-            return this.__XSRFStrategy_37;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_XHRBackend_38", {
-        get: function () {
-            if ((this.__XHRBackend_38 == null)) {
-                (this.__XHRBackend_38 = new XHRBackend(this._BrowserXhr_35, this._ResponseOptions_36, this._XSRFStrategy_37));
-            }
-            return this.__XHRBackend_38;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_RequestOptions_39", {
-        get: function () {
-            if ((this.__RequestOptions_39 == null)) {
-                (this.__RequestOptions_39 = new BaseRequestOptions());
-            }
-            return this.__RequestOptions_39;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Http_40", {
-        get: function () {
-            if ((this.__Http_40 == null)) {
-                (this.__Http_40 = httpFactory(this._XHRBackend_38, this._RequestOptions_39));
-            }
-            return this.__Http_40;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_RadioControlRegistry_41", {
-        get: function () {
-            if ((this.__RadioControlRegistry_41 == null)) {
-                (this.__RadioControlRegistry_41 = new RadioControlRegistry());
-            }
-            return this.__RadioControlRegistry_41;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ROUTER_CONFIGURATION_42", {
-        get: function () {
-            if ((this.__ROUTER_CONFIGURATION_42 == null)) {
-                (this.__ROUTER_CONFIGURATION_42 = {});
-            }
-            return this.__ROUTER_CONFIGURATION_42;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_LocationStrategy_43", {
-        get: function () {
-            if ((this.__LocationStrategy_43 == null)) {
-                (this.__LocationStrategy_43 = provideLocationStrategy(this.parent.get(PlatformLocation), this.parent.get(APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_42));
-            }
-            return this.__LocationStrategy_43;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Location_44", {
-        get: function () {
-            if ((this.__Location_44 == null)) {
-                (this.__Location_44 = new Location(this._LocationStrategy_43));
-            }
-            return this.__Location_44;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_UrlSerializer_45", {
-        get: function () {
-            if ((this.__UrlSerializer_45 == null)) {
-                (this.__UrlSerializer_45 = new DefaultUrlSerializer());
-            }
-            return this.__UrlSerializer_45;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_RouterOutletMap_46", {
-        get: function () {
-            if ((this.__RouterOutletMap_46 == null)) {
-                (this.__RouterOutletMap_46 = new RouterOutletMap());
-            }
-            return this.__RouterOutletMap_46;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_NgModuleFactoryLoader_47", {
-        get: function () {
-            if ((this.__NgModuleFactoryLoader_47 == null)) {
-                (this.__NgModuleFactoryLoader_47 = new SystemJsNgModuleLoader(this._Compiler_16, this.parent.get(SystemJsNgModuleLoaderConfig, null)));
-            }
-            return this.__NgModuleFactoryLoader_47;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ROUTES_48", {
-        get: function () {
-            if ((this.__ROUTES_48 == null)) {
-                (this.__ROUTES_48 = [[
-                        {
-                            path: '',
-                            redirectTo: 'youtube',
-                            pathMatch: 'full'
-                        },
-                        {
-                            path: 'youtube',
-                            component: YoutubeComponent,
-                            children: [{
-                                    path: 'player/:id',
-                                    component: PlayerComponent
-                                }
-                            ]
-                        },
-                        {
-                            path: '**',
-                            component: PageNotFoundComponent
-                        }
-                    ]
-                ]);
-            }
-            return this.__ROUTES_48;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_Router_49", {
-        get: function () {
-            if ((this.__Router_49 == null)) {
-                (this.__Router_49 = setupRouter(this._ApplicationRef_15, this._UrlSerializer_45, this._RouterOutletMap_46, this._Location_44, this, this._NgModuleFactoryLoader_47, this._Compiler_16, this._ROUTES_48, this._ROUTER_CONFIGURATION_42, this.parent.get(UrlHandlingStrategy, null), this.parent.get(RouteReuseStrategy, null)));
-            }
-            return this.__Router_49;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ActivatedRoute_50", {
-        get: function () {
-            if ((this.__ActivatedRoute_50 == null)) {
-                (this.__ActivatedRoute_50 = rootRoute(this._Router_49));
-            }
-            return this.__ActivatedRoute_50;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_PreloadAllModules_54", {
-        get: function () {
-            if ((this.__PreloadAllModules_54 == null)) {
-                (this.__PreloadAllModules_54 = new PreloadAllModules());
-            }
-            return this.__PreloadAllModules_54;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_ROUTER_INITIALIZER_55", {
-        get: function () {
-            if ((this.__ROUTER_INITIALIZER_55 == null)) {
-                (this.__ROUTER_INITIALIZER_55 = initialRouterNavigation(this._Router_49, this._ApplicationRef_15, this._RouterPreloader_53, this._ROUTER_CONFIGURATION_42));
-            }
-            return this.__ROUTER_INITIALIZER_55;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AppModuleInjector.prototype, "_APP_BOOTSTRAP_LISTENER_56", {
-        get: function () {
-            if ((this.__APP_BOOTSTRAP_LISTENER_56 == null)) {
-                (this.__APP_BOOTSTRAP_LISTENER_56 = [this._ROUTER_INITIALIZER_55]);
-            }
-            return this.__APP_BOOTSTRAP_LISTENER_56;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    AppModuleInjector.prototype.createInternal = function () {
+    get _LOCALE_ID_9() {
+        if ((this.__LOCALE_ID_9 == null)) {
+            (this.__LOCALE_ID_9 = 'en-US');
+        }
+        return this.__LOCALE_ID_9;
+    }
+    get _NgLocalization_10() {
+        if ((this.__NgLocalization_10 == null)) {
+            (this.__NgLocalization_10 = new NgLocaleLocalization(this._LOCALE_ID_9));
+        }
+        return this.__NgLocalization_10;
+    }
+    get _ApplicationRef_15() {
+        if ((this.__ApplicationRef_15 == null)) {
+            (this.__ApplicationRef_15 = this._ApplicationRef__14);
+        }
+        return this.__ApplicationRef_15;
+    }
+    get _Compiler_16() {
+        if ((this.__Compiler_16 == null)) {
+            (this.__Compiler_16 = new Compiler());
+        }
+        return this.__Compiler_16;
+    }
+    get _APP_ID_17() {
+        if ((this.__APP_ID_17 == null)) {
+            (this.__APP_ID_17 = _appIdRandomProviderFactory());
+        }
+        return this.__APP_ID_17;
+    }
+    get _DOCUMENT_18() {
+        if ((this.__DOCUMENT_18 == null)) {
+            (this.__DOCUMENT_18 = _document());
+        }
+        return this.__DOCUMENT_18;
+    }
+    get _HAMMER_GESTURE_CONFIG_19() {
+        if ((this.__HAMMER_GESTURE_CONFIG_19 == null)) {
+            (this.__HAMMER_GESTURE_CONFIG_19 = new HammerGestureConfig());
+        }
+        return this.__HAMMER_GESTURE_CONFIG_19;
+    }
+    get _EVENT_MANAGER_PLUGINS_20() {
+        if ((this.__EVENT_MANAGER_PLUGINS_20 == null)) {
+            (this.__EVENT_MANAGER_PLUGINS_20 = [
+                new DomEventsPlugin(),
+                new KeyEventsPlugin(),
+                new HammerGesturesPlugin(this._HAMMER_GESTURE_CONFIG_19)
+            ]);
+        }
+        return this.__EVENT_MANAGER_PLUGINS_20;
+    }
+    get _EventManager_21() {
+        if ((this.__EventManager_21 == null)) {
+            (this.__EventManager_21 = new EventManager(this._EVENT_MANAGER_PLUGINS_20, this.parent.get(NgZone)));
+        }
+        return this.__EventManager_21;
+    }
+    get _DomSharedStylesHost_22() {
+        if ((this.__DomSharedStylesHost_22 == null)) {
+            (this.__DomSharedStylesHost_22 = new DomSharedStylesHost(this._DOCUMENT_18));
+        }
+        return this.__DomSharedStylesHost_22;
+    }
+    get _AnimationDriver_23() {
+        if ((this.__AnimationDriver_23 == null)) {
+            (this.__AnimationDriver_23 = _resolveDefaultAnimationDriver());
+        }
+        return this.__AnimationDriver_23;
+    }
+    get _DomRootRenderer_24() {
+        if ((this.__DomRootRenderer_24 == null)) {
+            (this.__DomRootRenderer_24 = new DomRootRenderer_(this._DOCUMENT_18, this._EventManager_21, this._DomSharedStylesHost_22, this._AnimationDriver_23, this._APP_ID_17));
+        }
+        return this.__DomRootRenderer_24;
+    }
+    get _NgProbeToken_25() {
+        if ((this.__NgProbeToken_25 == null)) {
+            (this.__NgProbeToken_25 = [routerNgProbeToken()]);
+        }
+        return this.__NgProbeToken_25;
+    }
+    get _RootRenderer_26() {
+        if ((this.__RootRenderer_26 == null)) {
+            (this.__RootRenderer_26 = _createConditionalRootRenderer(this._DomRootRenderer_24, this.parent.get(NgProbeToken$1, null), this._NgProbeToken_25));
+        }
+        return this.__RootRenderer_26;
+    }
+    get _DomSanitizer_27() {
+        if ((this.__DomSanitizer_27 == null)) {
+            (this.__DomSanitizer_27 = new DomSanitizerImpl());
+        }
+        return this.__DomSanitizer_27;
+    }
+    get _Sanitizer_28() {
+        if ((this.__Sanitizer_28 == null)) {
+            (this.__Sanitizer_28 = this._DomSanitizer_27);
+        }
+        return this.__Sanitizer_28;
+    }
+    get _AnimationQueue_29() {
+        if ((this.__AnimationQueue_29 == null)) {
+            (this.__AnimationQueue_29 = new AnimationQueue(this.parent.get(NgZone)));
+        }
+        return this.__AnimationQueue_29;
+    }
+    get _ViewUtils_30() {
+        if ((this.__ViewUtils_30 == null)) {
+            (this.__ViewUtils_30 = new ViewUtils(this._RootRenderer_26, this._Sanitizer_28, this._AnimationQueue_29));
+        }
+        return this.__ViewUtils_30;
+    }
+    get _IterableDiffers_31() {
+        if ((this.__IterableDiffers_31 == null)) {
+            (this.__IterableDiffers_31 = _iterableDiffersFactory());
+        }
+        return this.__IterableDiffers_31;
+    }
+    get _KeyValueDiffers_32() {
+        if ((this.__KeyValueDiffers_32 == null)) {
+            (this.__KeyValueDiffers_32 = _keyValueDiffersFactory());
+        }
+        return this.__KeyValueDiffers_32;
+    }
+    get _SharedStylesHost_33() {
+        if ((this.__SharedStylesHost_33 == null)) {
+            (this.__SharedStylesHost_33 = this._DomSharedStylesHost_22);
+        }
+        return this.__SharedStylesHost_33;
+    }
+    get _Title_34() {
+        if ((this.__Title_34 == null)) {
+            (this.__Title_34 = new Title());
+        }
+        return this.__Title_34;
+    }
+    get _BrowserXhr_35() {
+        if ((this.__BrowserXhr_35 == null)) {
+            (this.__BrowserXhr_35 = new BrowserXhr());
+        }
+        return this.__BrowserXhr_35;
+    }
+    get _ResponseOptions_36() {
+        if ((this.__ResponseOptions_36 == null)) {
+            (this.__ResponseOptions_36 = new BaseResponseOptions());
+        }
+        return this.__ResponseOptions_36;
+    }
+    get _XSRFStrategy_37() {
+        if ((this.__XSRFStrategy_37 == null)) {
+            (this.__XSRFStrategy_37 = _createDefaultCookieXSRFStrategy());
+        }
+        return this.__XSRFStrategy_37;
+    }
+    get _XHRBackend_38() {
+        if ((this.__XHRBackend_38 == null)) {
+            (this.__XHRBackend_38 = new XHRBackend(this._BrowserXhr_35, this._ResponseOptions_36, this._XSRFStrategy_37));
+        }
+        return this.__XHRBackend_38;
+    }
+    get _RequestOptions_39() {
+        if ((this.__RequestOptions_39 == null)) {
+            (this.__RequestOptions_39 = new BaseRequestOptions());
+        }
+        return this.__RequestOptions_39;
+    }
+    get _Http_40() {
+        if ((this.__Http_40 == null)) {
+            (this.__Http_40 = httpFactory(this._XHRBackend_38, this._RequestOptions_39));
+        }
+        return this.__Http_40;
+    }
+    get _RadioControlRegistry_41() {
+        if ((this.__RadioControlRegistry_41 == null)) {
+            (this.__RadioControlRegistry_41 = new RadioControlRegistry());
+        }
+        return this.__RadioControlRegistry_41;
+    }
+    get _ROUTER_CONFIGURATION_42() {
+        if ((this.__ROUTER_CONFIGURATION_42 == null)) {
+            (this.__ROUTER_CONFIGURATION_42 = {});
+        }
+        return this.__ROUTER_CONFIGURATION_42;
+    }
+    get _LocationStrategy_43() {
+        if ((this.__LocationStrategy_43 == null)) {
+            (this.__LocationStrategy_43 = provideLocationStrategy(this.parent.get(PlatformLocation), this.parent.get(APP_BASE_HREF, null), this._ROUTER_CONFIGURATION_42));
+        }
+        return this.__LocationStrategy_43;
+    }
+    get _Location_44() {
+        if ((this.__Location_44 == null)) {
+            (this.__Location_44 = new Location(this._LocationStrategy_43));
+        }
+        return this.__Location_44;
+    }
+    get _UrlSerializer_45() {
+        if ((this.__UrlSerializer_45 == null)) {
+            (this.__UrlSerializer_45 = new DefaultUrlSerializer());
+        }
+        return this.__UrlSerializer_45;
+    }
+    get _RouterOutletMap_46() {
+        if ((this.__RouterOutletMap_46 == null)) {
+            (this.__RouterOutletMap_46 = new RouterOutletMap());
+        }
+        return this.__RouterOutletMap_46;
+    }
+    get _NgModuleFactoryLoader_47() {
+        if ((this.__NgModuleFactoryLoader_47 == null)) {
+            (this.__NgModuleFactoryLoader_47 = new SystemJsNgModuleLoader(this._Compiler_16, this.parent.get(SystemJsNgModuleLoaderConfig, null)));
+        }
+        return this.__NgModuleFactoryLoader_47;
+    }
+    get _ROUTES_48() {
+        if ((this.__ROUTES_48 == null)) {
+            (this.__ROUTES_48 = [[
+                    {
+                        path: '',
+                        redirectTo: 'youtube',
+                        pathMatch: 'full'
+                    },
+                    {
+                        path: 'youtube',
+                        component: YoutubeComponent,
+                        children: [{
+                                path: 'player/:id',
+                                component: PlayerComponent
+                            }
+                        ]
+                    },
+                    {
+                        path: '**',
+                        component: PageNotFoundComponent
+                    }
+                ]
+            ]);
+        }
+        return this.__ROUTES_48;
+    }
+    get _Router_49() {
+        if ((this.__Router_49 == null)) {
+            (this.__Router_49 = setupRouter(this._ApplicationRef_15, this._UrlSerializer_45, this._RouterOutletMap_46, this._Location_44, this, this._NgModuleFactoryLoader_47, this._Compiler_16, this._ROUTES_48, this._ROUTER_CONFIGURATION_42, this.parent.get(UrlHandlingStrategy, null), this.parent.get(RouteReuseStrategy, null)));
+        }
+        return this.__Router_49;
+    }
+    get _ActivatedRoute_50() {
+        if ((this.__ActivatedRoute_50 == null)) {
+            (this.__ActivatedRoute_50 = rootRoute(this._Router_49));
+        }
+        return this.__ActivatedRoute_50;
+    }
+    get _PreloadAllModules_54() {
+        if ((this.__PreloadAllModules_54 == null)) {
+            (this.__PreloadAllModules_54 = new PreloadAllModules());
+        }
+        return this.__PreloadAllModules_54;
+    }
+    get _ROUTER_INITIALIZER_55() {
+        if ((this.__ROUTER_INITIALIZER_55 == null)) {
+            (this.__ROUTER_INITIALIZER_55 = initialRouterNavigation(this._Router_49, this._ApplicationRef_15, this._RouterPreloader_53, this._ROUTER_CONFIGURATION_42));
+        }
+        return this.__ROUTER_INITIALIZER_55;
+    }
+    get _APP_BOOTSTRAP_LISTENER_56() {
+        if ((this.__APP_BOOTSTRAP_LISTENER_56 == null)) {
+            (this.__APP_BOOTSTRAP_LISTENER_56 = [this._ROUTER_INITIALIZER_55]);
+        }
+        return this.__APP_BOOTSTRAP_LISTENER_56;
+    }
+    createInternal() {
         this._CommonModule_0 = new CommonModule();
         this._ApplicationModule_1 = new ApplicationModule();
         this._BrowserModule_2 = new BrowserModule(this.parent.get(BrowserModule, null));
@@ -57441,8 +57217,8 @@ var AppModuleInjector = (function (_super) {
         this._PreloadingStrategy_52 = this._NoPreloading_51;
         this._RouterPreloader_53 = new RouterPreloader(this._Router_49, this._NgModuleFactoryLoader_47, this._Compiler_16, this, this._PreloadingStrategy_52);
         return this._AppModule_8;
-    };
-    AppModuleInjector.prototype.getInternal = function (token, notFoundResult) {
+    }
+    getInternal(token, notFoundResult) {
         if ((token === CommonModule)) {
             return this._CommonModule_0;
         }
@@ -57615,20 +57391,18 @@ var AppModuleInjector = (function (_super) {
             return this._APP_BOOTSTRAP_LISTENER_56;
         }
         return notFoundResult;
-    };
-    AppModuleInjector.prototype.destroyInternal = function () {
+    }
+    destroyInternal() {
         this._ApplicationRef__14.ngOnDestroy();
         this._RouterPreloader_53.ngOnDestroy();
-    };
-    return AppModuleInjector;
-}(NgModuleInjector));
-var AppModuleNgFactory = new NgModuleFactory(AppModuleInjector, AppModule);
+    }
+}
+const AppModuleNgFactory = new NgModuleFactory(AppModuleInjector, AppModule);
 
 /**
  * Created on 2017-01-04.
  * @author: Gman Park
  */
-
 // RxJS
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...

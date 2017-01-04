@@ -1,3 +1,8 @@
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 (function () {
     'use strict';
     /**
@@ -42159,7 +42164,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$161 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$160 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -42291,7 +42296,7 @@
       * *
      */
     var BaseResponseOptions = (function (_super) {
-        __extends$161(BaseResponseOptions, _super);
+        __extends$160(BaseResponseOptions, _super);
         function BaseResponseOptions() {
             _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() });
         }
@@ -42708,7 +42713,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$162 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$161 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -42735,7 +42740,7 @@
       * *
      */
     var Response = (function (_super) {
-        __extends$162(Response, _super);
+        __extends$161(Response, _super);
         /**
          * @param {?} responseOptions
          */
@@ -42844,7 +42849,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$160 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$159 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -42872,7 +42877,7 @@
         return JSONPConnection;
     }());
     var JSONPConnection_ = (function (_super) {
-        __extends$160(JSONPConnection_, _super);
+        __extends$159(JSONPConnection_, _super);
         /**
          * @param {?} req
          * @param {?} _dom
@@ -42965,14 +42970,14 @@
      * @abstract
      */
     var JSONPBackend = (function (_super) {
-        __extends$160(JSONPBackend, _super);
+        __extends$159(JSONPBackend, _super);
         function JSONPBackend() {
             _super.apply(this, arguments);
         }
         return JSONPBackend;
     }(ConnectionBackend));
     var JSONPBackend_ = (function (_super) {
-        __extends$160(JSONPBackend_, _super);
+        __extends$159(JSONPBackend_, _super);
         /**
          * @param {?} _browserJSONP
          * @param {?} _baseResponseOptions
@@ -43256,7 +43261,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$163 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$162 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -43394,7 +43399,7 @@
       * *
      */
     var BaseRequestOptions = (function (_super) {
-        __extends$163(BaseRequestOptions, _super);
+        __extends$162(BaseRequestOptions, _super);
         function BaseRequestOptions() {
             _super.call(this, { method: RequestMethod.Get, headers: new Headers() });
         }
@@ -43412,7 +43417,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$165 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$164 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -43457,7 +43462,7 @@
       * *
      */
     var Request = (function (_super) {
-        __extends$165(Request, _super);
+        __extends$164(Request, _super);
         /**
          * @param {?} requestOptions
          */
@@ -43571,7 +43576,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$164 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$163 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -43780,7 +43785,7 @@
      * @experimental
      */
     var Jsonp = (function (_super) {
-        __extends$164(Jsonp, _super);
+        __extends$163(Jsonp, _super);
         /**
          * @param {?} backend
          * @param {?} defaultOptions
@@ -44097,7 +44102,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$167 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$166 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -44111,7 +44116,7 @@
       * *
      */
     var ControlContainer = (function (_super) {
-        __extends$167(ControlContainer, _super);
+        __extends$166(ControlContainer, _super);
         function ControlContainer() {
             _super.apply(this, arguments);
         }
@@ -44862,7 +44867,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$168 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$167 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -44884,7 +44889,7 @@
      * @abstract
      */
     var NgControl = (function (_super) {
-        __extends$168(NgControl, _super);
+        __extends$167(NgControl, _super);
         function NgControl() {
             _super.apply(this, arguments);
             /** @internal */
@@ -45883,7 +45888,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$166 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$165 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -45895,7 +45900,7 @@
       * *
      */
     var AbstractFormGroupDirective = (function (_super) {
-        __extends$166(AbstractFormGroupDirective, _super);
+        __extends$165(AbstractFormGroupDirective, _super);
         function AbstractFormGroupDirective() {
             _super.apply(this, arguments);
         }
@@ -45970,7 +45975,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$169 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$168 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -46057,7 +46062,7 @@
       * *
      */
     var NgControlStatus = (function (_super) {
-        __extends$169(NgControlStatus, _super);
+        __extends$168(NgControlStatus, _super);
         /**
          * @param {?} cd
          */
@@ -46081,7 +46086,7 @@
       * *
      */
     var NgControlStatusGroup = (function (_super) {
-        __extends$169(NgControlStatusGroup, _super);
+        __extends$168(NgControlStatusGroup, _super);
         /**
          * @param {?} cd
          */
@@ -46109,7 +46114,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$171 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$170 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -46162,7 +46167,7 @@
       * Once a reference implementation of the spec is available, switch to it.
      */
     var EventEmitter$1 = (function (_super) {
-        __extends$171(EventEmitter, _super);
+        __extends$170(EventEmitter, _super);
         /**
          *  Creates an instance of [EventEmitter], which depending on [isAsync],
           * delivers events synchronously or asynchronously.
@@ -46226,7 +46231,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$172 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$171 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -46989,7 +46994,7 @@
       * *
      */
     var FormControl = (function (_super) {
-        __extends$172(FormControl, _super);
+        __extends$171(FormControl, _super);
         /**
          * @param {?=} formState
          * @param {?=} validator
@@ -47204,7 +47209,7 @@
       * *
      */
     var FormGroup = (function (_super) {
-        __extends$172(FormGroup, _super);
+        __extends$171(FormGroup, _super);
         /**
          * @param {?} controls
          * @param {?=} validator
@@ -47553,7 +47558,7 @@
       * *
      */
     var FormArray = (function (_super) {
-        __extends$172(FormArray, _super);
+        __extends$171(FormArray, _super);
         /**
          * @param {?} controls
          * @param {?=} validator
@@ -47840,7 +47845,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$170 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$169 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -47882,7 +47887,7 @@
       * @stable
      */
     var NgForm = (function (_super) {
-        __extends$170(NgForm, _super);
+        __extends$169(NgForm, _super);
         /**
          * @param {?} validators
          * @param {?} asyncValidators
@@ -48121,7 +48126,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$174 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$173 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -48155,7 +48160,7 @@
       * *
      */
     var NgModelGroup = (function (_super) {
-        __extends$174(NgModelGroup, _super);
+        __extends$173(NgModelGroup, _super);
         /**
          * @param {?} parent
          * @param {?} validators
@@ -48198,7 +48203,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$173 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$172 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -48284,7 +48289,7 @@
       * @stable
      */
     var NgModel = (function (_super) {
-        __extends$173(NgModel, _super);
+        __extends$172(NgModel, _super);
         /**
          * @param {?} parent
          * @param {?} validators
@@ -48532,7 +48537,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$175 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$174 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -48584,7 +48589,7 @@
       * @stable
      */
     var FormControlDirective = (function (_super) {
-        __extends$175(FormControlDirective, _super);
+        __extends$174(FormControlDirective, _super);
         /**
          * @param {?} validators
          * @param {?} asyncValidators
@@ -48698,7 +48703,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$177 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$176 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -48743,7 +48748,7 @@
       * @stable
      */
     var FormGroupDirective = (function (_super) {
-        __extends$177(FormGroupDirective, _super);
+        __extends$176(FormGroupDirective, _super);
         /**
          * @param {?} _validators
          * @param {?} _asyncValidators
@@ -48964,7 +48969,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$178 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$177 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -49017,7 +49022,7 @@
       * *
      */
     var FormGroupName = (function (_super) {
-        __extends$178(FormGroupName, _super);
+        __extends$177(FormGroupName, _super);
         /**
          * @param {?} parent
          * @param {?} validators
@@ -49102,7 +49107,7 @@
       * *
      */
     var FormArrayName = (function (_super) {
-        __extends$178(FormArrayName, _super);
+        __extends$177(FormArrayName, _super);
         /**
          * @param {?} parent
          * @param {?} validators
@@ -49210,7 +49215,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$176 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$175 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -49271,7 +49276,7 @@
       * @stable
      */
     var FormControlName = (function (_super) {
-        __extends$176(FormControlName, _super);
+        __extends$175(FormControlName, _super);
         /**
          * @param {?} parent
          * @param {?} validators
@@ -49410,7 +49415,7 @@
         };
         return FormControlName;
     }(NgControl));
-    var __extends$179 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$178 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -49496,7 +49501,7 @@
       * *
      */
     var CheckboxRequiredValidator = (function (_super) {
-        __extends$179(CheckboxRequiredValidator, _super);
+        __extends$178(CheckboxRequiredValidator, _super);
         function CheckboxRequiredValidator() {
             _super.apply(this, arguments);
         }
@@ -49858,15 +49863,15 @@
         AppComponent.prototype.setTitle = function (newTitle) {
             this.titleService.setTitle(newTitle);
         };
-        AppComponent = __decorate$1([
-            Component({
-                selector: 'my-app',
-                templateUrl: 'app.component.html'
-            }),
-            __metadata$1('design:paramtypes', [Title])
-        ], AppComponent);
         return AppComponent;
     }());
+    AppComponent = __decorate$1([
+        Component({
+            selector: 'my-app',
+            templateUrl: 'app.component.html'
+        }),
+        __metadata$1('design:paramtypes', [Title])
+    ], AppComponent);
     /**
      * @license
      * Copyright Google Inc. All Rights Reserved.
@@ -49874,7 +49879,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$180 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$179 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -49888,7 +49893,7 @@
      */
     var PRIMARY_OUTLET = 'primary';
     var NavigationCancelingError = (function (_super) {
-        __extends$180(NavigationCancelingError, _super);
+        __extends$179(NavigationCancelingError, _super);
         /**
          * @param {?} message
          */
@@ -51702,7 +51707,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    var __extends$181 = (undefined && undefined.__extends) || function (d, b) {
+    var __extends$180 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
                 d[p] = b[p];
@@ -51732,7 +51737,7 @@
       * *
      */
     var RouterState = (function (_super) {
-        __extends$181(RouterState, _super);
+        __extends$180(RouterState, _super);
         /**
          * @param {?} root
          * @param {?} snapshot
@@ -52034,7 +52039,7 @@
       * *
      */
     var RouterStateSnapshot = (function (_super) {
-        __extends$181(RouterStateSnapshot, _super);
+        __extends$180(RouterStateSnapshot, _super);
         /**
          * @param {?} url
          * @param {?} root
@@ -55447,7 +55452,7 @@
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
             return Reflect.metadata(k, v);
     };
-    var YoutubeComponent = (function () {
+    var YoutubeComponent_1 = (function () {
         function YoutubeComponent(cdRef, router) {
             this.query = 'donald trump';
             this.order = 'relevance';
@@ -55460,7 +55465,7 @@
             var _this = this;
             window['gapi'].load('client', function () {
                 var oClient = window['gapi']['client'];
-                oClient.setApiKey(YoutubeComponent.apiKey);
+                oClient.setApiKey(YoutubeComponent_1.apiKey);
                 oClient.load('youtube', 'v3').then(function () {
                     _this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
                     _this.requestYoutubeData({ type: 'init' });
@@ -55514,22 +55519,23 @@
             this.isLoading = false;
             this.cdRef.detectChanges();
         };
-        YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
-        __decorate$2([
-            HostListener('window:googleApiClientReady'),
-            __metadata$2('design:type', Function),
-            __metadata$2('design:paramtypes', []),
-            __metadata$2('design:returntype', void 0)
-        ], YoutubeComponent.prototype, "ngOnInit", null);
-        YoutubeComponent = __decorate$2([
-            Component({
-                styleUrls: ['youtube.component.css'],
-                templateUrl: 'youtube.component.html'
-            }),
-            __metadata$2('design:paramtypes', [ChangeDetectorRef, Router])
-        ], YoutubeComponent);
         return YoutubeComponent;
     }());
+    var YoutubeComponent = YoutubeComponent_1;
+    YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
+    __decorate$2([
+        HostListener('window:googleApiClientReady'),
+        __metadata$2('design:type', Function),
+        __metadata$2('design:paramtypes', []),
+        __metadata$2('design:returntype', void 0)
+    ], YoutubeComponent.prototype, "ngOnInit", null);
+    YoutubeComponent = YoutubeComponent_1 = __decorate$2([
+        Component({
+            styleUrls: ['youtube.component.css'],
+            templateUrl: 'youtube.component.html'
+        }),
+        __metadata$2('design:paramtypes', [ChangeDetectorRef, Router])
+    ], YoutubeComponent);
     /**
      * Created on 2016-12-08.
      * @author: Gman Park
@@ -55633,15 +55639,15 @@
             this.player.loadVideoById(this.videoId);
             this.player.playVideo();
         };
-        PlayerComponent = __decorate$3([
-            Component({
-                templateUrl: 'player.component.html',
-                styleUrls: ['./player.component.css']
-            }),
-            __metadata$3('design:paramtypes', [ActivatedRoute, ChangeDetectorRef])
-        ], PlayerComponent);
         return PlayerComponent;
     }());
+    PlayerComponent = __decorate$3([
+        Component({
+            templateUrl: 'player.component.html',
+            styleUrls: ['./player.component.css']
+        }),
+        __metadata$3('design:paramtypes', [ActivatedRoute, ChangeDetectorRef])
+    ], PlayerComponent);
     /**
      * Created on 2016-12-14.
      * @author: Gman Park
@@ -55664,14 +55670,14 @@
         function PageNotFoundComponent() {
             this.title = ' Page Not Found ';
         }
-        PageNotFoundComponent = __decorate$4([
-            Component({
-                template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
-            }),
-            __metadata$4('design:paramtypes', [])
-        ], PageNotFoundComponent);
         return PageNotFoundComponent;
     }());
+    PageNotFoundComponent = __decorate$4([
+        Component({
+            template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
+        }),
+        __metadata$4('design:paramtypes', [])
+    ], PageNotFoundComponent);
     /**
      * Created on 2016-12-06.
      * @author: Gman Park
@@ -55710,29 +55716,29 @@
     var AppModule = (function () {
         function AppModule() {
         }
-        AppModule = __decorate([
-            NgModule({
-                imports: [
-                    BrowserModule,
-                    HttpModule,
-                    FormsModule,
-                    routingModule,
-                ],
-                declarations: [
-                    AppComponent,
-                    YoutubeComponent,
-                    PlayerComponent,
-                    PageNotFoundComponent
-                ],
-                providers: [
-                    Title
-                ],
-                bootstrap: [AppComponent],
-            }),
-            __metadata('design:paramtypes', [])
-        ], AppModule);
         return AppModule;
     }());
+    AppModule = __decorate([
+        NgModule({
+            imports: [
+                BrowserModule,
+                HttpModule,
+                FormsModule,
+                routingModule,
+            ],
+            declarations: [
+                AppComponent,
+                YoutubeComponent,
+                PlayerComponent,
+                PageNotFoundComponent
+            ],
+            providers: [
+                Title
+            ],
+            bootstrap: [AppComponent],
+        }),
+        __metadata('design:paramtypes', [])
+    ], AppModule);
     /**
      * @fileoverview This file is generated by the Angular 2 template compiler.
      * Do not edit.
@@ -56263,13 +56269,6 @@
      * @suppress {suspiciousCode,uselessCode,missingProperties}
      */
     /* tslint:disable */
-    var __extends$182 = (undefined && undefined.__extends) || function (d, b) {
-        for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
     var Wrapper_YoutubeComponent = (function () {
         function Wrapper_YoutubeComponent(p0, p1) {
             this._changed = false;
@@ -56306,7 +56305,7 @@
     }());
     var renderType_YoutubeComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
     var View_YoutubeComponent_Host0 = (function (_super) {
-        __extends$182(View_YoutubeComponent_Host0, _super);
+        __extends(View_YoutubeComponent_Host0, _super);
         function View_YoutubeComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_YoutubeComponent_Host0, renderType_YoutubeComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         }
@@ -56347,7 +56346,7 @@
     var styles_YoutubeComponent = [styles];
     var renderType_YoutubeComponent = createRenderComponentType('', 0, ViewEncapsulation.Emulated, styles_YoutubeComponent, {});
     var View_YoutubeComponent0 = (function (_super) {
-        __extends$182(View_YoutubeComponent0, _super);
+        __extends(View_YoutubeComponent0, _super);
         function View_YoutubeComponent0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_YoutubeComponent0, renderType_YoutubeComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
             this._expr_150 = UNINITIALIZED;
@@ -56825,7 +56824,7 @@
         return View_YoutubeComponent0;
     }(AppView));
     var View_YoutubeComponent1 = (function (_super) {
-        __extends$182(View_YoutubeComponent1, _super);
+        __extends(View_YoutubeComponent1, _super);
         function View_YoutubeComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
             _super.call(this, View_YoutubeComponent1, renderType_YoutubeComponent, ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways, declaredViewContainer);
             this._map_21 = pureProxy1(function (p0) {
@@ -56948,13 +56947,6 @@
      * @suppress {suspiciousCode,uselessCode,missingProperties}
      */
     /* tslint:disable */
-    var __extends$183 = (undefined && undefined.__extends) || function (d, b) {
-        for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
     var Wrapper_PlayerComponent = (function () {
         function Wrapper_PlayerComponent(p0, p1) {
             this._changed = false;
@@ -56987,7 +56979,7 @@
     }());
     var renderType_PlayerComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
     var View_PlayerComponent_Host0 = (function (_super) {
-        __extends$183(View_PlayerComponent_Host0, _super);
+        __extends(View_PlayerComponent_Host0, _super);
         function View_PlayerComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_PlayerComponent_Host0, renderType_PlayerComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         }
@@ -57021,7 +57013,7 @@
     var styles_PlayerComponent = [styles$1];
     var renderType_PlayerComponent = createRenderComponentType('', 0, ViewEncapsulation.Emulated, styles_PlayerComponent, {});
     var View_PlayerComponent0 = (function (_super) {
-        __extends$183(View_PlayerComponent0, _super);
+        __extends(View_PlayerComponent0, _super);
         function View_PlayerComponent0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_PlayerComponent0, renderType_PlayerComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
             this._expr_12 = UNINITIALIZED;
@@ -57081,13 +57073,6 @@
      * @suppress {suspiciousCode,uselessCode,missingProperties}
      */
     /* tslint:disable */
-    var __extends$184 = (undefined && undefined.__extends) || function (d, b) {
-        for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
     var Wrapper_PageNotFoundComponent = (function () {
         function Wrapper_PageNotFoundComponent() {
             this._changed = false;
@@ -57115,7 +57100,7 @@
     }());
     var renderType_PageNotFoundComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
     var View_PageNotFoundComponent_Host0 = (function (_super) {
-        __extends$184(View_PageNotFoundComponent_Host0, _super);
+        __extends(View_PageNotFoundComponent_Host0, _super);
         function View_PageNotFoundComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_PageNotFoundComponent_Host0, renderType_PageNotFoundComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         }
@@ -57149,7 +57134,7 @@
     var styles_PageNotFoundComponent = [];
     var renderType_PageNotFoundComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_PageNotFoundComponent, {});
     var View_PageNotFoundComponent0 = (function (_super) {
-        __extends$184(View_PageNotFoundComponent0, _super);
+        __extends(View_PageNotFoundComponent0, _super);
         function View_PageNotFoundComponent0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_PageNotFoundComponent0, renderType_PageNotFoundComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
             this._expr_12 = UNINITIALIZED;
@@ -57199,13 +57184,6 @@
      * @suppress {suspiciousCode,uselessCode,missingProperties}
      */
     /* tslint:disable */
-    var __extends$185 = (undefined && undefined.__extends) || function (d, b) {
-        for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
     var Wrapper_AppComponent = (function () {
         function Wrapper_AppComponent(p0) {
             this._changed = false;
@@ -57233,7 +57211,7 @@
     }());
     var renderType_AppComponent_Host = createRenderComponentType('', 0, ViewEncapsulation.None, [], {});
     var View_AppComponent_Host0 = (function (_super) {
-        __extends$185(View_AppComponent_Host0, _super);
+        __extends(View_AppComponent_Host0, _super);
         function View_AppComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_AppComponent_Host0, renderType_AppComponent_Host, ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         }
@@ -57267,7 +57245,7 @@
     var styles_AppComponent = [];
     var renderType_AppComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_AppComponent, {});
     var View_AppComponent0 = (function (_super) {
-        __extends$185(View_AppComponent0, _super);
+        __extends(View_AppComponent0, _super);
         function View_AppComponent0(viewUtils, parentView, parentIndex, parentElement) {
             _super.call(this, View_AppComponent0, renderType_AppComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways);
         }
@@ -57309,15 +57287,8 @@
      * @suppress {suspiciousCode,uselessCode,missingProperties}
      */
     /* tslint:disable */
-    var __extends$159 = (undefined && undefined.__extends) || function (d, b) {
-        for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p];
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
     var AppModuleInjector = (function (_super) {
-        __extends$159(AppModuleInjector, _super);
+        __extends(AppModuleInjector, _super);
         function AppModuleInjector(parent) {
             _super.call(this, parent, [
                 YoutubeComponentNgFactory,
