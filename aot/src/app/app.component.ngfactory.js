@@ -4,6 +4,11 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 import * as import0 from '../../../src/app/app.component';
 import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
@@ -17,69 +22,73 @@ import * as import10 from '../../node_modules/@angular/router/src/directives/rou
 import * as import11 from '@angular/router/src/router_outlet_map';
 import * as import12 from '@angular/core/src/linker/component_factory_resolver';
 import * as import13 from '@angular/router/src/directives/router_outlet';
-export class Wrapper_AppComponent {
-    constructor(p0) {
+export var Wrapper_AppComponent = (function () {
+    function Wrapper_AppComponent(p0) {
         this._changed = false;
         this.context = new import0.AppComponent(p0);
     }
-    ngOnDetach(view, componentView, el) {
-    }
-    ngOnDestroy() {
-    }
-    ngDoCheck(view, el, throwOnChange) {
+    Wrapper_AppComponent.prototype.ngOnDetach = function (view, componentView, el) {
+    };
+    Wrapper_AppComponent.prototype.ngOnDestroy = function () {
+    };
+    Wrapper_AppComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         return changed;
-    }
-    checkHost(view, componentView, el, throwOnChange) {
-    }
-    handleEvent(eventName, $event) {
+    };
+    Wrapper_AppComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
+    };
+    Wrapper_AppComponent.prototype.handleEvent = function (eventName, $event) {
         var result = true;
         return result;
-    }
-    subscribe(view, _eventHandler) {
+    };
+    Wrapper_AppComponent.prototype.subscribe = function (view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    }
-}
+    };
+    return Wrapper_AppComponent;
+}());
 var renderType_AppComponent_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
-class View_AppComponent_Host0 extends import1.AppView {
-    constructor(viewUtils, parentView, parentIndex, parentElement) {
-        super(View_AppComponent_Host0, renderType_AppComponent_Host, import5.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
+var View_AppComponent_Host0 = (function (_super) {
+    __extends(View_AppComponent_Host0, _super);
+    function View_AppComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
+        _super.call(this, View_AppComponent_Host0, renderType_AppComponent_Host, import5.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
     }
-    createInternal(rootSelector) {
+    View_AppComponent_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'my-app', import3.EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_AppComponent0(this.viewUtils, this, 0, this._el_0);
         this._AppComponent_0_3 = new Wrapper_AppComponent(this.injectorGet(import8.Title, this.parentIndex));
         this.compView_0.create(this._AppComponent_0_3.context);
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), null);
         return new import7.ComponentRef_(0, this, this._el_0, this._AppComponent_0_3.context);
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+    };
+    View_AppComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import0.AppComponent) && (0 === requestNodeIndex))) {
             return this._AppComponent_0_3.context;
         }
         return notFoundResult;
-    }
-    detectChangesInternal(throwOnChange) {
+    };
+    View_AppComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
         this._AppComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    }
-    destroyInternal() {
+    };
+    View_AppComponent_Host0.prototype.destroyInternal = function () {
         this.compView_0.destroy();
-    }
-    visitRootNodesInternal(cb, ctx) {
+    };
+    View_AppComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
         cb(this._el_0, ctx);
-    }
-}
-export const AppComponentNgFactory = new import7.ComponentFactory('my-app', View_AppComponent_Host0, import0.AppComponent);
-const styles_AppComponent = [];
+    };
+    return View_AppComponent_Host0;
+}(import1.AppView));
+export var AppComponentNgFactory = new import7.ComponentFactory('my-app', View_AppComponent_Host0, import0.AppComponent);
+var styles_AppComponent = [];
 var renderType_AppComponent = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, styles_AppComponent, {});
-export class View_AppComponent0 extends import1.AppView {
-    constructor(viewUtils, parentView, parentIndex, parentElement) {
-        super(View_AppComponent0, renderType_AppComponent, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
+export var View_AppComponent0 = (function (_super) {
+    __extends(View_AppComponent0, _super);
+    function View_AppComponent0(viewUtils, parentView, parentIndex, parentElement) {
+        _super.call(this, View_AppComponent0, renderType_AppComponent, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
     }
-    createInternal(rootSelector) {
-        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    View_AppComponent0.prototype.createInternal = function (rootSelector) {
+        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', import3.EMPTY_INLINE_ARRAY, null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'router-outlet', import3.EMPTY_INLINE_ARRAY, null);
@@ -93,20 +102,21 @@ export class View_AppComponent0 extends import1.AppView {
             this._text_3
         ]), null);
         return null;
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+    };
+    View_AppComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import13.RouterOutlet) && (2 === requestNodeIndex))) {
             return this._RouterOutlet_2_5.context;
         }
         return notFoundResult;
-    }
-    detectChangesInternal(throwOnChange) {
+    };
+    View_AppComponent0.prototype.detectChangesInternal = function (throwOnChange) {
         this._RouterOutlet_2_5.ngDoCheck(this, this._el_2, throwOnChange);
         this._vc_2.detectChangesInNestedViews(throwOnChange);
-    }
-    destroyInternal() {
+    };
+    View_AppComponent0.prototype.destroyInternal = function () {
         this._vc_2.destroyNestedViews();
         this._RouterOutlet_2_5.ngOnDestroy();
-    }
-}
+    };
+    return View_AppComponent0;
+}(import1.AppView));
 //# sourceMappingURL=app.component.ngfactory.js.map

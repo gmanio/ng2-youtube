@@ -2,6 +2,7 @@
  * Created on 2017-01-04.
  * @author: Gman Park
  */
+import 'core-js/client/shim';
 import 'zone.js';
 import 'reflect-metadata';
 

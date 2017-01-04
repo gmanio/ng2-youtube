@@ -4,6 +4,11 @@
  * @suppress {suspiciousCode,uselessCode,missingProperties}
  */
 /* tslint:disable */
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 import * as import0 from '../../../../src/app/youtube/youtube.component';
 import * as import1 from '@angular/core/src/linker/view';
 import * as import3 from '@angular/core/src/linker/view_utils';
@@ -42,16 +47,16 @@ import * as import35 from '@angular/core/src/change_detection/differs/keyvalue_d
 import * as import36 from '@angular/common/src/directives/ng_style';
 import * as import37 from '@angular/router/src/directives/router_link';
 import * as import38 from '@angular/router/src/directives/router_link_active';
-export class Wrapper_YoutubeComponent {
-    constructor(p0, p1) {
+export var Wrapper_YoutubeComponent = (function () {
+    function Wrapper_YoutubeComponent(p0, p1) {
         this._changed = false;
         this.context = new import0.YoutubeComponent(p0, p1);
     }
-    ngOnDetach(view, componentView, el) {
-    }
-    ngOnDestroy() {
-    }
-    ngDoCheck(view, el, throwOnChange) {
+    Wrapper_YoutubeComponent.prototype.ngOnDetach = function (view, componentView, el) {
+    };
+    Wrapper_YoutubeComponent.prototype.ngOnDestroy = function () {
+    };
+    Wrapper_YoutubeComponent.prototype.ngDoCheck = function (view, el, throwOnChange) {
         var changed = this._changed;
         this._changed = false;
         if (!throwOnChange) {
@@ -60,27 +65,29 @@ export class Wrapper_YoutubeComponent {
             }
         }
         return changed;
-    }
-    checkHost(view, componentView, el, throwOnChange) {
-    }
-    handleEvent(eventName, $event) {
+    };
+    Wrapper_YoutubeComponent.prototype.checkHost = function (view, componentView, el, throwOnChange) {
+    };
+    Wrapper_YoutubeComponent.prototype.handleEvent = function (eventName, $event) {
         var result = true;
         if ((eventName == 'window:googleApiClientReady')) {
-            const pd_sub_0 = (this.context.ngOnInit() !== false);
+            var pd_sub_0 = (this.context.ngOnInit() !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    subscribe(view, _eventHandler) {
+    };
+    Wrapper_YoutubeComponent.prototype.subscribe = function (view, _eventHandler) {
         this._eventHandler = _eventHandler;
-    }
-}
+    };
+    return Wrapper_YoutubeComponent;
+}());
 var renderType_YoutubeComponent_Host = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.None, [], {});
-class View_YoutubeComponent_Host0 extends import1.AppView {
-    constructor(viewUtils, parentView, parentIndex, parentElement) {
-        super(View_YoutubeComponent_Host0, renderType_YoutubeComponent_Host, import5.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
+var View_YoutubeComponent_Host0 = (function (_super) {
+    __extends(View_YoutubeComponent_Host0, _super);
+    function View_YoutubeComponent_Host0(viewUtils, parentView, parentIndex, parentElement) {
+        _super.call(this, View_YoutubeComponent_Host0, renderType_YoutubeComponent_Host, import5.ViewType.HOST, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
     }
-    createInternal(rootSelector) {
+    View_YoutubeComponent_Host0.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.selectOrCreateRenderHostElement(this.renderer, 'ng-component', import3.EMPTY_INLINE_ARRAY, rootSelector, null);
         this.compView_0 = new View_YoutubeComponent0(this.viewUtils, this, 0, this._el_0);
         this._YoutubeComponent_0_3 = new Wrapper_YoutubeComponent(this.compView_0.ref, this.injectorGet(import8.Router, this.parentIndex));
@@ -88,41 +95,43 @@ class View_YoutubeComponent_Host0 extends import1.AppView {
         var disposable_0 = import3.subscribeToRenderElement(this, this._el_0, new import3.InlineArray2(2, 'googleApiClientReady', 'window'), this.eventHandler(this.handleEvent_0));
         this.init(this._el_0, (this.renderer.directRenderer ? null : [this._el_0]), [disposable_0]);
         return new import7.ComponentRef_(0, this, this._el_0, this._YoutubeComponent_0_3.context);
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+    };
+    View_YoutubeComponent_Host0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import0.YoutubeComponent) && (0 === requestNodeIndex))) {
             return this._YoutubeComponent_0_3.context;
         }
         return notFoundResult;
-    }
-    detectChangesInternal(throwOnChange) {
+    };
+    View_YoutubeComponent_Host0.prototype.detectChangesInternal = function (throwOnChange) {
         this._YoutubeComponent_0_3.ngDoCheck(this, this._el_0, throwOnChange);
         this.compView_0.internalDetectChanges(throwOnChange);
-    }
-    destroyInternal() {
+    };
+    View_YoutubeComponent_Host0.prototype.destroyInternal = function () {
         this.compView_0.destroy();
-    }
-    visitRootNodesInternal(cb, ctx) {
+    };
+    View_YoutubeComponent_Host0.prototype.visitRootNodesInternal = function (cb, ctx) {
         cb(this._el_0, ctx);
-    }
-    handleEvent_0(eventName, $event) {
+    };
+    View_YoutubeComponent_Host0.prototype.handleEvent_0 = function (eventName, $event) {
         this.compView_0.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._YoutubeComponent_0_3.handleEvent(eventName, $event) && result);
         return result;
-    }
-}
-export const YoutubeComponentNgFactory = new import7.ComponentFactory('ng-component', View_YoutubeComponent_Host0, import0.YoutubeComponent);
-const styles_YoutubeComponent = [import9.styles];
+    };
+    return View_YoutubeComponent_Host0;
+}(import1.AppView));
+export var YoutubeComponentNgFactory = new import7.ComponentFactory('ng-component', View_YoutubeComponent_Host0, import0.YoutubeComponent);
+var styles_YoutubeComponent = [import9.styles];
 var renderType_YoutubeComponent = import3.createRenderComponentType('', 0, import4.ViewEncapsulation.Emulated, styles_YoutubeComponent, {});
-export class View_YoutubeComponent0 extends import1.AppView {
-    constructor(viewUtils, parentView, parentIndex, parentElement) {
-        super(View_YoutubeComponent0, renderType_YoutubeComponent, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
+export var View_YoutubeComponent0 = (function (_super) {
+    __extends(View_YoutubeComponent0, _super);
+    function View_YoutubeComponent0(viewUtils, parentView, parentIndex, parentElement) {
+        _super.call(this, View_YoutubeComponent0, renderType_YoutubeComponent, import5.ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways);
         this._expr_150 = import16.UNINITIALIZED;
         this._expr_151 = import16.UNINITIALIZED;
     }
-    createInternal(rootSelector) {
-        const parentRenderNode = this.renderer.createViewRoot(this.parentElement);
+    View_YoutubeComponent0.prototype.createInternal = function (rootSelector) {
+        var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
         this._el_0 = import3.createRenderElement(this.renderer, parentRenderNode, 'div', new import3.InlineArray2(2, 'class', 'mdl-layout mdl-js-layout mdl-layout--fixed-header'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'div', new import3.InlineArray2(2, 'class', 'nav_youtube mdl-layout__header '), null);
@@ -436,8 +445,8 @@ export class View_YoutubeComponent0 extends import1.AppView {
             disposable_8
         ]);
         return null;
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+    };
+    View_YoutubeComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import22.DefaultValueAccessor) && (18 === requestNodeIndex))) {
             return this._DefaultValueAccessor_18_3.context;
         }
@@ -463,143 +472,145 @@ export class View_YoutubeComponent0 extends import1.AppView {
             return this._RouterOutlet_139_5.context;
         }
         return notFoundResult;
-    }
-    detectChangesInternal(throwOnChange) {
+    };
+    View_YoutubeComponent0.prototype.detectChangesInternal = function (throwOnChange) {
         this._DefaultValueAccessor_18_3.ngDoCheck(this, this._el_18, throwOnChange);
-        const currVal_18_1_0 = this.context.query;
+        var currVal_18_1_0 = this.context.query;
         this._NgModel_18_5.check_model(currVal_18_1_0, throwOnChange, false);
         this._NgModel_18_5.ngDoCheck(this, this._el_18, throwOnChange);
         this._NgControlStatus_18_7.ngDoCheck(this, this._el_18, throwOnChange);
-        const currVal_107_0_0 = this.context.videos;
+        var currVal_107_0_0 = this.context.videos;
         this._NgFor_107_6.check_ngForOf(currVal_107_0_0, throwOnChange, false);
         this._NgFor_107_6.ngDoCheck(this, this._anchor_107, throwOnChange);
         this._RouterOutlet_139_5.ngDoCheck(this, this._el_139, throwOnChange);
         this._vc_107.detectChangesInNestedViews(throwOnChange);
         this._vc_139.detectChangesInNestedViews(throwOnChange);
         this._NgControlStatus_18_7.checkHost(this, this, this._el_18, throwOnChange);
-        const currVal_150 = import3.inlineInterpolate(1, 'Sort by ', this.context.order, '');
+        var currVal_150 = import3.inlineInterpolate(1, 'Sort by ', this.context.order, '');
         if (import3.checkBinding(throwOnChange, this._expr_150, currVal_150)) {
             this.renderer.setText(this._text_42, currVal_150);
             this._expr_150 = currVal_150;
         }
-        const currVal_151 = !this.context.isLoading;
+        var currVal_151 = !this.context.isLoading;
         if (import3.checkBinding(throwOnChange, this._expr_151, currVal_151)) {
             this.renderer.setElementProperty(this._el_121, 'hidden', currVal_151);
             this._expr_151 = currVal_151;
         }
-    }
-    destroyInternal() {
+    };
+    View_YoutubeComponent0.prototype.destroyInternal = function () {
         this._vc_107.destroyNestedViews();
         this._vc_139.destroyNestedViews();
         this._NgModel_18_5.ngOnDestroy();
         this._RouterOutlet_139_5.ngOnDestroy();
-    }
-    createEmbeddedViewInternal(nodeIndex) {
+    };
+    View_YoutubeComponent0.prototype.createEmbeddedViewInternal = function (nodeIndex) {
         if ((nodeIndex == 107)) {
             return new View_YoutubeComponent1(this.viewUtils, this, 107, this._anchor_107, this._vc_107);
         }
         return null;
-    }
-    handleEvent_10(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_10 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onSearch($event) !== false);
+            var pd_sub_0 = (this.context.onSearch($event) !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_18(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_18 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._DefaultValueAccessor_18_3.handleEvent(eventName, $event) && result);
         if ((eventName == 'ngModelChange')) {
-            const pd_sub_0 = ((this.context.query = $event) !== false);
+            var pd_sub_0 = ((this.context.query = $event) !== false);
             result = (pd_sub_0 && result);
         }
         if ((eventName == 'keypress')) {
-            const pd_sub_1 = (this.context.onSearch($event) !== false);
+            var pd_sub_1 = (this.context.onSearch($event) !== false);
             result = (pd_sub_1 && result);
         }
         if ((eventName == 'blur')) {
-            const pd_sub_2 = (this.context.onSearch($event) !== false);
+            var pd_sub_2 = (this.context.onSearch($event) !== false);
             result = (pd_sub_2 && result);
         }
         return result;
-    }
-    handleEvent_45(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_45 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('viewCount') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('viewCount') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_54(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_54 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('rating') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('rating') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_63(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_63 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('relevance') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('relevance') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_72(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_72 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('date') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('date') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_81(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_81 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('videoCount') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('videoCount') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_90(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_90 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onClickedSort('title') !== false);
+            var pd_sub_0 = (this.context.onClickedSort('title') !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-    handleEvent_113(eventName, $event) {
+    };
+    View_YoutubeComponent0.prototype.handleEvent_113 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         if ((eventName == 'click')) {
-            const pd_sub_0 = (this.context.onLoadMoreContent() !== false);
+            var pd_sub_0 = (this.context.onLoadMoreContent() !== false);
             result = (pd_sub_0 && result);
         }
         return result;
-    }
-}
-class View_YoutubeComponent1 extends import1.AppView {
-    constructor(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
-        super(View_YoutubeComponent1, renderType_YoutubeComponent, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
-        this._map_21 = import3.pureProxy1((p0) => {
+    };
+    return View_YoutubeComponent0;
+}(import1.AppView));
+var View_YoutubeComponent1 = (function (_super) {
+    __extends(View_YoutubeComponent1, _super);
+    function View_YoutubeComponent1(viewUtils, parentView, parentIndex, parentElement, declaredViewContainer) {
+        _super.call(this, View_YoutubeComponent1, renderType_YoutubeComponent, import5.ViewType.EMBEDDED, viewUtils, parentView, parentIndex, parentElement, import6.ChangeDetectorStatus.CheckAlways, declaredViewContainer);
+        this._map_21 = import3.pureProxy1(function (p0) {
             return { 'background-image': p0 };
         });
         this._expr_22 = import16.UNINITIALIZED;
     }
-    createInternal(rootSelector) {
+    View_YoutubeComponent1.prototype.createInternal = function (rootSelector) {
         this._el_0 = import3.createRenderElement(this.renderer, null, 'li', new import3.InlineArray2(2, 'class', 'video_item show'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n                    ', null);
         this._el_2 = import3.createRenderElement(this.renderer, this._el_0, 'a', new import3.InlineArray2(2, 'routerLinkActive', 'active'), null);
@@ -641,8 +652,8 @@ class View_YoutubeComponent1 extends import1.AppView {
             this._text_15
         ]), [disposable_0]);
         return null;
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+    };
+    View_YoutubeComponent1.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import36.NgStyle) && ((4 <= requestNodeIndex) && (requestNodeIndex <= 13)))) {
             return this._NgStyle_4_3.context;
         }
@@ -653,15 +664,15 @@ class View_YoutubeComponent1 extends import1.AppView {
             return this._RouterLinkActive_2_4.context;
         }
         return notFoundResult;
-    }
-    detectChangesInternal(throwOnChange) {
-        const currVal_2_0_0 = import3.inlineInterpolate(1, './player/', this.context.$implicit.id.videoId, '');
+    };
+    View_YoutubeComponent1.prototype.detectChangesInternal = function (throwOnChange) {
+        var currVal_2_0_0 = import3.inlineInterpolate(1, './player/', this.context.$implicit.id.videoId, '');
         this._RouterLinkWithHref_2_3.check_routerLink(currVal_2_0_0, throwOnChange, false);
         this._RouterLinkWithHref_2_3.ngDoCheck(this, this._el_2, throwOnChange);
-        const currVal_2_1_0 = 'active';
+        var currVal_2_1_0 = 'active';
         this._RouterLinkActive_2_4.check_routerLinkActive(currVal_2_1_0, throwOnChange, false);
         this._RouterLinkActive_2_4.ngDoCheck(this, this._el_2, throwOnChange);
-        const currVal_4_0_0 = this._map_21((('url(' + this.context.$implicit.snippet.thumbnails.high.url) + ')'));
+        var currVal_4_0_0 = this._map_21((('url(' + this.context.$implicit.snippet.thumbnails.high.url) + ')'));
         this._NgStyle_4_3.check_ngStyle(currVal_4_0_0, throwOnChange, false);
         this._NgStyle_4_3.ngDoCheck(this, this._el_4, throwOnChange);
         if (!throwOnChange) {
@@ -680,24 +691,25 @@ class View_YoutubeComponent1 extends import1.AppView {
             }
         }
         this._RouterLinkWithHref_2_3.checkHost(this, this, this._el_2, throwOnChange);
-        const currVal_22 = import3.inlineInterpolate(1, '', this.context.$implicit.snippet.title, '');
+        var currVal_22 = import3.inlineInterpolate(1, '', this.context.$implicit.snippet.title, '');
         if (import3.checkBinding(throwOnChange, this._expr_22, currVal_22)) {
             this.renderer.setText(this._text_9, currVal_22);
             this._expr_22 = currVal_22;
         }
-    }
-    destroyInternal() {
+    };
+    View_YoutubeComponent1.prototype.destroyInternal = function () {
         this._RouterLinkWithHref_2_3.ngOnDestroy();
         this._RouterLinkActive_2_4.ngOnDestroy();
-    }
-    visitRootNodesInternal(cb, ctx) {
+    };
+    View_YoutubeComponent1.prototype.visitRootNodesInternal = function (cb, ctx) {
         cb(this._el_0, ctx);
-    }
-    handleEvent_2(eventName, $event) {
+    };
+    View_YoutubeComponent1.prototype.handleEvent_2 = function (eventName, $event) {
         this.markPathToRootAsCheckOnce();
         var result = true;
         result = (this._RouterLinkWithHref_2_3.handleEvent(eventName, $event) && result);
         return result;
-    }
-}
+    };
+    return View_YoutubeComponent1;
+}(import1.AppView));
 //# sourceMappingURL=youtube.component.ngfactory.js.map
