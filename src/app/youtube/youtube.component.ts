@@ -41,7 +41,6 @@ export class YoutubeComponent implements OnInit {
 
     }
 
-
     constructor(cdRef: ChangeDetectorRef, router: Router) {
         this.cdRef = cdRef;
         this.router = router;
@@ -101,6 +100,8 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
+        document.getElementById('search-field').blur();
+
         this.isLoading = false;
         this.cdRef.detectChanges();
     }
