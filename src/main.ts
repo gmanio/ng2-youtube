@@ -2,9 +2,9 @@
  * Created on 2016-12-06.
  * @author: Gman Park
  */
-import 'core-js/client/shim';
-import 'zone.js';
-import 'reflect-metadata';
+// import 'core-js/client/shim';
+// import 'zone.js';
+// import 'reflect-metadata';
 
 // RxJS
 import 'rxjs';

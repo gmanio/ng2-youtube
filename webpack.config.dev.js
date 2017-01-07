@@ -15,8 +15,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require("path");
 
 module.exports = {
-    devtool:'inline-source-map',
-
+    devtool: 'cheap-module-source-map',
     entry: {
         'bundle': ['./src/main.ts']
     },
@@ -72,6 +71,10 @@ module.exports = {
         historyApiFallback: true,
         compress: true,
         quiet: true,
-        progress: true
+        progress: true,
+        watchOptions: {
+            aggregateTimeout: 300,
+            poll: 1000
+        }
     }
 };

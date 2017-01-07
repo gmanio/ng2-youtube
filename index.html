@@ -8,16 +8,25 @@
     <meta name="description" content="angular2, webpack">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./dist/bundle.css">
-    <!-- polyfills -->
-    <!--<script src="./node_modules/core-js/client/shim.min.js"></script>-->
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- js -->
+    <!-- load the dependencies -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <!-- load our angular app with systemjs -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err) { console.error(err); });
+    </script>
 </head>
 <body>
 <my-app>
     <!-- Angular Application Area -->
 </my-app>
-<script src="./dist/bundle.min.js"></script>
 </body>
 </html>

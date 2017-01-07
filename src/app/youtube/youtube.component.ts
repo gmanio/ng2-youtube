@@ -100,9 +100,10 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
-        if(document.getElementById('search-field') != null){
+        setTimeout(()=>{
             document.getElementById('search-field').blur();
-        }
+        }, 3000);
+        // document.focus();
 
         this.isLoading = false;
         this.cdRef.detectChanges();
