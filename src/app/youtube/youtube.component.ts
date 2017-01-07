@@ -100,7 +100,9 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
-        document.getElementById('search-field').blur();
+        if(document.getElementById('search-field') != null){
+            document.getElementById('search-field').blur();
+        }
 
         this.isLoading = false;
         this.cdRef.detectChanges();
