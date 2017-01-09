@@ -2,14 +2,13 @@
 
 [ View ] : (https://gman.io/youtube)
 
+It is a good guidance for using Youtube API with angular2 framework. <br>
 This is no more using webpack for develop environment due to the reason that related dependencies. <br>
 
-It is a good guidance for using Youtube API with angular2 framework. <br>
-
 > Dev Environment : SystemJS <br>
-> Build Environment : Angular Ahead Of Time Compilation
+> Build Environment : Angular Ahead Of Time Compilation + rollUp + uglifyJS
 
-powered by Angular2 + webpack
+powered by Angular2 ( rollUp, systemJS, AOT process )
 
 > GmanPark @ 2016
 
