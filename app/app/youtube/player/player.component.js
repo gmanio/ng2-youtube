@@ -1,8 +1,3 @@
-/**
- * Created on 2016-12-08.
- * @author: Gman Park
- */
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12,8 +7,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
+import { Component, ChangeDetectorRef } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 var PlayerComponent = (function () {
     function PlayerComponent(router, cdRef) {
         var _this = this;
@@ -52,8 +47,6 @@ var PlayerComponent = (function () {
             videoId: this.videoId,
             events: {
                 'onReady': this.playVideo.bind(this),
-                // 'onStateChange': this.onPlayerStateChange.bind(this)
-                // 'onPlaybackQualityChange': onPlayerPlaybackQualityChange,
                 'onStateChange': this.onPlayerStateChange.bind(this),
             }
         });
@@ -68,19 +61,6 @@ var PlayerComponent = (function () {
             this.player.setSize(window.innerWidth, window.innerHeight);
         }
     };
-    /*
-     * -1(시작되지 않음)
-     0(종료됨)
-     1(재생 중)
-     2(일시중지됨)
-     3(버퍼링 중)
-     5(동영상 신호)
-     YT.PlayerState.ENDED
-     YT.PlayerState.PLAYING
-     YT.PlayerState.PAUSED
-     YT.PlayerState.BUFFERING
-     YT.PlayerState.CUED
-     */
     PlayerComponent.prototype.onPlayerStateChange = function (event) {
         switch (event.data) {
             case (0):
@@ -102,12 +82,11 @@ var PlayerComponent = (function () {
     return PlayerComponent;
 }());
 PlayerComponent = __decorate([
-    core_1.Component({
+    Component({
         moduleId: module.id,
         templateUrl: './player.component.html',
         styleUrls: ['./player.component.css']
     }),
-    __metadata("design:paramtypes", [router_1.ActivatedRoute, core_1.ChangeDetectorRef])
+    __metadata("design:paramtypes", [ActivatedRoute, ChangeDetectorRef])
 ], PlayerComponent);
-exports.PlayerComponent = PlayerComponent;
-//# sourceMappingURL=player.component.js.map
+export { PlayerComponent };

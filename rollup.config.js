@@ -8,7 +8,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import css from 'rollup-plugin-css-only';
 
 export default {
-    entry: 'src/main.aot.ts',
+    entry: 'app/main.aot.ts',
     dest: 'dist/bundle.rollup.js',
     format: 'iife',
     sourceMap: false,

@@ -1,0 +1,1 @@
+export var styles = ['.wrap_youtube_player[_ngcontent-%COMP%]{ position:absolute; z-index:100 }\r\n.btn_player-close[_ngcontent-%COMP%]{ position:absolute; width:25px; height:25px; background:#fff; opacity:0.3; z-index:100;}'];

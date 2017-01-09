@@ -1,8 +1,3 @@
-/**
- * Created on 2016-12-14.
- * @author: Gman Park
- */
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
+import { Component } from '@angular/core';
 var PageNotFoundComponent = (function () {
     function PageNotFoundComponent() {
         this.title = ' Page Not Found ';
@@ -20,10 +15,9 @@ var PageNotFoundComponent = (function () {
     return PageNotFoundComponent;
 }());
 PageNotFoundComponent = __decorate([
-    core_1.Component({
+    Component({
         template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
-exports.PageNotFoundComponent = PageNotFoundComponent;
-//# sourceMappingURL=pagenotfound.component.js.map
+export { PageNotFoundComponent };

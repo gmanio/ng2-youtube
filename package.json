@@ -1,11 +1,10 @@
 {
   "name": "ng2-youtube",
   "version": "0.0.1",
+  "description": "It is a good guidance for using Youtube API with angular2 framework.",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "dev": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "tsc": "tsc",
-    "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack-dev-server --config webpack.config.dev.js",
     "lite": "lite-server -c bs-config.js",
     "ngc": "ngc -p tsconfig-aot.json",
     "rollup": "rollup -c rollup.config.js",

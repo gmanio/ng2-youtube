@@ -12,10 +12,14 @@ module.exports = {
         middleware: {
             // overrides the second middleware default with new settings
             1: compression(), //gzip configure,
-            2: require('connect-history-api-fallback')({
-                index: './index.dev.html',
-                verbose: true
-            })
+
+            /**
+             * Only for develop environment.
+             */
+            // 2: require('connect-history-api-fallback')({
+            //     index: './index.dev.html',
+            //     verbose: true
+            // })
         }
     }
 };
