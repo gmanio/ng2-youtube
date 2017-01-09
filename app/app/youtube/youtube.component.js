@@ -12,10 +12,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require("@angular/core");
-var router_1 = require("@angular/router");
-var YoutubeComponent = (function () {
-    function YoutubeComponent(cdRef, router) {
+const core_1 = require("@angular/core");
+const router_1 = require("@angular/router");
+let YoutubeComponent = YoutubeComponent_1 = 
+/**
+ *
+ * [ref] : https://developers.google.com/youtube/v3/docs/search/list?hl=ko
+ */
+class YoutubeComponent {
+    constructor(cdRef, router) {
         this.query = 'donald trump';
         this.order = 'relevance';
         this.isLoading = false;
@@ -23,20 +28,19 @@ var YoutubeComponent = (function () {
         this.cdRef = cdRef;
         this.router = router;
     }
-    YoutubeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        window['gapi'].load('client', function () {
-            var oClient = window['gapi']['client'];
-            oClient.setApiKey(YoutubeComponent.apiKey);
-            oClient.load('youtube', 'v3').then(function () {
-                _this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
-                _this.requestYoutubeData({ type: 'init' });
+    ngOnInit() {
+        window['gapi'].load('client', () => {
+            let oClient = window['gapi']['client'];
+            oClient.setApiKey(YoutubeComponent_1.apiKey);
+            oClient.load('youtube', 'v3').then(() => {
+                this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
+                this.requestYoutubeData({ type: 'init' });
             });
         });
-    };
-    YoutubeComponent.prototype.requestYoutubeData = function (htOption) {
+    }
+    requestYoutubeData(htOption) {
         this.onLoading();
-        var initOption = {
+        let initOption = {
             part: 'snippet',
             type: 'video',
             q: this.query,
@@ -51,55 +55,56 @@ var YoutubeComponent = (function () {
             initOption = Object.assign({}, initOption, { pageToken: this.nextPageToken });
         }
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
-    };
-    YoutubeComponent.prototype.onLoadMoreContent = function () {
+    }
+    onLoadMoreContent() {
         this.requestYoutubeData({ pageToken: this.nextPageToken });
-    };
-    YoutubeComponent.prototype.onClickedSort = function (sortType) {
+    }
+    onClickedSort(sortType) {
         this.order = sortType;
         this.requestYoutubeData({ type: 'init' });
-    };
-    YoutubeComponent.prototype.onSearch = function (event) {
+    }
+    onSearch(event) {
         if (event.button != 0 && event.which != 13) {
             return;
         }
         this.requestYoutubeData({ type: 'init' });
-    };
-    YoutubeComponent.prototype.onSuccess = function (data) {
+    }
+    onSuccess(data) {
         this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
         this.onLoaded();
-    };
-    YoutubeComponent.prototype.onFailed = function () {
+    }
+    onFailed() {
         this.onLoaded();
-    };
-    YoutubeComponent.prototype.onLoading = function () {
+    }
+    onLoading() {
         this.isLoading = true;
         this.cdRef.detectChanges();
-    };
-    YoutubeComponent.prototype.onLoaded = function () {
-        setTimeout(function () {
+    }
+    onLoaded() {
+        setTimeout(() => {
             document.getElementById('search-field').blur();
         }, 3000);
         // document.focus();
         this.isLoading = false;
         this.cdRef.detectChanges();
-    };
-    YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
-    __decorate([
-        core_1.HostListener('window:googleApiClientReady'), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
-        __metadata('design:returntype', void 0)
-    ], YoutubeComponent.prototype, "ngOnInit", null);
-    YoutubeComponent = __decorate([
-        core_1.Component({
-            styleUrls: ['youtube.component.css'],
-            templateUrl: 'youtube.component.html'
-        }), 
-        __metadata('design:paramtypes', [core_1.ChangeDetectorRef, router_1.Router])
-    ], YoutubeComponent);
-    return YoutubeComponent;
-}());
+    }
+};
+YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
+__decorate([
+    core_1.HostListener('window:googleApiClientReady'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], YoutubeComponent.prototype, "ngOnInit", null);
+YoutubeComponent = YoutubeComponent_1 = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        styleUrls: ['youtube.component.css'],
+        templateUrl: './youtube.component.html',
+        encapsulation: core_1.ViewEncapsulation.None
+    }),
+    __metadata("design:paramtypes", [core_1.ChangeDetectorRef, router_1.Router])
+], YoutubeComponent);
 exports.YoutubeComponent = YoutubeComponent;
-//# sourceMappingURL=youtube.component.js.map
+var YoutubeComponent_1;

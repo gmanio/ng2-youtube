@@ -8,24 +8,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var AppComponent = (function () {
-    function AppComponent(titleService) {
+const core_1 = require("@angular/core");
+const platform_browser_1 = require("@angular/platform-browser");
+let AppComponent = class AppComponent {
+    constructor(titleService) {
         this.titleService = titleService;
         this.setTitle("It's works");
     }
-    AppComponent.prototype.setTitle = function (newTitle) {
+    setTitle(newTitle) {
         this.titleService.setTitle(newTitle);
-    };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app.component.html'
-        }), 
-        __metadata('design:paramtypes', [platform_browser_1.Title])
-    ], AppComponent);
-    return AppComponent;
-}());
+    }
+};
+AppComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'my-app',
+        templateUrl: './app.component.html'
+    }),
+    __metadata("design:paramtypes", [platform_browser_1.Title])
+], AppComponent);
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map

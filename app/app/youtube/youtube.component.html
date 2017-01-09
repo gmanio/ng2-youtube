@@ -1,12 +1,12 @@
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <div class="nav_youtube mdl-layout__header ">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer">
+    <div class="nav_youtube mdl-layout__header">
         <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field" (click)="onSearch($event)">
                 <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input inp_search" type="text" id="search-field" [(ngModel)]='query' (keypress)="onSearch($event)" (blur)="onSearch($event)">
+                <input class="mdl-textfield__input inp_search" type="text" id="search-field" [(ngModel)]='query' (keypress)="onSearch($event)">
             </div>
         </div>
     </div>

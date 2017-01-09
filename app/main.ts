@@ -12,14 +12,16 @@
 // You can import js, ts, css, sass, ...
 
 //youtube
-// import './vendor/material/material.min.css';
+// require('./vendor/material/material.min.css');
+// require('./vendor/material/material.min.js');
+import './vendor/material/material.min.css';
 import './vendor/material/material.min.js';
 import './vendor/youtube/client.js';
 import './vendor/youtube/player.js';
 
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { AppModule } from './app/app.module';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {enableProdMode} from '@angular/core';
+import {AppModule} from './app/app.module';
 
 enableProdMode();
 

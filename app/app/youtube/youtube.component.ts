@@ -3,12 +3,14 @@
  * @author: Gman Park
  */
 
-import {Component, HostListener, OnInit, ChangeDetectorRef} from "@angular/core";
+import {Component, HostListener, OnInit, ChangeDetectorRef, ViewEncapsulation} from "@angular/core";
 import {Router} from "@angular/router";
 
 @Component({
+    moduleId: module.id,
     styleUrls: ['youtube.component.css'],
-    templateUrl: 'youtube.component.html'
+    templateUrl: './youtube.component.html',
+    encapsulation: ViewEncapsulation.None
 })
 
 /**
@@ -61,7 +63,7 @@ export class YoutubeComponent implements OnInit {
         if (htOption.type == "init") {
             this.videos = [];
         } else {
-            initOption = Object.assign({}, initOption, {pageToken: this.nextPageToken});
+            initOption = (<any>Object).assign({}, initOption, {pageToken: this.nextPageToken});
         }
 
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
@@ -100,7 +102,7 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
-        setTimeout(()=>{
+        setTimeout(() => {
             document.getElementById('search-field').blur();
         }, 3000);
         // document.focus();

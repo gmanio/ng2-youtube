@@ -12,18 +12,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var PageNotFoundComponent = (function () {
-    function PageNotFoundComponent() {
+const core_1 = require("@angular/core");
+let PageNotFoundComponent = class PageNotFoundComponent {
+    constructor() {
         this.title = ' Page Not Found ';
     }
-    PageNotFoundComponent = __decorate([
-        core_1.Component({
-            template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PageNotFoundComponent);
-    return PageNotFoundComponent;
-}());
+};
+PageNotFoundComponent = __decorate([
+    core_1.Component({
+        template: `
+        <div>
+            <h3>Angular2 Router</h3>
+            <p> Sorry.. Something is wrong. </p>
+            <span>{{title}}</span>
+        </div>`,
+    }),
+    __metadata("design:paramtypes", [])
+], PageNotFoundComponent);
 exports.PageNotFoundComponent = PageNotFoundComponent;
-//# sourceMappingURL=pagenotfound.component.js.map

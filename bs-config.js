@@ -6,15 +6,16 @@
 var compression = require('compression');
 
 module.exports = {
+    "port": 8000,
+    "files": ["./app/**/*.{html,htm,css,js}"],
     server: {
-        baseDir: "./app",
         middleware: {
             // overrides the second middleware default with new settings
             1: compression(), //gzip configure,
-            // 2: require('connect-history-api-fallback')({
-            //     index: '/index.dev.html',
-            //     verbose: true
-            // })
+            2: require('connect-history-api-fallback')({
+                index: './index.html',
+                verbose: true
+            })
         }
     }
 };
