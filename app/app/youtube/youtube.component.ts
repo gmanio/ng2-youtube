@@ -3,14 +3,13 @@
  * @author: Gman Park
  */
 
-import {Component, HostListener, OnInit, ChangeDetectorRef, ViewEncapsulation} from "@angular/core";
+import {Component, HostListener, OnInit, ChangeDetectorRef} from "@angular/core";
 import {Router} from "@angular/router";
 
 @Component({
     moduleId: module.id,
-    styleUrls: ['youtube.component.css'],
     templateUrl: './youtube.component.html',
-    encapsulation: ViewEncapsulation.None
+    styleUrls: ['./youtube.component.css']
 })
 
 /**
@@ -41,6 +40,8 @@ export class YoutubeComponent implements OnInit {
             })
         })
 
+        // material css activated
+        window["componentHandler"].upgradeAllRegistered();
     }
 
     constructor(cdRef: ChangeDetectorRef, router: Router) {
@@ -102,10 +103,10 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
-        setTimeout(() => {
-            document.getElementById('search-field').blur();
-        }, 3000);
-        // document.focus();
+        // setTimeout(() => {
+        //     document.getElementById('search-field').blur();
+        // }, 3000);
+        // // document.focus();
 
         this.isLoading = false;
         this.cdRef.detectChanges();

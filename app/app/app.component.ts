@@ -4,7 +4,7 @@ import {Title} from '@angular/platform-browser';
 @Component({
     moduleId: module.id,
     selector: 'my-app',
-    templateUrl: './app.component.html'
+    templateUrl: './app.component.html',
 })
 
 export class AppComponent {

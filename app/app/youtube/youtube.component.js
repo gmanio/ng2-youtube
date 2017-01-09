@@ -12,15 +12,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require("@angular/core");
-const router_1 = require("@angular/router");
-let YoutubeComponent = YoutubeComponent_1 = 
-/**
- *
- * [ref] : https://developers.google.com/youtube/v3/docs/search/list?hl=ko
- */
-class YoutubeComponent {
-    constructor(cdRef, router) {
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var YoutubeComponent = YoutubeComponent_1 = (function () {
+    function YoutubeComponent(cdRef, router) {
         this.query = 'donald trump';
         this.order = 'relevance';
         this.isLoading = false;
@@ -28,19 +23,22 @@ class YoutubeComponent {
         this.cdRef = cdRef;
         this.router = router;
     }
-    ngOnInit() {
-        window['gapi'].load('client', () => {
-            let oClient = window['gapi']['client'];
+    YoutubeComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        window['gapi'].load('client', function () {
+            var oClient = window['gapi']['client'];
             oClient.setApiKey(YoutubeComponent_1.apiKey);
-            oClient.load('youtube', 'v3').then(() => {
-                this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
-                this.requestYoutubeData({ type: 'init' });
+            oClient.load('youtube', 'v3').then(function () {
+                _this.oYoutubeSearchRequest = window['gapi']['client']['youtube']['search']['list'];
+                _this.requestYoutubeData({ type: 'init' });
             });
         });
-    }
-    requestYoutubeData(htOption) {
+        // material css activated
+        window["componentHandler"].upgradeAllRegistered();
+    };
+    YoutubeComponent.prototype.requestYoutubeData = function (htOption) {
         this.onLoading();
-        let initOption = {
+        var initOption = {
             part: 'snippet',
             type: 'video',
             q: this.query,
@@ -55,41 +53,42 @@ class YoutubeComponent {
             initOption = Object.assign({}, initOption, { pageToken: this.nextPageToken });
         }
         this.oYoutubeSearchRequest(initOption).then(this.onSuccess.bind(this), this.onFailed.bind(this));
-    }
-    onLoadMoreContent() {
+    };
+    YoutubeComponent.prototype.onLoadMoreContent = function () {
         this.requestYoutubeData({ pageToken: this.nextPageToken });
-    }
-    onClickedSort(sortType) {
+    };
+    YoutubeComponent.prototype.onClickedSort = function (sortType) {
         this.order = sortType;
         this.requestYoutubeData({ type: 'init' });
-    }
-    onSearch(event) {
+    };
+    YoutubeComponent.prototype.onSearch = function (event) {
         if (event.button != 0 && event.which != 13) {
             return;
         }
         this.requestYoutubeData({ type: 'init' });
-    }
-    onSuccess(data) {
+    };
+    YoutubeComponent.prototype.onSuccess = function (data) {
         this.nextPageToken = data.result.nextPageToken;
         this.videos = this.videos.concat(data.result.items);
         this.onLoaded();
-    }
-    onFailed() {
+    };
+    YoutubeComponent.prototype.onFailed = function () {
         this.onLoaded();
-    }
-    onLoading() {
+    };
+    YoutubeComponent.prototype.onLoading = function () {
         this.isLoading = true;
         this.cdRef.detectChanges();
-    }
-    onLoaded() {
-        setTimeout(() => {
-            document.getElementById('search-field').blur();
-        }, 3000);
-        // document.focus();
+    };
+    YoutubeComponent.prototype.onLoaded = function () {
+        // setTimeout(() => {
+        //     document.getElementById('search-field').blur();
+        // }, 3000);
+        // // document.focus();
         this.isLoading = false;
         this.cdRef.detectChanges();
-    }
-};
+    };
+    return YoutubeComponent;
+}());
 YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
 __decorate([
     core_1.HostListener('window:googleApiClientReady'),
@@ -100,11 +99,11 @@ __decorate([
 YoutubeComponent = YoutubeComponent_1 = __decorate([
     core_1.Component({
         moduleId: module.id,
-        styleUrls: ['youtube.component.css'],
         templateUrl: './youtube.component.html',
-        encapsulation: core_1.ViewEncapsulation.None
+        styleUrls: ['./youtube.component.css']
     }),
     __metadata("design:paramtypes", [core_1.ChangeDetectorRef, router_1.Router])
 ], YoutubeComponent);
 exports.YoutubeComponent = YoutubeComponent;
 var YoutubeComponent_1;
+//# sourceMappingURL=youtube.component.js.map

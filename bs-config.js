@@ -13,7 +13,7 @@ module.exports = {
             // overrides the second middleware default with new settings
             1: compression(), //gzip configure,
             2: require('connect-history-api-fallback')({
-                index: './index.html',
+                index: './index.dev.html',
                 verbose: true
             })
         }

@@ -12,38 +12,40 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-const core_1 = require("@angular/core");
-const router_1 = require("@angular/router");
-let PlayerComponent = class PlayerComponent {
-    constructor(router, cdRef) {
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var PlayerComponent = (function () {
+    function PlayerComponent(router, cdRef) {
+        var _this = this;
         this.router = router;
         this.cdRef = cdRef;
         this.isPlayerOpen = false;
         this.router = router;
         this.cdRef = cdRef;
         window.addEventListener('resize', this.onResize.bind(this), false);
-        window['onYouTubeIframeAPIReady'] = () => {
+        window['onYouTubeIframeAPIReady'] = function () {
             if (window['YT'] && window['YT'].Player) {
-                this.initYoutubePlayer();
+                _this.initYoutubePlayer();
             }
         };
     }
-    ngOnInit() {
-        this.router.params.subscribe(params => {
-            this.isPlayerOpen = true;
-            this.videoId = params['id'];
-            this.cdRef.detectChanges();
-            if (this.player) {
-                this.playVideo();
+    PlayerComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.router.params.subscribe(function (params) {
+            _this.isPlayerOpen = true;
+            _this.videoId = params['id'];
+            _this.cdRef.detectChanges();
+            if (_this.player) {
+                _this.playVideo();
             }
             else {
                 if (window['YT'] && window['YT'].Player) {
-                    this.initYoutubePlayer();
+                    _this.initYoutubePlayer();
                 }
             }
         });
-    }
-    initYoutubePlayer() {
+    };
+    PlayerComponent.prototype.initYoutubePlayer = function () {
         this.player = new window['YT'].Player('youtube_player', {
             width: window.innerWidth,
             height: window.innerHeight,
@@ -55,17 +57,17 @@ let PlayerComponent = class PlayerComponent {
                 'onStateChange': this.onPlayerStateChange.bind(this),
             }
         });
-    }
-    hide() {
+    };
+    PlayerComponent.prototype.hide = function () {
         this.player.stopVideo();
         this.isPlayerOpen = false;
         this.cdRef.detectChanges();
-    }
-    onResize() {
+    };
+    PlayerComponent.prototype.onResize = function () {
         if (this.player) {
             this.player.setSize(window.innerWidth, window.innerHeight);
         }
-    }
+    };
     /*
      * -1(시작되지 않음)
      0(종료됨)
@@ -79,7 +81,7 @@ let PlayerComponent = class PlayerComponent {
      YT.PlayerState.BUFFERING
      YT.PlayerState.CUED
      */
-    onPlayerStateChange(event) {
+    PlayerComponent.prototype.onPlayerStateChange = function (event) {
         switch (event.data) {
             case (0):
                 break;
@@ -92,18 +94,20 @@ let PlayerComponent = class PlayerComponent {
             case (5):
                 break;
         }
-    }
-    playVideo() {
+    };
+    PlayerComponent.prototype.playVideo = function () {
         this.player.loadVideoById(this.videoId);
         this.player.playVideo();
-    }
-};
+    };
+    return PlayerComponent;
+}());
 PlayerComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        templateUrl: 'player.component.html',
+        templateUrl: './player.component.html',
         styleUrls: ['./player.component.css']
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute, core_1.ChangeDetectorRef])
 ], PlayerComponent);
 exports.PlayerComponent = PlayerComponent;
+//# sourceMappingURL=player.component.js.map

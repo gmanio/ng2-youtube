@@ -18,6 +18,7 @@
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",
+    "@angular/compiler-cli": "^2.4.2",
     "@angular/core": "~2.4.0",
     "@angular/forms": "~2.4.0",
     "@angular/http": "~2.4.0",
@@ -25,9 +26,9 @@
     "@angular/platform-browser-dynamic": "~2.4.0",
     "@angular/router": "~3.4.0",
     "angular-in-memory-web-api": "~0.2.4",
-    "systemjs": "0.19.40",
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
@@ -39,6 +40,7 @@
     "rollup-plugin-commonjs": "^6.0.1",
     "rollup-plugin-css-only": "^0.2.0",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "typescript": "^2.1.4"
+    "typescript": "^2.1.4",
+    "uglifyjs": "^2.4.10"
   }
 }

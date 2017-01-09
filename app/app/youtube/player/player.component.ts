@@ -8,7 +8,7 @@ import {ActivatedRoute} from "@angular/router";
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'player.component.html',
+    templateUrl: './player.component.html',
     styleUrls: ['./player.component.css']
 })
 

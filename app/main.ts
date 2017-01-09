@@ -2,6 +2,7 @@
  * Created on 2016-12-06.
  * @author: Gman Park
  */
+
 // import 'core-js/client/shim';
 // import 'zone.js';
 // import 'reflect-metadata';
@@ -12,10 +13,8 @@
 // You can import js, ts, css, sass, ...
 
 //youtube
-// require('./vendor/material/material.min.css');
-// require('./vendor/material/material.min.js');
-import './vendor/material/material.min.css';
-import './vendor/material/material.min.js';
+// import './vendor/material/material.min.css';
+// import './vendor/material/material.min.js';
 import './vendor/youtube/client.js';
 import './vendor/youtube/player.js';
 

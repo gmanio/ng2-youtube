@@ -16,6 +16,7 @@ import {PlayerComponent} from "./youtube/player/player.component";
 import {PageNotFoundComponent} from "./etc/pagenotfound.component";
 
 import {routingModule} from './app.routes';
+import {MDL} from './MaterialDesignLiteUpgradeElement';
 
 @NgModule({
     imports: [
@@ -28,7 +29,8 @@ import {routingModule} from './app.routes';
         AppComponent,
         YoutubeComponent,
         PlayerComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        MDL
     ],
     providers:[
         Title

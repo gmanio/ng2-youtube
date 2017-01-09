@@ -1,5 +1,5 @@
 /**
- * Created on 2016-12-14.
+ * Created on 2017-01-09.
  * @author: Gman Park
  */
 "use strict";
@@ -13,17 +13,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var PageNotFoundComponent = (function () {
-    function PageNotFoundComponent() {
-        this.title = ' Page Not Found ';
+var MDL = (function () {
+    function MDL(el) {
+        this.el = el;
     }
-    return PageNotFoundComponent;
+    MDL.prototype.ngAfterViewChecked = function () {
+        if (componentHandler) {
+            componentHandler.upgradeAllRegistered();
+        }
+    };
+    return MDL;
 }());
-PageNotFoundComponent = __decorate([
-    core_1.Component({
-        template: "\n        <div>\n            <h3>Angular2 Router</h3>\n            <p> Sorry.. Something is wrong. </p>\n            <span>{{title}}</span>\n        </div>",
+MDL = __decorate([
+    core_1.Directive({
+        selector: '[mdl]'
     }),
-    __metadata("design:paramtypes", [])
-], PageNotFoundComponent);
-exports.PageNotFoundComponent = PageNotFoundComponent;
-//# sourceMappingURL=pagenotfound.component.js.map
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], MDL);
+exports.MDL = MDL;
+//# sourceMappingURL=MaterialDesignLiteUpgradeElement.js.map
