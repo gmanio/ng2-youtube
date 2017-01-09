@@ -1,4 +1,4 @@
-# Angular2-youtube ( ECMAscript 6 Version )
+# Angular2-youtube ( Typescript )
 
 [ View ] : (https://gman.io/youtube)
 
