@@ -7,6 +7,7 @@ var compression = require('compression');
 
 module.exports = {
     server: {
+        baseDir: "./app",
         middleware: {
             // overrides the second middleware default with new settings
             1: compression(), //gzip configure,

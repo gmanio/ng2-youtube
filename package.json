@@ -2,6 +2,7 @@
   "name": "ng2-youtube",
   "version": "0.0.1",
   "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "tsc": "tsc",
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --config webpack.config.dev.js",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@types/node": "^6.0.58",
     "compression": "^1.6.2",
+    "concurrently": "^3.1.0",
     "lite-server": "^2.2.2",
     "rollup": "^0.38.0",
     "rollup-plugin-commonjs": "^6.0.1",
