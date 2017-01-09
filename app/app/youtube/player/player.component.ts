@@ -3,13 +3,14 @@
  * @author: Gman Park
  */
 
-import {Component, OnInit, ChangeDetectorRef} from "@angular/core";
+import {Component, OnInit, ChangeDetectorRef, ViewEncapsulation} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
     moduleId: module.id,
     templateUrl: './player.component.html',
-    styleUrls: ['./player.component.css']
+    styleUrls: ['./player.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class PlayerComponent implements OnInit {
@@ -60,7 +61,9 @@ export class PlayerComponent implements OnInit {
             }
         });
 
-
+        setTimeout(() => {
+            this.player.playVideo();
+        }, 3000);
     }
 
     hide() {

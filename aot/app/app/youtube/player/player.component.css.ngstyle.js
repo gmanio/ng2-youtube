@@ -1,0 +1,1 @@
+export var styles = ['.wrap_youtube_player{ position:absolute; width:100%; z-index:100 }\r\n.btn_player-close{ position:absolute; width:50px; height:50px; background:#fff; opacity:0.3; z-index:100; }\r\n.layer-player_close{ position:absolute; width:100%; height:50px }'];

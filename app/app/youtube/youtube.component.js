@@ -28,7 +28,9 @@ var YoutubeComponent = YoutubeComponent_1 = (function () {
                 _this.requestYoutubeData({ type: 'init' });
             });
         });
-        window["componentHandler"].upgradeAllRegistered();
+        if (window["module"] != "aot") {
+            window["componentHandler"].upgradeAllRegistered();
+        }
     };
     YoutubeComponent.prototype.requestYoutubeData = function (htOption) {
         this.onLoading();
@@ -59,7 +61,9 @@ var YoutubeComponent = YoutubeComponent_1 = (function () {
         if (event.button != 0 && event.which != 13) {
             return;
         }
-        this.requestYoutubeData({ type: 'init' });
+        if (document.activeElement != document.body) {
+            this.requestYoutubeData({ type: 'init' });
+        }
     };
     YoutubeComponent.prototype.onSuccess = function (data) {
         this.nextPageToken = data.result.nextPageToken;
@@ -74,6 +78,9 @@ var YoutubeComponent = YoutubeComponent_1 = (function () {
         this.cdRef.detectChanges();
     };
     YoutubeComponent.prototype.onLoaded = function () {
+        if (document.activeElement != document.body) {
+            document.getElementById('search-field').blur();
+        }
         this.isLoading = false;
         this.cdRef.detectChanges();
     };

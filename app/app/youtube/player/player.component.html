@@ -1,7 +1,9 @@
 <div class="wrap_youtube_player" [hidden]="!isPlayerOpen">
-    <button class="btn_player-close mdl-button mdl-js-button mdl-button--icon" (click)="hide()">
-        <i class="material-icons">clear</i>
-    </button>
+    <div class="layer-player_close" (click)="hide()">
+        <button class="btn_player-close mdl-button mdl-js-button mdl-button--icon" (click)="hide()">
+            <i class="material-icons">clear</i>
+        </button>
+    </div>
     <div id="youtube_player">
         <!--inserted youtube player -->
     </div>

@@ -38987,7 +38987,9 @@
                     _this.requestYoutubeData({ type: 'init' });
                 });
             });
-            window["componentHandler"].upgradeAllRegistered();
+            if (window["module"] != "aot") {
+                window["componentHandler"].upgradeAllRegistered();
+            }
         };
         YoutubeComponent.prototype.requestYoutubeData = function (htOption) {
             this.onLoading();
@@ -39018,7 +39020,9 @@
             if (event.button != 0 && event.which != 13) {
                 return;
             }
-            this.requestYoutubeData({ type: 'init' });
+            if (document.activeElement != document.body) {
+                this.requestYoutubeData({ type: 'init' });
+            }
         };
         YoutubeComponent.prototype.onSuccess = function (data) {
             this.nextPageToken = data.result.nextPageToken;
@@ -39033,6 +39037,9 @@
             this.cdRef.detectChanges();
         };
         YoutubeComponent.prototype.onLoaded = function () {
+            if (document.activeElement != document.body) {
+                document.getElementById('search-field').blur();
+            }
             this.isLoading = false;
             this.cdRef.detectChanges();
         };
@@ -39100,6 +39107,7 @@
             });
         };
         PlayerComponent.prototype.initYoutubePlayer = function () {
+            var _this = this;
             this.player = new window['YT'].Player('youtube_player', {
                 width: window.innerWidth,
                 height: window.innerHeight,
@@ -39109,6 +39117,9 @@
                     'onStateChange': this.onPlayerStateChange.bind(this),
                 }
             });
+            setTimeout(function () {
+                _this.player.playVideo();
+            }, 3000);
         };
         PlayerComponent.prototype.hide = function () {
             this.player.stopVideo();
@@ -39144,7 +39155,8 @@
         Component({
             moduleId: module.id,
             templateUrl: './player.component.html',
-            styleUrls: ['./player.component.css']
+            styleUrls: ['./player.component.css'],
+            encapsulation: ViewEncapsulation.None
         }),
         __metadata$3("design:paramtypes", [ActivatedRoute, ChangeDetectorRef])
     ], PlayerComponent);
@@ -40399,7 +40411,7 @@
         };
         return View_YoutubeComponent0;
     }(AppView));
-    var styles$1 = ['.wrap_youtube_player[_ngcontent-%COMP%]{ position:absolute; z-index:100 }\r\n.btn_player-close[_ngcontent-%COMP%]{ position:absolute; width:25px; height:25px; background:#fff; opacity:0.3; z-index:100;}'];
+    var styles$1 = ['.wrap_youtube_player{ position:absolute; width:100%; z-index:100 }\r\n.btn_player-close{ position:absolute; width:50px; height:50px; background:#fff; opacity:0.3; z-index:100; }\r\n.layer-player_close{ position:absolute; width:100%; height:50px }'];
     var __extends$80 = (undefined && undefined.__extends) || function (d, b) {
         for (var p in b)
             if (b.hasOwnProperty(p))
@@ -40471,29 +40483,33 @@
     }(AppView));
     var PlayerComponentNgFactory = new ComponentFactory('ng-component', View_PlayerComponent_Host0, PlayerComponent);
     var styles_PlayerComponent = [styles$1];
-    var renderType_PlayerComponent = createRenderComponentType('', 0, ViewEncapsulation.Emulated, styles_PlayerComponent, {});
+    var renderType_PlayerComponent = createRenderComponentType('', 0, ViewEncapsulation.None, styles_PlayerComponent, {});
     var View_PlayerComponent0 = (function (_super) {
         __extends$80(View_PlayerComponent0, _super);
         function View_PlayerComponent0(viewUtils, parentView, parentIndex, parentElement) {
             var _this = _super.call(this, View_PlayerComponent0, renderType_PlayerComponent, ViewType.COMPONENT, viewUtils, parentView, parentIndex, parentElement, ChangeDetectorStatus.CheckAlways) || this;
-            _this._expr_12 = UNINITIALIZED;
+            _this._expr_15 = UNINITIALIZED;
             return _this;
         }
         View_PlayerComponent0.prototype.createInternal = function (rootSelector) {
             var parentRenderNode = this.renderer.createViewRoot(this.parentElement);
             this._el_0 = createRenderElement(this.renderer, parentRenderNode, 'div', new InlineArray2(2, 'class', 'wrap_youtube_player'), null);
             this._text_1 = this.renderer.createText(this._el_0, '\n    ', null);
-            this._el_2 = createRenderElement(this.renderer, this._el_0, 'button', new InlineArray2(2, 'class', 'btn_player-close mdl-button mdl-js-button mdl-button--icon'), null);
+            this._el_2 = createRenderElement(this.renderer, this._el_0, 'div', new InlineArray2(2, 'class', 'layer-player_close'), null);
             this._text_3 = this.renderer.createText(this._el_2, '\n        ', null);
-            this._el_4 = createRenderElement(this.renderer, this._el_2, 'i', new InlineArray2(2, 'class', 'material-icons'), null);
-            this._text_5 = this.renderer.createText(this._el_4, 'clear', null);
-            this._text_6 = this.renderer.createText(this._el_2, '\n    ', null);
-            this._text_7 = this.renderer.createText(this._el_0, '\n    ', null);
-            this._el_8 = createRenderElement(this.renderer, this._el_0, 'div', new InlineArray2(2, 'id', 'youtube_player'), null);
-            this._text_9 = this.renderer.createText(this._el_8, '\n        ', null);
-            this._text_10 = this.renderer.createText(this._el_8, '\n    ', null);
-            this._text_11 = this.renderer.createText(this._el_0, '\n', null);
+            this._el_4 = createRenderElement(this.renderer, this._el_2, 'button', new InlineArray2(2, 'class', 'btn_player-close mdl-button mdl-js-button mdl-button--icon'), null);
+            this._text_5 = this.renderer.createText(this._el_4, '\n            ', null);
+            this._el_6 = createRenderElement(this.renderer, this._el_4, 'i', new InlineArray2(2, 'class', 'material-icons'), null);
+            this._text_7 = this.renderer.createText(this._el_6, 'clear', null);
+            this._text_8 = this.renderer.createText(this._el_4, '\n        ', null);
+            this._text_9 = this.renderer.createText(this._el_2, '\n    ', null);
+            this._text_10 = this.renderer.createText(this._el_0, '\n    ', null);
+            this._el_11 = createRenderElement(this.renderer, this._el_0, 'div', new InlineArray2(2, 'id', 'youtube_player'), null);
+            this._text_12 = this.renderer.createText(this._el_11, '\n        ', null);
+            this._text_13 = this.renderer.createText(this._el_11, '\n    ', null);
+            this._text_14 = this.renderer.createText(this._el_0, '\n', null);
             var disposable_0 = subscribeToRenderElement(this, this._el_2, new InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_2));
+            var disposable_1 = subscribeToRenderElement(this, this._el_4, new InlineArray2(2, 'click', null), this.eventHandler(this.handleEvent_4));
             this.init(null, (this.renderer.directRenderer ? null : [
                 this._el_0,
                 this._text_1,
@@ -40501,23 +40517,38 @@
                 this._text_3,
                 this._el_4,
                 this._text_5,
-                this._text_6,
+                this._el_6,
                 this._text_7,
-                this._el_8,
+                this._text_8,
                 this._text_9,
                 this._text_10,
-                this._text_11
-            ]), [disposable_0]);
+                this._el_11,
+                this._text_12,
+                this._text_13,
+                this._text_14
+            ]), [
+                disposable_0,
+                disposable_1
+            ]);
             return null;
         };
         View_PlayerComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-            var currVal_12 = !this.context.isPlayerOpen;
-            if (checkBinding(throwOnChange, this._expr_12, currVal_12)) {
-                this.renderer.setElementProperty(this._el_0, 'hidden', currVal_12);
-                this._expr_12 = currVal_12;
+            var currVal_15 = !this.context.isPlayerOpen;
+            if (checkBinding(throwOnChange, this._expr_15, currVal_15)) {
+                this.renderer.setElementProperty(this._el_0, 'hidden', currVal_15);
+                this._expr_15 = currVal_15;
             }
         };
         View_PlayerComponent0.prototype.handleEvent_2 = function (eventName, $event) {
+            this.markPathToRootAsCheckOnce();
+            var result = true;
+            if ((eventName == 'click')) {
+                var pd_sub_0 = (this.context.hide() !== false);
+                result = (pd_sub_0 && result);
+            }
+            return result;
+        };
+        View_PlayerComponent0.prototype.handleEvent_4 = function (eventName, $event) {
             this.markPathToRootAsCheckOnce();
             var result = true;
             if ((eventName == 'click')) {

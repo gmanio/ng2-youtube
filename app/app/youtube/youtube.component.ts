@@ -41,7 +41,9 @@ export class YoutubeComponent implements OnInit {
         })
 
         // material css activated
-        window["componentHandler"].upgradeAllRegistered();
+        if (window["module"] != "aot") {
+            window["componentHandler"].upgradeAllRegistered();
+        }
     }
 
     constructor(cdRef: ChangeDetectorRef, router: Router) {
@@ -84,7 +86,9 @@ export class YoutubeComponent implements OnInit {
             return;
         }
 
-        this.requestYoutubeData({type: 'init'});
+        if (document.activeElement != document.body) {
+            this.requestYoutubeData({type: 'init'});
+        }
     }
 
     onSuccess(data) {
@@ -103,10 +107,9 @@ export class YoutubeComponent implements OnInit {
     }
 
     onLoaded() {
-        // setTimeout(() => {
-        //     document.getElementById('search-field').blur();
-        // }, 3000);
-        // // document.focus();
+        if (document.activeElement != document.body) {
+            document.getElementById('search-field').blur();
+        }
 
         this.isLoading = false;
         this.cdRef.detectChanges();

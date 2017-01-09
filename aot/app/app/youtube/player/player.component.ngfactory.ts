@@ -14,7 +14,7 @@ import * as import5 from '@angular/core/src/linker/view_type';
 import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
 import * as import8 from '@angular/router/src/router_state';
-import * as import9 from './player.component.css.shim.ngstyle';
+import * as import9 from './player.component.css.ngstyle';
 import * as import10 from '@angular/core/src/change_detection/change_detection_util';
 export class Wrapper_PlayerComponent {
   /*private*/ _eventHandler:Function;
@@ -77,7 +77,7 @@ class View_PlayerComponent_Host0 extends import1.AppView<any> {
 }
 export const PlayerComponentNgFactory:import7.ComponentFactory<import0.PlayerComponent> = new import7.ComponentFactory<import0.PlayerComponent>('ng-component',View_PlayerComponent_Host0,import0.PlayerComponent);
 const styles_PlayerComponent:any[] = [import9.styles];
-var renderType_PlayerComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.Emulated,styles_PlayerComponent,{});
+var renderType_PlayerComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.None,styles_PlayerComponent,{});
 export class View_PlayerComponent0 extends import1.AppView<import0.PlayerComponent> {
   _el_0:any;
   _text_1:any;
@@ -85,32 +85,39 @@ export class View_PlayerComponent0 extends import1.AppView<import0.PlayerCompone
   _text_3:any;
   _el_4:any;
   _text_5:any;
-  _text_6:any;
+  _el_6:any;
   _text_7:any;
-  _el_8:any;
+  _text_8:any;
   _text_9:any;
   _text_10:any;
-  _text_11:any;
-  /*private*/ _expr_12:any;
+  _el_11:any;
+  _text_12:any;
+  _text_13:any;
+  _text_14:any;
+  /*private*/ _expr_15:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_PlayerComponent0,renderType_PlayerComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_12 = import10.UNINITIALIZED;
+    this._expr_15 = import10.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
     this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'div',new import3.InlineArray2(2,'class','wrap_youtube_player'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'button',new import3.InlineArray2(2,'class','btn_player-close mdl-button mdl-js-button mdl-button--icon'),(null as any));
+    this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'class','layer-player_close'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n        ',(null as any));
-    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'i',new import3.InlineArray2(2,'class','material-icons'),(null as any));
-    this._text_5 = this.renderer.createText(this._el_4,'clear',(null as any));
-    this._text_6 = this.renderer.createText(this._el_2,'\n    ',(null as any));
-    this._text_7 = this.renderer.createText(this._el_0,'\n    ',(null as any));
-    this._el_8 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'id','youtube_player'),(null as any));
-    this._text_9 = this.renderer.createText(this._el_8,'\n        ',(null as any));
-    this._text_10 = this.renderer.createText(this._el_8,'\n    ',(null as any));
-    this._text_11 = this.renderer.createText(this._el_0,'\n',(null as any));
+    this._el_4 = import3.createRenderElement(this.renderer,this._el_2,'button',new import3.InlineArray2(2,'class','btn_player-close mdl-button mdl-js-button mdl-button--icon'),(null as any));
+    this._text_5 = this.renderer.createText(this._el_4,'\n            ',(null as any));
+    this._el_6 = import3.createRenderElement(this.renderer,this._el_4,'i',new import3.InlineArray2(2,'class','material-icons'),(null as any));
+    this._text_7 = this.renderer.createText(this._el_6,'clear',(null as any));
+    this._text_8 = this.renderer.createText(this._el_4,'\n        ',(null as any));
+    this._text_9 = this.renderer.createText(this._el_2,'\n    ',(null as any));
+    this._text_10 = this.renderer.createText(this._el_0,'\n    ',(null as any));
+    this._el_11 = import3.createRenderElement(this.renderer,this._el_0,'div',new import3.InlineArray2(2,'id','youtube_player'),(null as any));
+    this._text_12 = this.renderer.createText(this._el_11,'\n        ',(null as any));
+    this._text_13 = this.renderer.createText(this._el_11,'\n    ',(null as any));
+    this._text_14 = this.renderer.createText(this._el_0,'\n',(null as any));
     var disposable_0:Function = import3.subscribeToRenderElement(this,this._el_2,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_2));
+    var disposable_1:Function = import3.subscribeToRenderElement(this,this._el_4,new import3.InlineArray2(2,'click',(null as any)),this.eventHandler(this.handleEvent_4));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
       this._el_0,
       this._text_1,
@@ -118,24 +125,40 @@ export class View_PlayerComponent0 extends import1.AppView<import0.PlayerCompone
       this._text_3,
       this._el_4,
       this._text_5,
-      this._text_6,
+      this._el_6,
       this._text_7,
-      this._el_8,
+      this._text_8,
       this._text_9,
       this._text_10,
-      this._text_11
+      this._el_11,
+      this._text_12,
+      this._text_13,
+      this._text_14
     ]
-    ),[disposable_0]);
+    ),[
+      disposable_0,
+      disposable_1
+    ]
+    );
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_12:boolean = !this.context.isPlayerOpen;
-    if (import3.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
-      this.renderer.setElementProperty(this._el_0,'hidden',currVal_12);
-      this._expr_12 = currVal_12;
+    const currVal_15:boolean = !this.context.isPlayerOpen;
+    if (import3.checkBinding(throwOnChange,this._expr_15,currVal_15)) {
+      this.renderer.setElementProperty(this._el_0,'hidden',currVal_15);
+      this._expr_15 = currVal_15;
     }
   }
   handleEvent_2(eventName:string,$event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    var result:boolean = true;
+    if ((eventName == 'click')) {
+      const pd_sub_0:any = ((<any>this.context.hide()) !== false);
+      result = (pd_sub_0 && result);
+    }
+    return result;
+  }
+  handleEvent_4(eventName:string,$event:any):boolean {
     this.markPathToRootAsCheckOnce();
     var result:boolean = true;
     if ((eventName == 'click')) {

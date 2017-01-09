@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, ChangeDetectorRef } from "@angular/core";
+import { Component, ChangeDetectorRef, ViewEncapsulation } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 var PlayerComponent = (function () {
     function PlayerComponent(router, cdRef) {
@@ -41,6 +41,7 @@ var PlayerComponent = (function () {
         });
     };
     PlayerComponent.prototype.initYoutubePlayer = function () {
+        var _this = this;
         this.player = new window['YT'].Player('youtube_player', {
             width: window.innerWidth,
             height: window.innerHeight,
@@ -50,6 +51,9 @@ var PlayerComponent = (function () {
                 'onStateChange': this.onPlayerStateChange.bind(this),
             }
         });
+        setTimeout(function () {
+            _this.player.playVideo();
+        }, 3000);
     };
     PlayerComponent.prototype.hide = function () {
         this.player.stopVideo();
@@ -85,7 +89,8 @@ PlayerComponent = __decorate([
     Component({
         moduleId: module.id,
         templateUrl: './player.component.html',
-        styleUrls: ['./player.component.css']
+        styleUrls: ['./player.component.css'],
+        encapsulation: ViewEncapsulation.None
     }),
     __metadata("design:paramtypes", [ActivatedRoute, ChangeDetectorRef])
 ], PlayerComponent);
