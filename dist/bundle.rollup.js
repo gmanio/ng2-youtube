@@ -30841,10 +30841,15 @@ var __metadata$1 = (undefined && undefined.__metadata) || function (k, v) {
 var AppComponent = (function () {
     function AppComponent(titleService) {
         this.titleService = titleService;
-        this.setTitle("It's works");
+        this.setTitle("It works");
+        this.printLogo();
     }
     AppComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
+    };
+    AppComponent.prototype.printLogo = function () {
+        setTimeout(console.log.bind(console, "%cGMAN", "font:8em Arial;color:#EC6521;font-weight:bold"), 0);
+        setTimeout(console.log.bind(console, "%cDevTools@2017", "font:2em sans-serif;color:#333;"), 0);
     };
     return AppComponent;
 }());
