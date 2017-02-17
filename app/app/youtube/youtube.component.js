@@ -1,3 +1,8 @@
+/**
+ * Created on 2016-12-06.
+ * @author: Gman Park
+ */
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,8 +12,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component, HostListener, ChangeDetectorRef } from "@angular/core";
-import { Router } from "@angular/router";
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var YoutubeComponent = YoutubeComponent_1 = (function () {
     function YoutubeComponent(cdRef, router) {
         this.query = 'donald trump';
@@ -28,6 +33,7 @@ var YoutubeComponent = YoutubeComponent_1 = (function () {
                 _this.requestYoutubeData({ type: 'init' });
             });
         });
+        // material css activated
         if (window["module"] != "aot") {
             window["componentHandler"].upgradeAllRegistered();
         }
@@ -88,18 +94,19 @@ var YoutubeComponent = YoutubeComponent_1 = (function () {
 }());
 YoutubeComponent.apiKey = 'AIzaSyA4k_7jggyPzjs1Tv90go3eoRyn5War9LQ';
 __decorate([
-    HostListener('window:googleApiClientReady'),
+    core_1.HostListener('window:googleApiClientReady'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], YoutubeComponent.prototype, "ngOnInit", null);
 YoutubeComponent = YoutubeComponent_1 = __decorate([
-    Component({
+    core_1.Component({
         moduleId: module.id,
         templateUrl: './youtube.component.html',
         styleUrls: ['./youtube.component.css']
     }),
-    __metadata("design:paramtypes", [ChangeDetectorRef, Router])
+    __metadata("design:paramtypes", [core_1.ChangeDetectorRef, router_1.Router])
 ], YoutubeComponent);
-export { YoutubeComponent };
+exports.YoutubeComponent = YoutubeComponent;
 var YoutubeComponent_1;
+//# sourceMappingURL=youtube.component.js.map

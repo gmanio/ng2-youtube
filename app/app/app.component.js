@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
 var AppComponent = (function () {
     function AppComponent(titleService) {
         this.titleService = titleService;
@@ -25,11 +26,12 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Component({
+    core_1.Component({
         moduleId: module.id,
         selector: 'my-app',
         templateUrl: './app.component.html',
     }),
-    __metadata("design:paramtypes", [Title])
+    __metadata("design:paramtypes", [platform_browser_1.Title])
 ], AppComponent);
-export { AppComponent };
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

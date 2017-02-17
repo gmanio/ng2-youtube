@@ -1,3 +1,8 @@
+/**
+ * Created on 2017-01-09.
+ * @author: Gman Park
+ */
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,7 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Directive, ElementRef } from '@angular/core';
+var core_1 = require("@angular/core");
 var MDL = (function () {
     function MDL(el) {
         this.el = el;
@@ -20,9 +25,10 @@ var MDL = (function () {
     return MDL;
 }());
 MDL = __decorate([
-    Directive({
+    core_1.Directive({
         selector: '[mdl]'
     }),
-    __metadata("design:paramtypes", [ElementRef])
+    __metadata("design:paramtypes", [core_1.ElementRef])
 ], MDL);
-export { MDL };
+exports.MDL = MDL;
+//# sourceMappingURL=MaterialDesignLiteUpgradeElement.js.map
