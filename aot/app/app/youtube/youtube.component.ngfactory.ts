@@ -152,7 +152,7 @@ class View_YoutubeComponent1 extends import1.AppView<any> {
     this._text_1 = this.renderer.createText(this._el_0,'\n                    ',(null as any));
     this._el_2 = import3.createRenderElement(this.renderer,this._el_0,'a',new import3.InlineArray2(2,'routerLinkActive','active'),(null as any));
     this._RouterLinkWithHref_2_3 = new import10.Wrapper_RouterLinkWithHref(this.parentView.parentView.injectorGet(import8.Router,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import16.ActivatedRoute,this.parentView.parentIndex),this.parentView.parentView.injectorGet(import17.LocationStrategy,this.parentView.parentIndex));
-    this._RouterLinkActive_2_4 = new import11.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import8.Router,this.parentView.parentIndex),new import18.ElementRef(this._el_2),this.renderer);
+    this._RouterLinkActive_2_4 = new import11.Wrapper_RouterLinkActive(this.parentView.parentView.injectorGet(import8.Router,this.parentView.parentIndex),new import18.ElementRef(this._el_2),this.renderer,this.parentView.ref);
     this._query_RouterLink_2_0 = new import12.QueryList<any>();
     this._query_RouterLinkWithHref_2_1 = new import12.QueryList<any>();
     this._text_3 = this.renderer.createText(this._el_2,'\n                        ',(null as any));
